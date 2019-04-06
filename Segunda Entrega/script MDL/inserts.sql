@@ -192,9 +192,18 @@ INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (10,'10/15
 INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (11,'02/28/03',30);
 
 
------------------- INSERT  ------------------
+------------------ INSERT AUTOR ------------------
 
-
+INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (1,10);
+INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (2,11);
+INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (3,12);
+INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (4,13);
+INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (5,14);
+INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (6,15);
+INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (7,16);
+INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (8,17);
+INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (9,18);
+INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (10,19);
 
 
 ------------------ INSERT  ------------------

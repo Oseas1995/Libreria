@@ -11,3 +11,4 @@ Tablas Insert Realizados
 8. TIPO PAGO
 9. LIBRO
 10. CLIENTE
+11. AUTOR
