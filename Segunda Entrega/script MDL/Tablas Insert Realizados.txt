@@ -1,0 +1,13 @@
+
+Tablas Insert Realizados
+
+1. PERSONA
+2. CARGO
+3. IDIOMA
+4. Editorial
+5. CATEGORIA
+6. GENERO
+7. TELEFONO
+8. TIPO PAGO
+9. LIBRO
+10. CLIENTE
