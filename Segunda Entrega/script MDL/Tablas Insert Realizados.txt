@@ -12,3 +12,30 @@ Tablas Insert Realizados
 9. LIBRO
 10. CLIENTE
 11. AUTOR
+12. BODEGA
+13. PASILLO
+14. ESTANTE
+15. CUBICULO
+16. TIPO OBTENCION 
+17. 
+18. 
+19. 
+20. 
+21. 
+22. 
+23. 
+24. 
+25. 
+26. 
+27. 
+28. 
+29. 
+30. 
+31. 
+32. 
+33. 
+34. 
+35. 
+36. 
+37. 
+38. 

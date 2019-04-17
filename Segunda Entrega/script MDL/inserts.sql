@@ -1,37 +1,4 @@
 
------------------- INSERT TELEFONO ------------------
-
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (1,'2090-7146',1);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (2,'3985-5240',2);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (3,'2128-3334',3);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (4,'5873-4378',4);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (5,'2999-5807',5);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (6,'1927-9969',6);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (7,'2743-8604',7);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (8,'4741-9356',8);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (9,'9373-0521',9);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (10,'6061-5791',10);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (11,'5945-1617',11);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (12,'9069-9902',12);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (13,'8284-3627',13);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (14,'6089-9021',14);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (15,'4137-8081',15);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (16,'1989-7983',16);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (17,'5898-0481',17);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (18,'1254-0038',18);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (19,'4512-7683',19);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (20,'3642-1573',20);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (21,'1075-6617',21);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (22,'4940-7021',22);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (23,'3486-2747',23);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (24,'1914-9662',24);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (25,'2756-6682',25);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (26,'6428-4005',26);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (27,'7932-8061',27);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (28,'1197-5857',28);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (29,'2597-5193',29);
-INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (30,'1033-6228',30);
-
 
 ------------------ INSERT PERSONA ------------------
 
@@ -67,6 +34,38 @@ INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,cor
 INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo) VALUES (30,'Louis','Lucy','Dexter','Josiah','376-9729 Sed Avda.','Louis.Dexter@gmail.com');
 INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo) VALUES (31,'Gage','Lee','Lucian','Honorato','Apdo.:658-265 Lacinia C/','Gage.Lucian@gmail.com');
 
+------------------ INSERT TELEFONO ------------------
+
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (1,'2090-7146',1);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (2,'3985-5240',2);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (3,'2128-3334',3);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (4,'5873-4378',4);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (5,'2999-5807',5);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (6,'1927-9969',6);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (7,'2743-8604',7);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (8,'4741-9356',8);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (9,'9373-0521',9);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (10,'6061-5791',10);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (11,'5945-1617',11);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (12,'9069-9902',12);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (13,'8284-3627',13);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (14,'6089-9021',14);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (15,'4137-8081',15);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (16,'1989-7983',16);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (17,'5898-0481',17);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (18,'1254-0038',18);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (19,'4512-7683',19);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (20,'3642-1573',20);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (21,'1075-6617',21);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (22,'4940-7021',22);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (23,'3486-2747',23);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (24,'1914-9662',24);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (25,'2756-6682',25);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (26,'6428-4005',26);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (27,'7932-8061',27);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (28,'1197-5857',28);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (29,'2597-5193',29);
+INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (30,'1033-6228',30);
 
 ------------------ INSERT CARGO ------------------
 
@@ -148,8 +147,6 @@ INSERT INTO TIPOPAGO (idTipoPago,descripcion) VALUES (3,'Efectivo');
 
 ------------------ INSERT LIBRO ------------------
 
-
-
 INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma) VALUES (1,'Don Quijote de La Mancha I',1995,4,2);
 INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma) VALUES (2,'El tránsito terreno',2015,2,2);
 INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma) VALUES (3,'Historias de Nueva',2000,8,2);
@@ -206,19 +203,96 @@ INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (9,18);
 INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (10,19);
 
 
+------------------ INSERT BODEGA ------------------
+
+INSERT INTO BODEGA (idBodega,Nombre) VALUES (1,'Bodega 1');
+INSERT INTO BODEGA (idBodega,Nombre) VALUES (2,'Bodega 2');
+INSERT INTO BODEGA (idBodega,Nombre) VALUES (3,'Bodega 3');
+INSERT INTO BODEGA (idBodega,Nombre) VALUES (5,'Bodega 4');
+
+
+
+------------------ INSERT PASILLO ------------------
+
+INSERT INTO PASILLO (idPasillo, descripcion, Bodega_idBodega) VALUES (1,'Pasillo A',1);
+INSERT INTO PASILLO (idPasillo, descripcion, Bodega_idBodega) VALUES (2,'Pasillo B',1);
+INSERT INTO PASILLO (idPasillo, descripcion, Bodega_idBodega) VALUES (3,'Pasillo C',1);
+INSERT INTO PASILLO (idPasillo, descripcion, Bodega_idBodega) VALUES (4,'Pasillo D',1);
+INSERT INTO PASILLO (idPasillo, descripcion, Bodega_idBodega) VALUES (5,'Pasillo E',1);
+INSERT INTO PASILLO (idPasillo, descripcion, Bodega_idBodega) VALUES (6,'Pasillo F',1);
+INSERT INTO PASILLO (idPasillo, descripcion, Bodega_idBodega) VALUES (7,'Pasillo G',1);
+INSERT INTO PASILLO (idPasillo, descripcion, Bodega_idBodega) VALUES (8,'Pasillo H',1);
+INSERT INTO PASILLO (idPasillo, descripcion, Bodega_idBodega) VALUES (9,'Pasillo I',1);
+INSERT INTO PASILLO (idPasillo, descripcion, Bodega_idBodega) VALUES (10,'Pasillo J',1);
+
+
+------------------ INSERT ESTANTE ------------------
+
+INSERT INTO ESTANTE (idEstante, descripcion, Pasillo_idPasillo) VALUES (1,'Estante A1',1);
+INSERT INTO ESTANTE (idEstante, descripcion, Pasillo_idPasillo) VALUES (2,'Estante A2',1);
+INSERT INTO ESTANTE (idEstante, descripcion, Pasillo_idPasillo) VALUES (3,'Estante A3',1);
+INSERT INTO ESTANTE (idEstante, descripcion, Pasillo_idPasillo) VALUES (4,'Estante A4',1);
+INSERT INTO ESTANTE (idEstante, descripcion, Pasillo_idPasillo) VALUES (5,'Estante A5',1);
+INSERT INTO ESTANTE (idEstante, descripcion, Pasillo_idPasillo) VALUES (6,'Estante A6',1);
+INSERT INTO ESTANTE (idEstante, descripcion, Pasillo_idPasillo) VALUES (7,'Estante A7',1);
+INSERT INTO ESTANTE (idEstante, descripcion, Pasillo_idPasillo) VALUES (8,'Estante A8',1);
+INSERT INTO ESTANTE (idEstante, descripcion, Pasillo_idPasillo) VALUES (9,'Estante A9',1);
+INSERT INTO ESTANTE (idEstante, descripcion, Pasillo_idPasillo) VALUES (10,'Estante A10',1);
+
+INSERT INTO ESTANTE (idEstante, descripcion, Pasillo_idPasillo) VALUES (11,'Estante B1',2);
+INSERT INTO ESTANTE (idEstante, descripcion, Pasillo_idPasillo) VALUES (12,'Estante B2',2);
+INSERT INTO ESTANTE (idEstante, descripcion, Pasillo_idPasillo) VALUES (13,'Estante B3',2);
+INSERT INTO ESTANTE (idEstante, descripcion, Pasillo_idPasillo) VALUES (14,'Estante B4',2);
+INSERT INTO ESTANTE (idEstante, descripcion, Pasillo_idPasillo) VALUES (15,'Estante B5',2);
+INSERT INTO ESTANTE (idEstante, descripcion, Pasillo_idPasillo) VALUES (16,'Estante B6',2);
+INSERT INTO ESTANTE (idEstante, descripcion, Pasillo_idPasillo) VALUES (17,'Estante B7',2);
+INSERT INTO ESTANTE (idEstante, descripcion, Pasillo_idPasillo) VALUES (18,'Estante B8',2);
+INSERT INTO ESTANTE (idEstante, descripcion, Pasillo_idPasillo) VALUES (19,'Estante B9',2);
+INSERT INTO ESTANTE (idEstante, descripcion, Pasillo_idPasillo) VALUES (20,'Estante B10',2);
+
+
+------------------ INSERT CUBICULO ------------------
+
+INSERT INTO CUBICULO (idCubiculo, descripcion, Estante_idEstante) VALUES (1,'Cubiculo 1',1);
+INSERT INTO CUBICULO (idCubiculo, descripcion, Estante_idEstante) VALUES (2,'Cubiculo 2',2);
+INSERT INTO CUBICULO (idCubiculo, descripcion, Estante_idEstante) VALUES (3,'Cubiculo 3',3);
+INSERT INTO CUBICULO (idCubiculo, descripcion, Estante_idEstante) VALUES (4,'Cubiculo 4',4);
+INSERT INTO CUBICULO (idCubiculo, descripcion, Estante_idEstante) VALUES (5,'Cubiculo 5',5);
+INSERT INTO CUBICULO (idCubiculo, descripcion, Estante_idEstante) VALUES (6,'Cubiculo 6',6);
+INSERT INTO CUBICULO (idCubiculo, descripcion, Estante_idEstante) VALUES (7,'Cubiculo 7',7);
+INSERT INTO CUBICULO (idCubiculo, descripcion, Estante_idEstante) VALUES (8,'Cubiculo 8',8);
+INSERT INTO CUBICULO (idCubiculo, descripcion, Estante_idEstante) VALUES (9,'Cubiculo 9',9);
+INSERT INTO CUBICULO (idCubiculo, descripcion, Estante_idEstante) VALUES (10,'Cubiculo 10',10);
+
+
+------------------ INSERT TIPO OBTENCION ------------------
+
+INSERT INTO TIPOOBTENCION (idTipoObtencion, descripcion) VALUES (1,'Vendido');
+INSERT INTO TIPOOBTENCION (idTipoObtencion, descripcion) VALUES (2,'Prestamo');
+
+
 ------------------ INSERT  ------------------
 
 
+------------------ INSERT  ------------------
 
 
 ------------------ INSERT  ------------------
 
 
+------------------ INSERT  ------------------
 
 
 ------------------ INSERT  ------------------
 
 
+------------------ INSERT  ------------------
+
+
+------------------ INSERT  ------------------
+
+
+------------------ INSERT  ------------------
 
 
 ------------------ INSERT  ------------------
