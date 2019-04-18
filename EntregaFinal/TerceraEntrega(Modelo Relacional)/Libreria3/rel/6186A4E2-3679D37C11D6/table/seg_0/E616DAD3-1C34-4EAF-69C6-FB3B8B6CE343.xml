@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="90A7B15E-6E20-9D85-C499-91E5531AC144" name="Empleado">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E616DAD3-1C34-4EAF-69C6-FB3B8B6CE343" name="Autores/Libros">
 <createdBy>davef</createdBy>
-<createdTime>2019-03-27 02:08:12 UTC</createdTime>
+<createdTime>2019-03-27 03:36:36 UTC</createdTime>
 <ownerDesignName>Libreria3</ownerDesignName>
-<ordsAlias>table_3</ordsAlias>
+<ordsAlias>table_30</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="idEmpleado" id="76347C5D-193E-24B4-3AA5-B121415505ED">
+<Column name="idAutores/Libros" id="92A9EE28-77B9-9646-5E09-25D5CDA5498A">
 <createdBy>davef</createdBy>
-<createdTime>2019-03-27 02:12:14 UTC</createdTime>
+<createdTime>2019-03-27 03:37:05 UTC</createdTime>
 <ownerDesignName>Libreria3</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,20 +18,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="FechaIngreso" id="CA701737-7A06-386A-049C-340D5D25AAA8">
+<Column name="Autor_idAutor" id="AAD5D8A7-B7FF-7EB6-7904-69851E24A4AC">
 <createdBy>davef</createdBy>
-<createdTime>2019-03-27 02:09:07 UTC</createdTime>
-<ownerDesignName>Libreria3</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="Persona_idPersona" id="D8256561-2223-69D7-8792-5F192540DF25">
-<createdBy>davef</createdBy>
-<createdTime>2019-03-27 02:12:37 UTC</createdTime>
+<createdTime>2019-03-27 03:50:45 UTC</createdTime>
 <ownerDesignName>Libreria3</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,40 +29,54 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="EA6ED26C-9F23-01DE-3919-8E89A72DCF22" referredColumn="04CCFE2F-EFD3-6207-C2C6-39B225D63B98"/>
+<colAssociation fkAssociation="A3320DA8-5160-1272-1F29-44132BDFC33A" referredColumn="6200A001-EC64-D283-2EF1-644BFEE52A1F"/>
+</associations>
+</Column>
+<Column name="Libro_idLibro" id="36D1A8EE-B8CE-75FC-0101-AE72BEB5D876">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:53:34 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F8472EDF-CCBC-4B7E-345F-1CFEA285DA9A" referredColumn="424C32DF-4FD6-8FA4-9B9C-0F786CD8C86D"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="5A3FC672-0CE9-BAB9-53D2-0203A6C30D86" name="Empleado_PK">
+<ind_PK_UK id="1B631DC1-352F-B1E5-F644-8D5EC7D4CC4B" name="Autores/Libros_PK">
 <createdBy>davef</createdBy>
-<createdTime>2019-03-27 02:12:14 UTC</createdTime>
+<createdTime>2019-03-27 03:37:05 UTC</createdTime>
 <ownerDesignName>Libreria3</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="76347C5D-193E-24B4-3AA5-B121415505ED"/>
+<colUsage columnID="92A9EE28-77B9-9646-5E09-25D5CDA5498A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="A1528D8F-21F7-F8CA-3EDA-A9A0FFAA1DDD" name="Empleado__IDX">
+<ind_PK_UK id="80A1FB14-9299-4491-337E-E66250571110" name="Autores/Libros_Autor_FK">
 <createdBy>davef</createdBy>
-<createdTime>2019-03-27 02:15:08 UTC</createdTime>
-<ownerDesignName>Libreria3</ownerDesignName>
-<indexState>Unique Plain Index</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="D8256561-2223-69D7-8792-5F192540DF25"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="2EC48D66-841E-45BD-A2F2-C08996EC4F92" name="Empleado_Persona_FK">
-<createdBy>davef</createdBy>
-<createdTime>2019-03-27 02:12:37 UTC</createdTime>
+<createdTime>2019-03-27 03:50:45 UTC</createdTime>
 <ownerDesignName>Libreria3</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="D8256561-2223-69D7-8792-5F192540DF25"/>
+<colUsage columnID="AAD5D8A7-B7FF-7EB6-7904-69851E24A4AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE207CDA-47B5-9CC9-698A-3AB2FE1F00F0" name="Autores/Libros_Libro_FK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:53:34 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36D1A8EE-B8CE-75FC-0101-AE72BEB5D876"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
