@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="F408E1B6-0847-1711-556F-9A99E1C06DB1" mainViewID="1B83476C-3D92-25C0-CEA6-CF74024C0A55">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:05:07 UTC</createdTime>
+<ownerDesignName>Libreria E-R</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

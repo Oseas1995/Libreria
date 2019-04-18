@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A3320DA8-5160-1272-1F29-44132BDFC33A" containerWithKeyObject="E616DAD3-1C34-4EAF-69C6-FB3B8B6CE343" localFKIndex="80A1FB14-9299-4491-337E-E66250571110" name="Autores/Libros_Autor_FK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:50:45 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<referredTableLongName>Autor</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4BDEF819-EFAC-EAF9-5ECE-73A257EC8829</referredTableID>
+<keyObject>D3395CBD-C1E2-031B-F8FA-CD273F0BD719</keyObject>
+<referredKeyID>D3395CBD-C1E2-031B-F8FA-CD273F0BD719</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idAutor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

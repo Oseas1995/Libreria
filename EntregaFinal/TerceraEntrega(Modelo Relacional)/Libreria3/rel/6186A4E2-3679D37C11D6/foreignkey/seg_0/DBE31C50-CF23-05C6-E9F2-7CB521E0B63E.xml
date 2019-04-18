@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DBE31C50-CF23-05C6-E9F2-7CB521E0B63E" containerWithKeyObject="D17B8BD8-D35A-4F34-9200-F1E79BB9B337" localFKIndex="9202C814-5C7B-664F-C945-569093C4857B" name="Prov/pv_ProductosVarios_FK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:50:20 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<referredTableLongName>PVarios</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FB75223E-9767-A700-8CD7-AF07CB64F3CF</referredTableID>
+<keyObject>CE19127E-C547-710E-9503-0BA91271E875</keyObject>
+<referredKeyID>CE19127E-C547-710E-9503-0BA91271E875</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idPVarios</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

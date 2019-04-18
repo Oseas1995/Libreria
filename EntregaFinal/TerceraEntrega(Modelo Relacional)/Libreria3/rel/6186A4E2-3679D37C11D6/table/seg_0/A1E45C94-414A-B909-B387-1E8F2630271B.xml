@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A1E45C94-414A-B909-B387-1E8F2630271B" name="Cliente">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:56:11 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<ordsAlias>table_17</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idCliente" id="69301738-B93E-AE3D-FB29-F9F3383FBD3D">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:56:47 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechaIngreso" id="6555E6D8-E694-3647-EC8B-CF41F2546BCF">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:56:47 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Persona_idPersona" id="96ECCA30-AF11-4F59-97B4-0A3C2FCAC7D0">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:13:45 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="39802D58-C210-39A2-638E-D79E0D2E24FA" referredColumn="04CCFE2F-EFD3-6207-C2C6-39B225D63B98"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D0347E9-6DB2-A75F-540E-BF20B3C1D762" name="Cliente_PK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:56:47 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="69301738-B93E-AE3D-FB29-F9F3383FBD3D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="97B541B4-9AAF-176B-C864-31E5DF23C620" name="Cliente__IDX">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:13:56 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96ECCA30-AF11-4F59-97B4-0A3C2FCAC7D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F834732B-E570-EC60-A19A-545954B56524" name="Cliente_Persona_FK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:13:45 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96ECCA30-AF11-4F59-97B4-0A3C2FCAC7D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="513000A2-11D6-7ED7-9F5A-B321413126B0" name="Mora">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:02:45 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<ordsAlias>table_24</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idMora" id="2DD62675-3E62-CCDE-29F8-1B9D50299988">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:03:36 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="montoMora" id="CEB12FBC-FD42-E514-2255-537BF21860AB">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:03:36 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="F39F5A5F-39E2-8A57-DD56-73096CA9C1C7">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:03:36 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pago_idPago" id="B17419AD-4F20-D1DB-6E99-F4ED113DDCB4">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:17:22 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="424AC117-220E-76E0-F643-B019DE25B9B7" referredColumn="8ACC8D77-87C4-20F9-8516-8978020311B5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BFEED1A8-C18A-0859-9FEC-A89FA4E4FC34" name="Mora_PK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:03:36 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2DD62675-3E62-CCDE-29F8-1B9D50299988"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25CE10C9-850F-2747-0F83-F11231E38B92" name="Mora_Pago_FK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:17:22 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B17419AD-4F20-D1DB-6E99-F4ED113DDCB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

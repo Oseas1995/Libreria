@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="90A7B15E-6E20-9D85-C499-91E5531AC144" name="Empleado">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:08:12 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idEmpleado" id="76347C5D-193E-24B4-3AA5-B121415505ED">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:12:14 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FechaIngreso" id="CA701737-7A06-386A-049C-340D5D25AAA8">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:09:07 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Persona_idPersona" id="D8256561-2223-69D7-8792-5F192540DF25">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:12:37 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EA6ED26C-9F23-01DE-3919-8E89A72DCF22" referredColumn="04CCFE2F-EFD3-6207-C2C6-39B225D63B98"/>
+</associations>
+</Column>
+<Column name="JefeInmediato_idJefeInmediato" id="CE3851EA-F903-417E-54D1-7FE7AF0BF89A">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:15:30 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C227DBDE-0013-4357-F9DC-1C586192217D" referredColumn="C9B14E93-787D-C805-9629-10C11DEBBF05"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5A3FC672-0CE9-BAB9-53D2-0203A6C30D86" name="Empleado_PK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:12:14 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76347C5D-193E-24B4-3AA5-B121415505ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A1528D8F-21F7-F8CA-3EDA-A9A0FFAA1DDD" name="Empleado__IDX">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:15:08 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8256561-2223-69D7-8792-5F192540DF25"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2EC48D66-841E-45BD-A2F2-C08996EC4F92" name="Empleado_Persona_FK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:12:37 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8256561-2223-69D7-8792-5F192540DF25"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D72C1B31-5DE6-1D9F-D2F5-8FE1C03C0788" name="Empleado_JefeInmediato_FK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:15:30 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE3851EA-F903-417E-54D1-7FE7AF0BF89A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

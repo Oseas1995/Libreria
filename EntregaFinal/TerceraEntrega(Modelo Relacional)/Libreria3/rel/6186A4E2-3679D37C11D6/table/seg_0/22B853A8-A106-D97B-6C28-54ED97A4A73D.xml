@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="22B853A8-A106-D97B-6C28-54ED97A4A73D" name="Pasillo">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:49:11 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idPasillo" id="19552680-524C-C647-EBF0-01232138B8D7">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:49:46 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="FEDF70A5-24FE-6CE7-BCAA-ABDA1783A8B0">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:49:46 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Bodega_idBodega" id="11E562FE-57BE-5822-8095-386D52E272E8">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:54:48 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="155E8FF9-440F-D322-9A6F-098F4443F6F7" referredColumn="6AA75FA4-1A1C-1458-7246-88E2E36A1119"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2325089F-6EDC-F473-839A-B829E3E230DA" name="Pasillo_PK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:49:46 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19552680-524C-C647-EBF0-01232138B8D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D2837C4-4DA0-C8B1-D2D2-8497C5E4DD74" name="Pasillo_Bodega_FK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:54:48 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11E562FE-57BE-5822-8095-386D52E272E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

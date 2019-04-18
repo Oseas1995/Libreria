@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D17B8BD8-D35A-4F34-9200-F1E79BB9B337" name="Prov/pv">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:46:15 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<ordsAlias>table_39</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idProv/pv" id="DDF097D7-9C49-51B0-59D7-FB9EE890159D">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:47:05 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cantidad" id="4C7792F4-DA59-8EDC-96EF-B92BC604BB9A">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:47:05 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Proveedor_idProveedor" id="023B3730-D98F-F026-C5F7-E3B466B9288E">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:50:16 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="235F4AA3-865A-C946-E2AC-9C0C78274D81" referredColumn="EA1C31D8-02A1-8903-1EA6-CC3622C98675"/>
+</associations>
+</Column>
+<Column name="PVarios_idPVarios" id="D09B6253-F71A-AF51-B5E2-28704D592E3C">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:50:20 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DBE31C50-CF23-05C6-E9F2-7CB521E0B63E" referredColumn="3B58244D-5ABC-89C2-CF08-7F428A5934B7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="76573D74-CFD6-2162-D9C1-756E98C3EF0D" name="Prov/pv_PK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:47:05 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DDF097D7-9C49-51B0-59D7-FB9EE890159D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FE7AC16E-A77C-5CC8-BA68-DF15F634189B" name="Prov/pv_Proveedor_FK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:50:16 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="023B3730-D98F-F026-C5F7-E3B466B9288E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9202C814-5C7B-664F-C945-569093C4857B" name="Prov/pv_ProductosVarios_FK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:50:20 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D09B6253-F71A-AF51-B5E2-28704D592E3C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C3329474-2133-4539-72DB-B7EDE81927AF" name="Pago">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:59:34 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<ordsAlias>table_21</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idPago" id="8ACC8D77-87C4-20F9-8516-8978020311B5">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:01:02 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MontoPagar" id="A2B4D45C-4297-EE4F-1AD8-35FB89AA1E24">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:01:02 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechaHora" id="61D72E73-1B9D-F61C-3105-EE696D42AF38">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:01:02 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Prestamo_idPrestamo" id="5AAF8E21-65ED-6595-A30A-951F0F825B5C">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:15:23 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CE5FBDD3-3EC7-2573-EB25-19B3DB9BDE49" referredColumn="61B90E7F-32C3-2CC0-0270-973764BDEE69"/>
+</associations>
+</Column>
+<Column name="Descuento_idDescuento" id="FF946E20-5D21-0337-BC44-74B78C439855">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:16:58 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="47979190-E8E5-962A-E93E-83275ECB367D" referredColumn="402C4D13-CA03-7D1D-8B9A-A7DE68EE3F8A"/>
+</associations>
+</Column>
+<Column name="TipoPago_idTipoPago" id="6A20D7C1-DD4E-D29C-4225-3F29E186E186">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:17:12 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="112CC51B-AD53-2D2C-BDEE-8E77F28D34C9" referredColumn="52E1584E-3A23-799E-8F07-666662914FFF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FB464F8C-0376-F72C-B20C-20D6D380AC2E" name="Pago_PK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:01:02 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8ACC8D77-87C4-20F9-8516-8978020311B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3532BB94-A613-EAB7-6F56-A9497609DCBE" name="Pago_Prestamo_FK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:15:23 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5AAF8E21-65ED-6595-A30A-951F0F825B5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="308D188E-397D-4657-D233-79D2DD5FD355" name="Pago_Descuento_FK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:16:58 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF946E20-5D21-0337-BC44-74B78C439855"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C0807564-FDBB-34EA-BE9F-93E2007CDC10" name="Pago_TipoPago_FK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:17:12 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A20D7C1-DD4E-D29C-4225-3F29E186E186"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

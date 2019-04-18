@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E2D79381-23DA-CFFB-A504-B0C7157CBCC1" name="Idioma">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:43:36 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<ordsAlias>table_36</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idIdioma" id="B9733C37-8CED-D4CC-45A1-B83A95DAF988">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:44:03 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="A49E3063-31E6-B714-4C4C-62ACF245287E">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:44:03 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C54DB466-EEFF-7F60-B176-4EFE25397F3D" name="Idioma_PK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:44:03 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B9733C37-8CED-D4CC-45A1-B83A95DAF988"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

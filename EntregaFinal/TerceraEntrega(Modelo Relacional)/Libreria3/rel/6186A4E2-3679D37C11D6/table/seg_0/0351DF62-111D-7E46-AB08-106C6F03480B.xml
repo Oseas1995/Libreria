@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0351DF62-111D-7E46-AB08-106C6F03480B" name="Telefono">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:21:13 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idTelefono" id="88E305DE-9F42-D81C-5099-03203A5ACA3F">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:21:52 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero" id="61835C7D-6D07-9B22-3647-D691B7B0D9AD">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:21:52 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Persona_idPersona" id="973164EC-6213-753B-F5F8-7B05F248B0B5">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:41:32 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2950DF4E-D8F6-188F-12D6-91E3F1868E34" referredColumn="04CCFE2F-EFD3-6207-C2C6-39B225D63B98"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B1ED1B72-1D8C-9CC2-3079-006E9933CAAD" name="Telefono_PK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:21:52 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88E305DE-9F42-D81C-5099-03203A5ACA3F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C3B0B65F-112E-23CF-0367-3EFA220B79AA" name="Telefono_Persona_FK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:41:32 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="973164EC-6213-753B-F5F8-7B05F248B0B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5D05AA96-A77F-A1DD-CBEA-0E8D3FCB57C4" name="Prestamo">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:01:06 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<ordsAlias>table_22</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idPrestamo" id="61B90E7F-32C3-2CC0-0270-973764BDEE69">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:01:46 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechaInicio" id="951BDA9F-DB8B-007F-7545-97C59D962BA4">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:01:46 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechaMax" id="C1F71E9C-463F-6549-789F-37832C3B5D81">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:01:46 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="89ACBF63-5F75-48C1-3299-24C9965BD87C" name="Prestamo_PK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:01:46 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61B90E7F-32C3-2CC0-0270-973764BDEE69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

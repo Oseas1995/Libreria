@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4BDEF819-EFAC-EAF9-5ECE-73A257EC8829" name="Autor">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:36:24 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<ordsAlias>table_29</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idAutor" id="6200A001-EC64-D283-2EF1-644BFEE52A1F">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:39:32 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Persona_idPersona" id="E0C392E1-7555-0C26-25C1-BFC598950BD9">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:49:26 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="284A06C2-1F29-7902-C9A7-7DDB1D26D591" referredColumn="04CCFE2F-EFD3-6207-C2C6-39B225D63B98"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D3395CBD-C1E2-031B-F8FA-CD273F0BD719" name="Autor_PK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:39:32 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6200A001-EC64-D283-2EF1-644BFEE52A1F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F3EABB8F-5B17-0946-FF58-E0B3AD796F07" name="Autor__IDX">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:49:38 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0C392E1-7555-0C26-25C1-BFC598950BD9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D1151132-8190-A79C-9595-B1A38EC2F7D1" name="Autor_Persona_FK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:49:26 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0C392E1-7555-0C26-25C1-BFC598950BD9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

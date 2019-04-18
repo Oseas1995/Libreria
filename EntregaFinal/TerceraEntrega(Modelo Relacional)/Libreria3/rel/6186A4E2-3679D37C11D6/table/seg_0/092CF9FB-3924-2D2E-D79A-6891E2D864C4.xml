@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="092CF9FB-3924-2D2E-D79A-6891E2D864C4" name="posicionLibro">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:51:38 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idposicionLibro" id="13E5EB23-9B6B-29A3-2706-E744A02F59AB">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:52:19 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="221C0740-C226-8649-A55B-18068735E077">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:52:19 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cubiculo_idCubiculo" id="F1AC7A76-24AB-F06D-577B-D51BD6DF2C20">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:55:32 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="922037DF-A736-7920-C93D-3AEC58C4F480" referredColumn="E385F23B-07C3-1EA8-8394-2CF529325FF5"/>
+</associations>
+</Column>
+<Column name="Libro_idLibro" id="8C6022D8-051A-AE2C-EB1B-FF4B8830D654">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:18:31 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E50A82EB-61BC-07E0-7753-4BB877840C5E" referredColumn="424C32DF-4FD6-8FA4-9B9C-0F786CD8C86D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="675DFBBC-B132-7ECF-3B9D-1FEF5D29844D" name="posicionLibro_PK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:52:19 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13E5EB23-9B6B-29A3-2706-E744A02F59AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A8EF47CE-ED62-53B0-7575-496BC3C4F576" name="posicionLibro__IDX">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:18:42 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C6022D8-051A-AE2C-EB1B-FF4B8830D654"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DB4C7C3E-5674-5A61-A014-C059F9EDE258" name="posicionLibro_Cubiculo_FK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:55:32 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1AC7A76-24AB-F06D-577B-D51BD6DF2C20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A8861422-C575-8095-7EDC-36FFE368DFC1" name="posicionLibro_Libro_FK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:18:31 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C6022D8-051A-AE2C-EB1B-FF4B8830D654"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

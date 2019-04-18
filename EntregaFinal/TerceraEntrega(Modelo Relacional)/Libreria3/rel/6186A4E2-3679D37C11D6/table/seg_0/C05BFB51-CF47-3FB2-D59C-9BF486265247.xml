@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C05BFB51-CF47-3FB2-D59C-9BF486265247" name="Cubiculo">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:50:40 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idCubiculo" id="E385F23B-07C3-1EA8-8394-2CF529325FF5">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:51:31 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="9CF7CBDF-DA6B-E12B-FFB8-A41ABEEB2A30">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:51:31 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estante_idEstante" id="F5259D11-24F8-FFFF-BB65-7739C0732F7D">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:55:05 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="295408BB-F200-24ED-F69F-383D88E9D2A6" referredColumn="F661DF28-11FC-DEBB-2D88-03C0FA94925E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5BC01DE8-52C1-7B98-F53E-E373756EF7F6" name="Cubiculo_PK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:55:14 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E385F23B-07C3-1EA8-8394-2CF529325FF5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="639C6134-B2C6-392C-A39F-279BB58AAE1B" name="Cubiculo_Estante_FK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:55:05 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5259D11-24F8-FFFF-BB65-7739C0732F7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

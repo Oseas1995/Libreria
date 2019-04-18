@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="364B2929-187B-34F9-4520-108264CA70EF" containerWithKeyObject="45A51C56-3960-DF6C-8D68-7BE083A3E064" localFKIndex="6181E3C7-C8BF-F049-3732-06BD2EE08D6E" name="Prov/Lib_Proveedor_FK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-28 01:36:33 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<referredTableLongName>Proveedor</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9A3E310A-07E2-AEE7-E0AE-19958455030F</referredTableID>
+<keyObject>B5E3CEC6-1D74-FFC3-87EE-AF991ABDD5A4</keyObject>
+<referredKeyID>B5E3CEC6-1D74-FFC3-87EE-AF991ABDD5A4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idProveedor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

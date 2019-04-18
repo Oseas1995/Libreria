@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="295408BB-F200-24ED-F69F-383D88E9D2A6" containerWithKeyObject="C05BFB51-CF47-3FB2-D59C-9BF486265247" localFKIndex="639C6134-B2C6-392C-A39F-279BB58AAE1B" name="Cubiculo_Estante_FK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 02:55:05 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<referredTableLongName>Estante</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0218560F-E82E-DE5A-9CC2-3B5EA294AFD9</referredTableID>
+<keyObject>A52A456D-E891-FAFB-07AC-2EF3DC757F92</keyObject>
+<referredKeyID>A52A456D-E891-FAFB-07AC-2EF3DC757F92</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idEstante</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

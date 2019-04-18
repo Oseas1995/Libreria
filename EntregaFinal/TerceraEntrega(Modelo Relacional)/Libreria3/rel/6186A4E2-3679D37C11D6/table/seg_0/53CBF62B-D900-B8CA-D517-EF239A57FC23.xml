@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="53CBF62B-D900-B8CA-D517-EF239A57FC23" name="Generos/Libros">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:42:12 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<ordsAlias>table_34</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idGeneros/Libros" id="664F5011-6047-FFF5-75F9-706B194B3439">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:42:36 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Libro_idLibro" id="95ECCB4F-B290-F219-9DC8-65FA67B2A6C1">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:51:45 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B8738650-72A9-227F-1401-ABB8824EB1BA" referredColumn="424C32DF-4FD6-8FA4-9B9C-0F786CD8C86D"/>
+</associations>
+</Column>
+<Column name="Genero_idGenero" id="263D780B-8B4E-CC69-9B5D-9CAA9688E6A8">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:51:50 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CD0BA9B3-1A1B-9F10-DF0D-B96FEE306491" referredColumn="65FF4611-73C1-FF29-55A5-9F247E342CB7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="118E6331-3643-4B58-BD31-5FA1A7F5047B" name="Generos/Libros_PK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:42:36 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="664F5011-6047-FFF5-75F9-706B194B3439"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B72EF04B-E6C2-0300-9831-75A9FADEC905" name="Generos/Libros_Libro_FK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:51:45 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95ECCB4F-B290-F219-9DC8-65FA67B2A6C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3D4EB17-FB09-F054-72EB-B7D72D144C8D" name="Generos/Libros_Genero_FK">
+<createdBy>davef</createdBy>
+<createdTime>2019-03-27 03:51:50 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="263D780B-8B4E-CC69-9B5D-9CAA9688E6A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
