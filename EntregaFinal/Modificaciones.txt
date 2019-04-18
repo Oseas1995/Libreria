@@ -2,3 +2,4 @@ MODIFICACIONES:
 
 
 1- se le agregó el campo precioVenta y PrecioCosto a la tabla Libro
+2. se le agregó el campo NoIdentidad a la tabla Persona
