@@ -176,17 +176,17 @@ INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_i
 
 ------------------ INSERT CLIENTE ------------------
 
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (1,'10/14/08',20);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (2,'01/19/11',21);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (3,'01/19/08',22);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (4,'05/01/17',23);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (5,'04/09/15',24);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (6,'10/21/09',25);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (7,'06/06/04',26);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (8,'09/16/15',27);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (9,'11/19/17',28);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (10,'10/15/03',29);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (11,'02/28/03',30);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (1,TO_DATE('10/14/08 09:05:01','DD/MM/YYYY hh24:mi:ss'),20);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (2,TO_DATE('01/19/11 09:05:01','DD/MM/YYYY hh24:mi:ss'),21);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (3,TO_DATE('01/19/08 09:05:01','DD/MM/YYYY hh24:mi:ss'),22);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (4,TO_DATE('05/01/17 09:05:01','DD/MM/YYYY hh24:mi:ss'),23);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (5,TO_DATE('04/09/15 09:05:01','DD/MM/YYYY hh24:mi:ss'),24);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (6,TO_DATE('10/21/09 09:05:01','DD/MM/YYYY hh24:mi:ss'),25);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (7,TO_DATE('06/06/04 09:05:01','DD/MM/YYYY hh24:mi:ss'),26);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (8,TO_DATE('09/16/15 09:05:01','DD/MM/YYYY hh24:mi:ss'),27);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (9,TO_DATE('11/19/17 09:05:01','DD/MM/YYYY hh24:mi:ss'),28);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (10,TO_DATE('10/15/03 09:05:01','DD/MM/YYYY hh24:mi:ss'),29);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (11,TO_DATE('02/28/03 09:05:01','DD/MM/YYYY hh24:mi:ss'),30);
 
 
 ------------------ INSERT AUTOR ------------------
