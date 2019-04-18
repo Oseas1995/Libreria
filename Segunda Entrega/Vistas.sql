@@ -1,16 +1,15 @@
 --1 Mostrar Clientes
 
 Create view wv_Clientes as
-select per.pnombre+' '+per.snombre+' '+per.papellido+' '+per.sapellido, tel.numero as numeroTelefono, per.direccion, per.correo from Cliente Cli
+select (per.pnombre||' '||per.snombre||' '||per.papellido||' '||per.sapellido) nombreCompleto, tel.numero as numeroTelefono, per.direccion, per.correo from Cliente Cli
 inner join Persona per ON per.idPersona=Cli.Persona_idPersona
 inner join Telefono tel ON tel.Persona_idPersona=per.idPersona
-
 
 
 --2 Mostrar informacion de libros
 
 Create view wv_libros as
-select li.nombre, li.anioPublicacion, per.pnombre+' '+per.papellido as autor, idi.descripcion as idioma, gen.descripcion as genero, cat.descripcion as categoria, edi.nombre as editorial from Libro li
+select li.nombre, li.anioPublicacion, (per.pnombre||' '||per.papellido) as autor, idi.descripcion as idioma, gen.descripcion as genero, cat.descripcion as categoria, edi.nombre as editorial from Libro li
 inner join Idioma idi on idi.idIdioma=li.Idioma_idIdioma
 inner join Generos/Libros gl ON gl.Libro_idLibro=li.idLibro
 inner join Genero gen on gen.idGenero=gl.Genero_idGenero
@@ -24,7 +23,7 @@ inner join Editorial edi on edi.idEditorial=le.Editorial_idEditorial
 --3 Mostrar Empleados
 
 Create view wv_Empleados as
-select per.pnombre+' '+per.snombre+' '+per.papellido+' '+per.sapellido, tel.numero as numeroTelefono, per.direccion, per.correo from Empleado em
+select (per.pnombre||' '||per.snombre||' '||per.papellido||' '||per.sapellido) nombreCompleto, tel.numero as numeroTelefono, per.direccion, per.correo from Empleado em
 inner join Persona per ON per.idPersona=em.Persona_idPersona
 inner join Telefono tel ON tel.Persona_idPersona=per.idPersona
 
@@ -50,3 +49,26 @@ INNER JOIN Cubiculo cu ON cu.Estante_idEstante=es.idEstante
 INNER JOIN posicionLibro pl ON pl.Cubiculo_idCubiculo=cu.idCubiculo 
 INNER JOIN Libro li ON li.idLibro=pl.Libro_idLibro
 GROUP BY su.nombre  
+
+
+--6 Mostrar cargos de los empleados
+
+CREATE VIEW wv_CargoEmpleados AS
+SELECT (p.pnombre||' '||p.snombre||' '||p.papellido||' '||p.sapellido) NombreCompleto, c.descripcion cargo  FROM Persona p 
+INNER JOIN Empleado e ON p.idPersona = e.Persona_idPersona
+INNER JOIN Empleado/Cargo ec ON e.idEmpleado = ec.Empleado_idEmpleado
+INNER JOIN Cargo c ON ec.Cargo_idCargo = c.idCargo
+
+
+--7 Mostrar Detalle Factura
+
+CREATE VIEW vw_DetalleFactura AS
+SELECT f.IDFACTURA, (p.PNOMBRE||' '||p.PAPELLIDO) nombre, l.NOMBRE libro, df.CANTIDAD, tiob.DESCRIPCION TipoObtencion, f.FECHAREGISTRO FROM Factura f 
+INNER JOIN DETALLEFACTURA df ON f.IDFACTURA = df.FACTURA_IDFACTURA
+INNER JOIN CLIENTE c ON f.CLIENTE_IDCLIENTE = c.IDCLIENTE
+INNER JOIN Persona p ON c.PERSONA_IDPERSONA = p.IDPERSONA
+INNER JOIN LIBRO l ON df.LIBRO_IDLIBRO = l.IDLIBRO
+INNER JOIN TIPOOBTENCION tiob ON f.TIPOOBTENCION_IDTIPOOBTENCION = tiob.IDTIPOOBTENCION; 
+
+
+--8 
