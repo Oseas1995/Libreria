@@ -271,10 +271,47 @@ INSERT INTO TIPOOBTENCION (idTipoObtencion, descripcion) VALUES (1,'Vendido');
 INSERT INTO TIPOOBTENCION (idTipoObtencion, descripcion) VALUES (2,'Prestamo');
 
 
------------------- INSERT  ------------------
+------------------ INSERT DESCUENTO ------------------
+
+INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (1,0.10,'descuento persona normal');
+INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (2,0.20,'descuento estudiante');
+INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (3,0.30,'descuento tercera edad');
+INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (4,0.30,'descuento maestro');
+INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (5,0.35,'descuento empleados');
 
 
------------------- INSERT  ------------------
+------------------ INSERT PRESTAMO ------------------
+
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (1,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (2,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (3,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (4,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (5,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (6,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (7,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (8,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (9,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (10,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (11,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (12,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (13,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (14,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (15,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (16,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (17,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (18,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (19,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (20,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (21,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (22,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (23,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (24,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (25,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (26,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (27,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (28,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (29,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (30,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
 
 
 ------------------ INSERT  ------------------

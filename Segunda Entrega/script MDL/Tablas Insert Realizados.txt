@@ -4,7 +4,7 @@ Tablas Insert Realizados
 1. PERSONA
 2. CARGO
 3. IDIOMA
-4. Editorial
+4. EDITORIAL
 5. CATEGORIA
 6. GENERO
 7. TELEFONO
@@ -17,25 +17,26 @@ Tablas Insert Realizados
 14. ESTANTE
 15. CUBICULO
 16. TIPO OBTENCION 
-17. 
-18. 
-19. 
-20. 
-21. 
-22. 
-23. 
-24. 
-25. 
-26. 
-27. 
-28. 
-29. 
-30. 
-31. 
-32. 
-33. 
-34. 
-35. 
-36. 
-37. 
-38. 
+17. DESCUENTO
+18. PRESTAMO
+19. MORA ------------------(FALTA)
+20. TIPO PROVEEDOR --------(FALTA)
+21. PROVEEDOR -------------(FALTA)
+22. PVARIOS ---------------(FALTA)
+23. PROV/PV ---------------(FALTA)
+24. EMPLEADO --------------(FALTA)
+25. EMPLEADO/CARGO --------(FALTA)
+26. JEFE INMEDIATO --------(FALTA)
+27. SUCURSAL/EMPLEADO -----(FALTA)
+28. SUCURSAL --------------(FALTA)
+29. LIBRERIA --------------(FALTA)
+30. POSICION LIBRO --------(FALTA)
+31. PAGO ------------------(FALTA)
+32. FACTURA ---------------(FALTA)
+33. DETALLE FACTURA -------(FALTA)
+34. LIB/EDIT --------------(FALTA)
+35. GENEROS/LIBROS --------(FALTA)
+36. AUTORES/LIBROS --------(FALTA)
+37. PROV/LIB --------------(FALTA)
+38. EDICION ---------------(FALTA)
+
