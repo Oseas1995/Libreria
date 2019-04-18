@@ -1,6 +1,7 @@
 --1. Gestion Empleado
 --2. Gestion Cliente
 --3. Gestion Libro
+--4- Gestion Sucursal
 
 
 --1 Gestion Empleado
@@ -25,6 +26,7 @@ BEGIN
 
     DECLARE vctempMensaje VARCHAR2(1000);
     DECLARE vnconteo INT;
+    DECLARE vnEmpleado INT;
 
     vctempMensaje:='';
     vnconteo:=0;
@@ -89,7 +91,7 @@ BEGIN
         SELECT MAX(per.idPersona) INTO vnPersona FROM Persona
 
         INSERT INTO Empleado(FechaIngreso,Persona_idPersona)
-        VALUES(CURRENT_DATE FROM DUAL,vnPersona);
+        VALUES(SYSDATE FROM DUAL,vnPersona);
 
         pcmensajeError:='EMPLEADO REGISTRADO Exitosamente';
         pbocurreError:=0;
@@ -99,7 +101,47 @@ BEGIN
 
     IF pcAccion='EDITAR' or pcAccion='editar' THEN
         
-    END IF;    
+        SELECT COUNT(*) INTO vnconteo FROM Persona per
+        WHERE per.NoIdentidad=pcNoIdentidad
+
+
+        IF vnconteo=0 THEN
+            pcmensajeError:='NO SE ENCONTRÓ REGISTRO';
+            pbocurreError:=1;
+            RETURN;
+        END IF;
+
+        SELECT per.idPersona INTO vnPersona FROM Persona per
+        WHERE per.NoIdentidad=pcNoIdentidad
+
+        SELECT em.idEmpleado INTO vnEmpleado FROM Empleado em
+       INNER JOIN Persona per on per.idPersona=em.Persona_idPersona
+       WHERE per.NoIdentidad=pcNoIdentidad
+
+        UPDATE Persona
+        SET idPersona=vnPersona ,pnombre=pcpnombre, snombre=pcsnombre, papellido=pcpapellido, sapellido=pcsapellido, direccion=pcdireccion, correo=pccorreo, NoIdentidad=pcNoIdentidad
+        WHERE NoIdentidad=pcNoIdentidad
+
+        UPDATE Empleado 
+        SET idEmpleado=vnEmpleado,Persona_idPersona=vnPersona
+        WHERE idEmpleado=vnEmpleado 
+
+        pcmensajeError:='EMPLEADO EDITADO CORRECTAMENTE';
+        pbocurreError=0;
+
+        RETURN;
+
+    END IF;
+
+    IF pcAccion='ELIMINAR' OR pcAccion='eliminar' THEN
+        Delete FROM Persona
+        WHERE NoIdentidad=pcNoIdentidad
+
+        pcmensajeError:='eliminado exitosamente';
+        pbocurreError:=0;
+        RETURN;
+
+    END IF;
 
     
 

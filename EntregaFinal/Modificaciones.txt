@@ -4,3 +4,4 @@ MODIFICACIONES:
 1- se le agregó el campo precioVenta y PrecioCosto a la tabla Libro
 2. se le agregó el campo NoIdentidad a la tabla Persona
 3. Se eliminó la tabla JefeInmediato
+4. se les agregó el comando ON DELETE CASCADE a las lalves foraneas pra permitir DELETE en cascada
