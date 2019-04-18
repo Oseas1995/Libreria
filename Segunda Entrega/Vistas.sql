@@ -73,7 +73,7 @@ INNER JOIN PAGO pa ON f.PAGO_IDPAGO = pa.IDPAGO
 INNER JOIN TIPOPAGO tp ON pa.TIPOPAGO_IDTIPOPAGO = tp.IDTIPOPAGO;
 
 
---8 Mostrar los Empleados que tengas dos o más de dos telefonos.
+--8 Mostrar los Empleados que tengas dos o más telefonos.
 
 SELECT (p.PNOMBRE||' '||p.PAPELLIDO) nombre, COUNT(t.IDTELEFONO) CantidadTelefonos FROM TELEFONO t
 INNER JOIN PERSONA p ON t.PERSONA_IDPERSONA = p.IDPERSONA
@@ -82,5 +82,17 @@ GROUP BY p.PNOMBRE||' '||p.PAPELLIDO
 HAVING COUNT(t.IDTELEFONO) > 1;
 
 
---9 Mostrar los jefes y sus subordinados
+--9 Mostrar los Empleados que tienen jefe.
 
+SELECT e.IDEMPLEADO, (p.pnombre||' '||p.snombre||' '||p.papellido||' '||p.sapellido) NombreCompleto, e.JEFEINMEDIATO_IDJEFEINMEDIATO FROM Persona p
+INNER JOIN EMPLEADO e ON p.IDPERSONA = e.PERSONA_IDPERSONA
+WHERE e.JEFEINMEDIATO_IDJEFEINMEDIATO IS NOT NULL;
+
+
+--10 Mostrar los clientes que tiene dos o más telefonos.
+
+SELECT (p.PNOMBRE||' '||p.PAPELLIDO) nombre, COUNT(t.IDTELEFONO) CantidadTelefonos FROM TELEFONO t
+INNER JOIN PERSONA p ON t.PERSONA_IDPERSONA = p.IDPERSONA
+INNER JOIN CLIENTE c ON p.IDPERSONA = c.PERSONA_IDPERSONA
+GROUP BY p.PNOMBRE||' '||p.PAPELLIDO
+HAVING COUNT(t.IDTELEFONO) > 1;
