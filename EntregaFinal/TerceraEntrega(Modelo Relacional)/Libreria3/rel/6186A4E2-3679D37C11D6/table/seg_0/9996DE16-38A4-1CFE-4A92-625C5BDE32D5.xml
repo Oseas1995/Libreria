@@ -90,6 +90,18 @@
 <ownDataTypeParameters>45,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="NoIdentidad" id="9857159C-8E09-95A7-BE74-0740D07E3CBF">
+<createdBy>davef</createdBy>
+<createdTime>2019-04-18 17:37:09 UTC</createdTime>
+<ownerDesignName>Libreria3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="D12CDBE3-F970-41C8-BF4A-2B8ABE55C301" name="Persona_PK">
