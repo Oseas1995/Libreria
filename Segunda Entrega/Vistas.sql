@@ -81,5 +81,6 @@ INNER JOIN EMPLEADO e ON p.IDPERSONA = e.PERSONA_IDPERSONA
 GROUP BY p.PNOMBRE||' '||p.PAPELLIDO
 HAVING COUNT(t.IDTELEFONO) > 1;
 
+
 --9 Mostrar los jefes y sus subordinados
 
