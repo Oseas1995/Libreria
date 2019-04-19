@@ -291,3 +291,133 @@ BEGIN
     
 
 END
+
+
+
+--3. GESTION LIBRO
+CREATE OR REPLACE PROCEDURE SP_GESTIO_LIBRO(
+        pcnombre IN VARCHAR2(45),
+        pnanioPublicacion IN INT,
+        pnidCategoria IN INT,
+        pnidIdioma IN INT,
+        pfPrecioCosto IN FLOAT,
+        pfPrecioVenta IN FLOAT,
+        pcAccion in VARCHAR2(45),
+
+       pbocurreError         OUT  INT,
+       pcmensajeError        OUT  VARCHAR(1000)
+)
+
+IS
+
+BEGIN
+
+    DECLARE vctempMensaje VARCHAR2(1000);
+    DECLARE vnconteo INT;
+    DECLARE vnCliente INT;
+
+
+    vctempMensaje:='';
+    vnconteo:=0;
+    pbocurreError:=0;
+
+    --validaciones
+    IF pcnombre='' OR pcnombre IS NULL THEN
+        vctempMensaje:='nombre, ';
+    END IF;
+
+    IF pnanioPublicacion='' OR pnanioPublicacion IS NULL THEN
+        vctempMensaje:=CONCAT('Anio de publicacion, ',vctempMensaje);
+    END IF;
+
+    IF pnidCategoria='' OR pnidCategoria IS NULL THEN
+        vctempMensaje:=CONCAT('ID CATEGORIA, ',vctempMensaje);
+    END IF;
+
+    IF pnidIdioma='' OR pnidIdioma IS NULL THEN
+        vctempMensaje:=CONCAT('ID IDIOMA, ',vctempMensaje);
+    END IF;
+    
+    IF pfPrecioCosto='' OR pfPrecioCosto IS NULL THEN
+        vctempMensaje:=CONCAT('PRECIO COSTO, ',vctempMensaje);
+    END IF;
+
+    IF pfPrecioVenta='' OR pfPrecioVenta IS NULL THEN
+        vctempMensaje:=CONCAT('PRECIO VENTA, ',vctempMensaje);
+    END IF;
+
+    IF pcAccion='' OR pcAccion IS NULL THEN
+        vctempMensaje:=CONCAT('ACCION, ',vctempMensaje);
+    END IF;
+
+    IF vctempMensaje<>'' THEN
+        pcmensajeError:=CONCAT('CAMPOS REQUERIDOS: ',vctempMensaje);
+        pbocurreError:=1;
+    END IF;
+
+    
+    IF pcAccion='AGREGAR' OR pcAccion='agregar' THEN
+        pcmensajeError:='';
+
+        SELECT COUNT(*) INTO vnconteo FROM Libro lib
+        WHERE lib.nombre =pcnombre
+
+        IF vnconteo>0 THEN
+            pcmensajeError:='YA EXISTE UN LIBRO CON ESTE NOMBRE';
+            pbocurreError:=1;
+            RETURN;
+        END IF;
+
+        INSERT INTO Libro(nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta)
+        VALUES(pcnombre,pnanioPublicacion,pnidCategoria,pnidIdioma,pfPrecioCosto,pfPrecioVenta);
+
+        
+
+        pcmensajeError:='LIBRO REGISTRADO Exitosamente';
+        pbocurreError:=0;
+        RETURN;
+
+    END IF;
+
+    IF pcAccion='EDITAR' or pcAccion='editar' THEN
+        
+        SELECT COUNT(*) INTO vnconteo FROM Libro lib
+        WHERE lib.nombre = pcnombre
+
+
+        IF vnconteo=0 THEN
+            pcmensajeError:='NO SE ENCONTRÓ REGISTRO';
+            pbocurreError:=1;
+            RETURN;
+        END IF;
+
+        DECLARE vnLibro INT;
+
+        SELECT lib.idLibro INTO vnLibro FROM Libro lib
+        WHERE lib.nombre=pcnombre
+
+
+        UPDATE Libro
+        SET idLibro=vnLibro ,nombre=pcnombre, anioPublicacion=pnanioPublicacion, PrecioCosto=pfPrecioCosto, PrecioVenta=pfPrecioVenta
+        WHERE nombre=pcnombre
+
+        pcmensajeError:='LIBRO EDITADO CORRECTAMENTE';
+        pbocurreError=0;
+
+        RETURN;
+
+    END IF;
+
+    IF pcAccion='ELIMINAR' OR pcAccion='eliminar' THEN
+        Delete FROM Libro
+        WHERE nombre=pcnombre
+
+        pcmensajeError:='eliminado exitosamente';
+        pbocurreError:=0;
+        RETURN;
+
+    END IF;
+
+    
+
+END
