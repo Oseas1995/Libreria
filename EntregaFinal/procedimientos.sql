@@ -150,7 +150,7 @@ END
 
 --2 GESTION CLIENTE
 
-CREATE OR REPLACE PROCEDURE SP_GESTION_EMPLEADO(
+CREATE OR REPLACE PROCEDURE SP_GESTIO_CLIENTE(
         pcpnombre IN VARCHAR2(45),
         pcsnombre IN VARCHAR2(45),
         pcpapellido IN VARCHAR2(45),
@@ -170,7 +170,8 @@ BEGIN
 
     DECLARE vctempMensaje VARCHAR2(1000);
     DECLARE vnconteo INT;
-    DECLARE vnEmpleado INT;
+    DECLARE vnCliente INT;
+
 
     vctempMensaje:='';
     vnconteo:=0;
@@ -234,10 +235,10 @@ BEGIN
 
         SELECT MAX(per.idPersona) INTO vnPersona FROM Persona
 
-        INSERT INTO Empleado(FechaIngreso,Persona_idPersona)
+        INSERT INTO Cliente(FechaIngreso,Persona_idPersona)
         VALUES(SYSDATE FROM DUAL,vnPersona);
 
-        pcmensajeError:='EMPLEADO REGISTRADO Exitosamente';
+        pcmensajeError:='CLIENTE REGISTRADO Exitosamente';
         pbocurreError:=0;
         RETURN;
 
@@ -258,19 +259,19 @@ BEGIN
         SELECT per.idPersona INTO vnPersona FROM Persona per
         WHERE per.NoIdentidad=pcNoIdentidad
 
-        SELECT em.idEmpleado INTO vnEmpleado FROM Empleado em
-       INNER JOIN Persona per on per.idPersona=em.Persona_idPersona
+        SELECT cli.idCliente INTO vnCliente FROM Cliente cli
+       INNER JOIN Persona per on per.idPersona=cli.Persona_idPersona
        WHERE per.NoIdentidad=pcNoIdentidad
 
         UPDATE Persona
         SET idPersona=vnPersona ,pnombre=pcpnombre, snombre=pcsnombre, papellido=pcpapellido, sapellido=pcsapellido, direccion=pcdireccion, correo=pccorreo, NoIdentidad=pcNoIdentidad
         WHERE NoIdentidad=pcNoIdentidad
 
-        UPDATE Empleado 
-        SET idEmpleado=vnEmpleado,Persona_idPersona=vnPersona
-        WHERE idEmpleado=vnEmpleado 
+        UPDATE Cliente 
+        SET idCliente=vnCliente,Persona_idPersona=vnPersona
+        WHERE idCliente=vnCliente 
 
-        pcmensajeError:='EMPLEADO EDITADO CORRECTAMENTE';
+        pcmensajeError:='CLIENTE EDITADO CORRECTAMENTE';
         pbocurreError=0;
 
         RETURN;
