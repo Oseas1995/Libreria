@@ -314,7 +314,7 @@ BEGIN
 
     DECLARE vctempMensaje VARCHAR2(1000);
     DECLARE vnconteo INT;
-    DECLARE vnCliente INT;
+
 
 
     vctempMensaje:='';
@@ -410,6 +410,133 @@ BEGIN
 
     IF pcAccion='ELIMINAR' OR pcAccion='eliminar' THEN
         Delete FROM Libro
+        WHERE nombre=pcnombre
+
+        pcmensajeError:='eliminado exitosamente';
+        pbocurreError:=0;
+        RETURN;
+
+    END IF;
+
+    
+
+END
+
+
+
+--4- Gestion Sucursal
+ CREATE OR REPLACE PROCEDURE SP_GESTIO_SUCURSAL(
+        pcnombre IN VARCHAR2(45),
+        pcdireccion IN VARCHAR2(45),
+        pctelefono IN VARCHAR2(45),
+        pnidBodega IN INT,
+        pnidLibreria IN FLOAT,
+        pcAccion in VARCHAR2(45),
+
+       pbocurreError         OUT  INT,
+       pcmensajeError        OUT  VARCHAR(1000)
+)
+
+IS
+
+BEGIN
+
+    DECLARE vctempMensaje VARCHAR2(1000);
+    DECLARE vnconteo INT;
+
+
+    vctempMensaje:='';
+    vnconteo:=0;
+    pbocurreError:=0;
+
+    --validaciones
+    IF pcnombre='' OR pcnombre IS NULL THEN
+        vctempMensaje:='nombre, ';
+    END IF;
+
+    IF pcdireccion='' OR pcdireccion IS NULL THEN
+        vctempMensaje:=CONCAT('direccion, ',vctempMensaje);
+    END IF;
+
+    IF pctelefono='' OR pctelefono IS NULL THEN
+        vctempMensaje:=CONCAT('TELEFONO, ',vctempMensaje);
+    END IF;
+
+    IF pnidBodega='' OR pnidBodega IS NULL THEN
+        vctempMensaje:=CONCAT('ID BODEGA, ',vctempMensaje);
+    END IF;
+    
+    IF pnidLibreria='' OR pnidLibreria IS NULL THEN
+        vctempMensaje:=CONCAT('ID LIBRERIA, ',vctempMensaje);
+    END IF;
+
+    IF pcAccion='' OR pcAccion IS NULL THEN
+        vctempMensaje:=CONCAT('ACCION, ',vctempMensaje);
+    END IF;
+
+    IF vctempMensaje<>'' THEN
+        pcmensajeError:=CONCAT('CAMPOS REQUERIDOS: ',vctempMensaje);
+        pbocurreError:=1;
+    END IF;
+
+    
+    IF pcAccion='AGREGAR' OR pcAccion='agregar' THEN
+        pcmensajeError:='';
+
+        SELECT COUNT(*) INTO vnconteo FROM Sucursal su
+        WHERE su.nombre =pcnombre
+
+        IF vnconteo>0 THEN
+            pcmensajeError:='YA EXISTE UNA SUCURSAL CON ESTE NOMBRE';
+            pbocurreError:=1;
+            RETURN;
+        END IF;
+
+        INSERT INTO Sucursal(nombre,direccion,telefono,Bodega_idBodega,Libreria_idLibreria)
+        VALUES(pcnombre,pcdireccion,pctelefono,pnidBodega,pnidLibreria);
+
+        INSERT INTO Bodega(idBodega,Nombre)
+        VALUES (pnidBodega,pcnombre);
+
+        
+
+        pcmensajeError:='SUCURSAL REGISTRADA Exitosamente';
+        pbocurreError:=0;
+        RETURN;
+
+    END IF;
+
+    IF pcAccion='EDITAR' or pcAccion='editar' THEN
+        
+        SELECT COUNT(*) INTO vnconteo FROM Sucursal su
+        WHERE su.nombre = pcnombre
+
+
+        IF vnconteo=0 THEN
+            pcmensajeError:='NO SE ENCONTRÓ REGISTRO';
+            pbocurreError:=1;
+            RETURN;
+        END IF;
+
+        DECLARE vnSucursal INT;
+
+        SELECT su.idSucursal INTO vnSucursal FROM Sucursal su
+        WHERE su.nombre=pcnombre
+
+
+        UPDATE Sucursal
+        SET idSucursal=vnSucursal ,nombre=pcnombre, direccion=pcdireccion, telefono=pctelefono
+        WHERE nombre=pcnombre
+
+        pcmensajeError:='SUCURSAL EDITADA CORRECTAMENTE';
+        pbocurreError=0;
+
+        RETURN;
+
+    END IF;
+
+    IF pcAccion='ELIMINAR' OR pcAccion='eliminar' THEN
+        Delete FROM Sucursal
         WHERE nombre=pcnombre
 
         pcmensajeError:='eliminado exitosamente';
