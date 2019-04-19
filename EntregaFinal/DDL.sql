@@ -1,8 +1,3 @@
--- Generado por Oracle SQL Developer Data Modeler 18.4.0.339.1532
---   en:        2019-04-18 17:26:22 CST
---   sitio:      Oracle Database 11g
---   tipo:      Oracle Database 11g
-
 
 
 CREATE TABLE autor (
@@ -17,13 +12,13 @@ CREATE UNIQUE INDEX autor__idx ON
 
 ALTER TABLE autor ADD CONSTRAINT autor_pk PRIMARY KEY ( idautor );
 
-CREATE TABLE "Autores/Libros" (
-    "idAutores/Libros"   INTEGER NOT NULL,
-    autor_idautor        INTEGER NOT NULL,
-    libro_idlibro        INTEGER NOT NULL
+CREATE TABLE autoreslibros (
+    idautoreslibros   INTEGER NOT NULL,
+    autor_idautor     INTEGER NOT NULL,
+    libro_idlibro     INTEGER NOT NULL
 );
 
-ALTER TABLE "Autores/Libros" ADD CONSTRAINT "Autores/Libros_PK" PRIMARY KEY ( "idAutores/Libros" );
+ALTER TABLE autoreslibros ADD CONSTRAINT AutoresLibros_PK PRIMARY KEY ( idautoreslibros );
 
 CREATE TABLE bodega (
     idbodega   INTEGER NOT NULL,
@@ -115,15 +110,15 @@ CREATE UNIQUE INDEX empleado__idx ON
 
 ALTER TABLE empleado ADD CONSTRAINT empleado_pk PRIMARY KEY ( idempleado );
 
-CREATE TABLE "Empleado/Cargo" (
-    "idEmpleado/cargo"    INTEGER NOT NULL,
+CREATE TABLE empleadocargo (
+    idempleadocargo       INTEGER NOT NULL,
     fechanombramiento     DATE,
     fechafin              DATE,
     empleado_idempleado   INTEGER NOT NULL,
     cargo_idcargo         INTEGER NOT NULL
 );
 
-ALTER TABLE "Empleado/Cargo" ADD CONSTRAINT "Empleado/Cargo_PK" PRIMARY KEY ( "idEmpleado/cargo" );
+ALTER TABLE empleadocargo ADD CONSTRAINT EmpleadoCargo_PK PRIMARY KEY ( idempleadocargo );
 
 CREATE TABLE estante (
     idestante           INTEGER NOT NULL,
@@ -155,13 +150,13 @@ CREATE TABLE genero (
 
 ALTER TABLE genero ADD CONSTRAINT genero_pk PRIMARY KEY ( idgenero );
 
-CREATE TABLE "Generos/Libros" (
-    "idGeneros/Libros"   INTEGER NOT NULL,
-    libro_idlibro        INTEGER NOT NULL,
-    genero_idgenero      INTEGER NOT NULL
+CREATE TABLE generoslibros (
+    idgeneroslibros   INTEGER NOT NULL,
+    libro_idlibro     INTEGER NOT NULL,
+    genero_idgenero   INTEGER NOT NULL
 );
 
-ALTER TABLE "Generos/Libros" ADD CONSTRAINT "Generos/Libros_PK" PRIMARY KEY ( "idGeneros/Libros" );
+ALTER TABLE generoslibros ADD CONSTRAINT GenerosLibros_PK PRIMARY KEY ( idgeneroslibros );
 
 CREATE TABLE idioma (
     ididioma      INTEGER NOT NULL,
@@ -170,13 +165,13 @@ CREATE TABLE idioma (
 
 ALTER TABLE idioma ADD CONSTRAINT idioma_pk PRIMARY KEY ( ididioma );
 
-CREATE TABLE "Lib/Edit" (
-    "idLib/Edit"            INTEGER NOT NULL,
+CREATE TABLE libedit (
+    idlibedit               INTEGER NOT NULL,
     editorial_ideditorial   INTEGER NOT NULL,
     libro_idlibro           INTEGER NOT NULL
 );
 
-ALTER TABLE "Lib/Edit" ADD CONSTRAINT "Lib/Edit_PK" PRIMARY KEY ( "idLib/Edit" );
+ALTER TABLE libedit ADD CONSTRAINT LibEdit_PK PRIMARY KEY ( idlibedit );
 
 CREATE TABLE libreria (
     idlibreria   INTEGER NOT NULL,
@@ -263,24 +258,6 @@ CREATE TABLE prestamo (
 
 ALTER TABLE prestamo ADD CONSTRAINT prestamo_pk PRIMARY KEY ( idprestamo );
 
-CREATE TABLE "Prov/Lib" (
-    "idProv/Lib"            INTEGER NOT NULL,
-    cantidad                INTEGER,
-    proveedor_idproveedor   INTEGER NOT NULL,
-    libro_idlibro           INTEGER NOT NULL
-);
-
-ALTER TABLE "Prov/Lib" ADD CONSTRAINT "Prov/Lib_PK" PRIMARY KEY ( "idProv/Lib" );
-
-CREATE TABLE "Prov/pv" (
-    "idProv/pv"             INTEGER NOT NULL,
-    cantidad                INTEGER,
-    proveedor_idproveedor   INTEGER NOT NULL,
-    pvarios_idpvarios       INTEGER NOT NULL
-);
-
-ALTER TABLE "Prov/pv" ADD CONSTRAINT "Prov/pv_PK" PRIMARY KEY ( "idProv/pv" );
-
 CREATE TABLE proveedor (
     idproveedor                     INTEGER NOT NULL,
     direccion                       VARCHAR2(45),
@@ -292,6 +269,24 @@ CREATE TABLE proveedor (
 );
 
 ALTER TABLE proveedor ADD CONSTRAINT proveedor_pk PRIMARY KEY ( idproveedor );
+
+CREATE TABLE provlib (
+    idprovlib               INTEGER NOT NULL,
+    cantidad                INTEGER,
+    proveedor_idproveedor   INTEGER NOT NULL,
+    libro_idlibro           INTEGER NOT NULL
+);
+
+ALTER TABLE provlib ADD CONSTRAINT ProvLib_PK PRIMARY KEY ( idprovlib );
+
+CREATE TABLE provpv (
+    idprovpv                INTEGER NOT NULL,
+    cantidad                INTEGER,
+    proveedor_idproveedor   INTEGER NOT NULL,
+    pvarios_idpvarios       INTEGER NOT NULL
+);
+
+ALTER TABLE provpv ADD CONSTRAINT Provpv_PK PRIMARY KEY ( idprovpv );
 
 CREATE TABLE pvarios (
     idpvarios     INTEGER NOT NULL,
@@ -316,15 +311,15 @@ CREATE UNIQUE INDEX sucursal__idx ON
 
 ALTER TABLE sucursal ADD CONSTRAINT sucursal_pk PRIMARY KEY ( idsucursal );
 
-CREATE TABLE "Sucursal/Empleado" (
-    "idSucursal/Empleado"   INTEGER NOT NULL,
-    fechainicio             DATE,
-    fechafin                DATE,
-    sucursal_idsucursal     INTEGER NOT NULL,
-    empleado_idempleado     INTEGER NOT NULL
+CREATE TABLE sucursalempleado (
+    idsucursalempleado    INTEGER NOT NULL,
+    fechainicio           DATE,
+    fechafin              DATE,
+    sucursal_idsucursal   INTEGER NOT NULL,
+    empleado_idempleado   INTEGER NOT NULL
 );
 
-ALTER TABLE "Sucursal/Empleado" ADD CONSTRAINT "Sucursal/Empleado_PK" PRIMARY KEY ( "idSucursal/Empleado" );
+ALTER TABLE sucursalempleado ADD CONSTRAINT SucursalEmpleado_PK PRIMARY KEY ( idsucursalempleado );
 
 CREATE TABLE telefono (
     idtelefono          INTEGER NOT NULL,
@@ -360,13 +355,13 @@ ALTER TABLE autor
         REFERENCES persona ( idpersona )
         ON DELETE CASCADE;
 
-ALTER TABLE "Autores/Libros"
-    ADD CONSTRAINT "Autores/Libros_Autor_FK" FOREIGN KEY ( autor_idautor )
+ALTER TABLE autoreslibros
+    ADD CONSTRAINT autoreslibros_autor_fk FOREIGN KEY ( autor_idautor )
         REFERENCES autor ( idautor )
         ON DELETE CASCADE;
 
-ALTER TABLE "Autores/Libros"
-    ADD CONSTRAINT "Autores/Libros_Libro_FK" FOREIGN KEY ( libro_idlibro )
+ALTER TABLE autoreslibros
+    ADD CONSTRAINT autoreslibros_libro_fk FOREIGN KEY ( libro_idlibro )
         REFERENCES libro ( idlibro )
         ON DELETE CASCADE;
 
@@ -400,13 +395,13 @@ ALTER TABLE empleado
         REFERENCES persona ( idpersona )
         ON DELETE CASCADE;
 
-ALTER TABLE "Empleado/Cargo"
-    ADD CONSTRAINT "Empleado/Cargo_Cargo_FK" FOREIGN KEY ( cargo_idcargo )
+ALTER TABLE empleadocargo
+    ADD CONSTRAINT EmpleadoCargo_Cargo_FK FOREIGN KEY ( cargo_idcargo )
         REFERENCES cargo ( idcargo )
         ON DELETE CASCADE;
 
-ALTER TABLE "Empleado/Cargo"
-    ADD CONSTRAINT "Empleado/Cargo_Empleado_FK" FOREIGN KEY ( empleado_idempleado )
+ALTER TABLE empleadocargo
+    ADD CONSTRAINT EmpleadoCargo_Empleado_FK FOREIGN KEY ( empleado_idempleado )
         REFERENCES empleado ( idempleado )
         ON DELETE CASCADE;
 
@@ -430,23 +425,23 @@ ALTER TABLE factura
         REFERENCES tipoobtencion ( idtipoobtencion )
         ON DELETE CASCADE;
 
-ALTER TABLE "Generos/Libros"
-    ADD CONSTRAINT "Generos/Libros_Genero_FK" FOREIGN KEY ( genero_idgenero )
+ALTER TABLE generoslibros
+    ADD CONSTRAINT generoslibros_genero_fk FOREIGN KEY ( genero_idgenero )
         REFERENCES genero ( idgenero )
         ON DELETE CASCADE;
 
-ALTER TABLE "Generos/Libros"
-    ADD CONSTRAINT "Generos/Libros_Libro_FK" FOREIGN KEY ( libro_idlibro )
+ALTER TABLE generoslibros
+    ADD CONSTRAINT generoslibros_libro_fk FOREIGN KEY ( libro_idlibro )
         REFERENCES libro ( idlibro )
         ON DELETE CASCADE;
 
-ALTER TABLE "Lib/Edit"
-    ADD CONSTRAINT "Lib/Edit_Editorial_FK" FOREIGN KEY ( editorial_ideditorial )
+ALTER TABLE libedit
+    ADD CONSTRAINT libedit_editorial_fk FOREIGN KEY ( editorial_ideditorial )
         REFERENCES editorial ( ideditorial )
         ON DELETE CASCADE;
 
-ALTER TABLE "Lib/Edit"
-    ADD CONSTRAINT "Lib/Edit_Libro_FK" FOREIGN KEY ( libro_idlibro )
+ALTER TABLE libedit
+    ADD CONSTRAINT libedit_libro_fk FOREIGN KEY ( libro_idlibro )
         REFERENCES libro ( idlibro )
         ON DELETE CASCADE;
 
@@ -495,29 +490,28 @@ ALTER TABLE posicionlibro
         REFERENCES libro ( idlibro )
         ON DELETE CASCADE;
 
-ALTER TABLE "Prov/Lib"
-    ADD CONSTRAINT "Prov/Lib_Libro_FK" FOREIGN KEY ( libro_idlibro )
+ALTER TABLE proveedor
+    ADD CONSTRAINT proveedor_tipoproveedor_fk FOREIGN KEY ( tipoproveedor_idtipoproveedor )
+        REFERENCES tipoproveedor ( idtipoproveedor );
+
+ALTER TABLE provlib
+    ADD CONSTRAINT provlib_libro_fk FOREIGN KEY ( libro_idlibro )
         REFERENCES libro ( idlibro )
         ON DELETE CASCADE;
 
-ALTER TABLE "Prov/Lib"
-    ADD CONSTRAINT "Prov/Lib_Proveedor_FK" FOREIGN KEY ( proveedor_idproveedor )
+ALTER TABLE provlib
+    ADD CONSTRAINT provlib_proveedor_fk FOREIGN KEY ( proveedor_idproveedor )
         REFERENCES proveedor ( idproveedor )
         ON DELETE CASCADE;
 
-ALTER TABLE "Prov/pv"
-    ADD CONSTRAINT "Prov/pv_ProductosVarios_FK" FOREIGN KEY ( pvarios_idpvarios )
+ALTER TABLE provpv
+    ADD CONSTRAINT provpv_productosvarios_fk FOREIGN KEY ( pvarios_idpvarios )
         REFERENCES pvarios ( idpvarios )
         ON DELETE CASCADE;
 
-ALTER TABLE "Prov/pv"
-    ADD CONSTRAINT "Prov/pv_Proveedor_FK" FOREIGN KEY ( proveedor_idproveedor )
+ALTER TABLE provpv
+    ADD CONSTRAINT provpv_proveedor_fk FOREIGN KEY ( proveedor_idproveedor )
         REFERENCES proveedor ( idproveedor )
-        ON DELETE CASCADE;
-
-ALTER TABLE proveedor
-    ADD CONSTRAINT proveedor_tipoproveedor_fk FOREIGN KEY ( tipoproveedor_idtipoproveedor )
-        REFERENCES tipoproveedor ( idtipoproveedor )
         ON DELETE CASCADE;
 
 ALTER TABLE sucursal
@@ -530,13 +524,13 @@ ALTER TABLE sucursal
         REFERENCES libreria ( idlibreria )
         ON DELETE CASCADE;
 
-ALTER TABLE "Sucursal/Empleado"
-    ADD CONSTRAINT "Sucursal/Empleado_Empleado_FK" FOREIGN KEY ( empleado_idempleado )
+ALTER TABLE sucursalempleado
+    ADD CONSTRAINT sucursalempleado_empleado_fk FOREIGN KEY ( empleado_idempleado )
         REFERENCES empleado ( idempleado )
         ON DELETE CASCADE;
 
-ALTER TABLE "Sucursal/Empleado"
-    ADD CONSTRAINT "Sucursal/Empleado_Sucursal_FK" FOREIGN KEY ( sucursal_idsucursal )
+ALTER TABLE sucursalempleado
+    ADD CONSTRAINT sucursalempleado_sucursal_fk FOREIGN KEY ( sucursal_idsucursal )
         REFERENCES sucursal ( idsucursal )
         ON DELETE CASCADE;
 
