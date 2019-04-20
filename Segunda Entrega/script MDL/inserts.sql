@@ -2,37 +2,37 @@
 
 ------------------ INSERT PERSONA ------------------
 
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (1,'Lionel','Ruby','Mechelle','Mannix','Apdo.:419-8537 Proin Ctra.','Lionel.Mechelle@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (2,'Barrett','Katelyn','Kameko','Oscar','Apdo.:165-4262 Non C.','Barrett.Kameko@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (3,'Wade','Ivana','Melissa','Ferdinand','Apartado núm.: 905, 1658 Phasellus C.','Wade.Melissa@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (4,'Malcolm','Angelica','Uriel','Mannix','Apdo.:984-4984 Diam C.','Malcolm.Uriel@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (5,'Sawyer','Amelia','Benjamin','Fuller','Apdo.:602-6808 Sed Calle','Sawyer.Benjamin@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (6,'Austin','Karly','Aladdin','Aristotle','Apartado núm.: 247, 1371 Curabitur Carretera','Austin.Aladdin@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (7,'Silas','Vivian','Hunter','Jermaine','435-7991 Commodo Avenida','Silas.Hunter@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (8,'Elvis','Kylie','Gage','Abbot','265-7874 Felis. Ctra.','Elvis.Gage@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (9,'Dolan','Willa','Scarlet','Simon','Apartado núm.: 465, 4861 Blandit. Avenida','Dolan.Scarlet@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (10,'Kasimir','Jacqueline','Rajah','Barrett','Apdo.:555-5138 Ante C/','Kasimir.Rajah@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (11,'Mannix','Mara','Ashton','Acton','Apartado núm.: 955, 5906 Erat. Calle','Mannix.Ashton@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (12,'Rajah','Vivian','Damian','Damian','Apdo.:199-8231 Enim Avenida','Rajah.Damian@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (13,'Lyle','Aspen','Zenaida','Elliott','Apdo.:851-1894 Interdum Calle','Lyle.Zenaida@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (14,'Josiah','Francesca','Tara','Logan','Apartado núm.: 625, 7156 Cursus Av.','Josiah.Tara@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (15,'Caldwell','Chanda','Colette','William','Apartado núm.: 447, 6839 Dolor. ','Caldwell.Colette@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (16,'Carlos','Lacy','Catherine','Kenneth','275-594 Proin Avenida','Carlos.Catherine@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (17,'Ali','Nerea','Hop','Lamar','Apdo.:279-8210 Conubia Carretera','Ali.Hop@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (18,'Burton','Xena','Wing','Cade','Apartado núm.: 405, 6350 Semper Ctra.','Burton.Wing@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (19,'Kane','Mikayla','Barrett','Donovan','Apartado núm.: 739, 2415 Egestas C.','Kane.Barrett@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (20,'Nissim','Lenore','Griffin','Quamar','Apdo.:533-8845 Eleifend, Ctra.','Nissim.Griffin@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (21,'Porter','Kerry','Hedley','Jarrod','2752 Tellus Calle','Porter.Hedley@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (22,'Paki','Sade','Cheryl','Kieran','266-3845 Bibendum Ctra.','Paki.Cheryl@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (23,'Wayne','Sydnee','Gray','Arthur','529-2933 Convallis Avda.','Wayne.Gray@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (24,'Tyler','Priscilla','Carolyn','Brian','931-1471 Id, ','Tyler.Carolyn@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (25,'Marshall','Jasmine','Jael','Bradley','483-5240 Mauris, C/','Marshall.Jael@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (26,'Wyatt','Hanna','Olivia','Stuart','Apdo.:976-9925 Proin Av.','Wyatt.Olivia@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (27,'Cody','Maggie','Lilah','Gage','Apdo.:696-4729 Id Calle','Cody.Lilah@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (28,'Gage','Briar','Dylan','Chester','Apartado núm.: 475, 9258 Donec Av.','Gage.Dylan@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (29,'Aristotle','Mary','Erich','Kirk','Apartado núm.: 308, 1177 Tristique Calle','Aristotle.Erich@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (30,'Louis','Lucy','Dexter','Josiah','376-9729 Sed Avda.','Louis.Dexter@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,noIdentidad) VALUES (31,'Gage','Lee','Lucian','Honorato','Apdo.:658-265 Lacinia C/','Gage.Lucian@gmail.com','0801-1992-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (1,'Lionel','Ruby','Mechelle','Mannix','Apdo.:419-8537 Proin Ctra.','Lionel.Mechelle@gmail.com','0801-1990-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (2,'Barrett','Katelyn','Kameko','Oscar','Apdo.:165-4262 Non C.','Barrett.Kameko@gmail.com','0801-1990-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (3,'Wade','Ivana','Melissa','Ferdinand','Apartado núm.: 905, 1658 Phasellus C.','Wade.Melissa@gmail.com','0801-1990-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (4,'Malcolm','Angelica','Uriel','Mannix','Apdo.:984-4984 Diam C.','Malcolm.Uriel@gmail.com','0801-1990-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (5,'Sawyer','Amelia','Benjamin','Fuller','Apdo.:602-6808 Sed Calle','Sawyer.Benjamin@gmail.com','0801-1990-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (6,'Austin','Karly','Aladdin','Aristotle','Apartado núm.: 247, 1371 Curabitur Carretera','Austin.Aladdin@gmail.com','0801-1990-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (7,'Silas','Vivian','Hunter','Jermaine','435-7991 Commodo Avenida','Silas.Hunter@gmail.com','0801-1990-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (8,'Elvis','Kylie','Gage','Abbot','265-7874 Felis. Ctra.','Elvis.Gage@gmail.com','0801-1990-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (9,'Dolan','Willa','Scarlet','Simon','Apartado núm.: 465, 4861 Blandit. Avenida','Dolan.Scarlet@gmail.com','0801-1990-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (10,'Kasimir','Jacqueline','Rajah','Barrett','Apdo.:555-5138 Ante C/','Kasimir.Rajah@gmail.com','0801-1990-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (11,'Mannix','Mara','Ashton','Acton','Apartado núm.: 955, 5906 Erat. Calle','Mannix.Ashton@gmail.com','0801-1990-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (12,'Rajah','Vivian','Damian','Damian','Apdo.:199-8231 Enim Avenida','Rajah.Damian@gmail.com','0801-1990-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (13,'Lyle','Aspen','Zenaida','Elliott','Apdo.:851-1894 Interdum Calle','Lyle.Zenaida@gmail.com','0801-1990-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (14,'Josiah','Francesca','Tara','Logan','Apartado núm.: 625, 7156 Cursus Av.','Josiah.Tara@gmail.com','0801-1990-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (15,'Caldwell','Chanda','Colette','William','Apartado núm.: 447, 6839 Dolor. ','Caldwell.Colette@gmail.com','0801-1990-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (16,'Carlos','Lacy','Catherine','Kenneth','275-594 Proin Avenida','Carlos.Catherine@gmail.com','0801-1990-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (17,'Ali','Nerea','Hop','Lamar','Apdo.:279-8210 Conubia Carretera','Ali.Hop@gmail.com','0801-1990-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (18,'Burton','Xena','Wing','Cade','Apartado núm.: 405, 6350 Semper Ctra.','Burton.Wing@gmail.com','0801-1990-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (19,'Kane','Mikayla','Barrett','Donovan','Apartado núm.: 739, 2415 Egestas C.','Kane.Barrett@gmail.com','0801-1992-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (20,'Nissim','Lenore','Griffin','Quamar','Apdo.:533-8845 Eleifend, Ctra.','Nissim.Griffin@gmail.com','0801-1992-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (21,'Porter','Kerry','Hedley','Jarrod','2752 Tellus Calle','Porter.Hedley@gmail.com','0801-1992-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (22,'Paki','Sade','Cheryl','Kieran','266-3845 Bibendum Ctra.','Paki.Cheryl@gmail.com','0801-1992-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (23,'Wayne','Sydnee','Gray','Arthur','529-2933 Convallis Avda.','Wayne.Gray@gmail.com','0801-1992-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (24,'Tyler','Priscilla','Carolyn','Brian','931-1471 Id, ','Tyler.Carolyn@gmail.com','0801-1992-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (25,'Marshall','Jasmine','Jael','Bradley','483-5240 Mauris, C/','Marshall.Jael@gmail.com','0801-1992-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (26,'Wyatt','Hanna','Olivia','Stuart','Apdo.:976-9925 Proin Av.','Wyatt.Olivia@gmail.com','0801-1992-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (27,'Cody','Maggie','Lilah','Gage','Apdo.:696-4729 Id Calle','Cody.Lilah@gmail.com','0801-1992-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (28,'Gage','Briar','Dylan','Chester','Apartado núm.: 475, 9258 Donec Av.','Gage.Dylan@gmail.com','0801-1992-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (29,'Aristotle','Mary','Erich','Kirk','Apartado núm.: 308, 1177 Tristique Calle','Aristotle.Erich@gmail.com','0801-1992-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (30,'Louis','Lucy','Dexter','Josiah','376-9729 Sed Avda.','Louis.Dexter@gmail.com','0801-1992-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (31,'Gage','Lee','Lucian','Honorato','Apdo.:658-265 Lacinia C/','Gage.Lucian@gmail.com','0801-1992-12345');
 
 ------------------ INSERT TELEFONO ------------------
 
@@ -144,31 +144,31 @@ INSERT INTO TIPOPAGO (idTipoPago,descripcion) VALUES (3,'Efectivo');
 
 ------------------ INSERT LIBRO ------------------
 
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (1,'Don Quijote de La Mancha I',1995,4,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (2,'El tránsito terreno',2015,2,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (3,'Historias de Nueva',2000,8,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (4,'El principito',1999,4,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (5,'El príncipe',1995,4,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (6,'Diplomacia',1995,8,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (7,'Los Windsor Plaza & Janés',1995,5,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (8,'El Último Emperador',1996,5,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (9,'Fortunata y Jacinta',1996,6,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (10,'Sistemas operativos',1990,7,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (11,'Poemas intrínsecos',2000,6,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (12,'Avances en Arquitectura',1990,2,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (13,'Las balas del bien',2001,4,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (14,'La mente y el sentir',2005,6,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (15,'Ensayos póstumos',1990,6,1,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (16,'Arquitectura y arte',2003,10,1,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (17,'Historia de Occidente',2014,8,2,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (18,'Sentimiento popular',2017,6,1,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (19,'Amigos o enemigos',1997,4,1,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (20,'Procesadores cuánticos',1899,2,1,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (21,'Canto de esperanza',2013,5,2,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (22,'Algebra lineal',2004,11,1,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (23,'Calculo II',2016,11,2,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (24,'Ecuaciones Diferenciales',2013,11,1,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,precioCosto,precioVenta) VALUES (25,'Estructuras de datos',2011,11,1,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (1,'Don Quijote de La Mancha I',1995,4,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (2,'El tránsito terreno',2015,2,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (3,'Historias de Nueva',2000,8,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (4,'El principito',1999,4,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (5,'El príncipe',1995,4,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (6,'Diplomacia',1995,8,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (7,'Los Windsor Plaza & Janés',1995,5,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (8,'El Último Emperador',1996,5,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (9,'Fortunata y Jacinta',1996,6,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (10,'Sistemas operativos',1990,7,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (11,'Poemas intrínsecos',2000,6,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (12,'Avances en Arquitectura',1990,2,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (13,'Las balas del bien',2001,4,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (14,'La mente y el sentir',2005,6,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (15,'Ensayos póstumos',1990,6,1,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (16,'Arquitectura y arte',2003,10,1,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (17,'Historia de Occidente',2014,8,2,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (18,'Sentimiento popular',2017,6,1,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (19,'Amigos o enemigos',1997,4,1,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (20,'Procesadores cuánticos',1899,2,1,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (21,'Canto de esperanza',2013,5,2,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (22,'Algebra lineal',2004,11,1,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (23,'Calculo II',2016,11,2,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (24,'Ecuaciones Diferenciales',2013,11,1,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (25,'Estructuras de datos',2011,11,1,300,500);
 
 
 ------------------ INSERT CLIENTE ------------------
