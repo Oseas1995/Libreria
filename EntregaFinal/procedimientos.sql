@@ -123,7 +123,7 @@ BEGIN
         WHERE idEmpleado=vnEmpleado;
 
         pcmensajeError:='EMPLEADO EDITADO CORRECTAMENTE';
-        pbocurreError=0;
+        pbocurreError:=0;
 
         RETURN;
 
@@ -141,7 +141,7 @@ BEGIN
 
 
 
-END
+END;
 
 
 --2 GESTION CLIENTE
@@ -263,7 +263,7 @@ BEGIN
         WHERE idCliente=vnCliente;
 
         pcmensajeError:='CLIENTE EDITADO CORRECTAMENTE';
-        pbocurreError=0;
+        pbocurreError:=0;
 
         RETURN;
 
@@ -281,7 +281,7 @@ BEGIN
 
 
 
-END
+END;
 
 
 
@@ -389,7 +389,7 @@ BEGIN
         WHERE nombre=pcnombre;
 
         pcmensajeError:='LIBRO EDITADO CORRECTAMENTE';
-        pbocurreError=0;
+        pbocurreError:=0;
 
         RETURN;
 
@@ -407,7 +407,7 @@ BEGIN
 
 
 
-END
+END;
 
 
 
@@ -513,7 +513,7 @@ BEGIN
         WHERE nombre=pcnombre;
 
         pcmensajeError:='SUCURSAL EDITADA CORRECTAMENTE';
-        pbocurreError=0;
+        pbocurreError:=0;
 
         RETURN;
 
@@ -531,4 +531,4 @@ BEGIN
 
 
 
-END
+END;

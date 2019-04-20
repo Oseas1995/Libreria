@@ -1,5 +1,6 @@
 
---TRIGGER 
+------------------- TRIGGER -------------------
+
 --BODEGA
 CREATE SEQUENCE S_ID_BODEGA
 START WITH 1
