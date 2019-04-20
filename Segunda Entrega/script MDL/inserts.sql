@@ -3,36 +3,36 @@
 ------------------ INSERT PERSONA ------------------
 
 INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (1,'Lionel','Ruby','Mechelle','Mannix','Apdo.:419-8537 Proin Ctra.','Lionel.Mechelle@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (2,'Barrett','Katelyn','Kameko','Oscar','Apdo.:165-4262 Non C.','Barrett.Kameko@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (3,'Wade','Ivana','Melissa','Ferdinand','Apartado núm.: 905, 1658 Phasellus C.','Wade.Melissa@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (4,'Malcolm','Angelica','Uriel','Mannix','Apdo.:984-4984 Diam C.','Malcolm.Uriel@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (5,'Sawyer','Amelia','Benjamin','Fuller','Apdo.:602-6808 Sed Calle','Sawyer.Benjamin@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (6,'Austin','Karly','Aladdin','Aristotle','Apartado núm.: 247, 1371 Curabitur Carretera','Austin.Aladdin@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (7,'Silas','Vivian','Hunter','Jermaine','435-7991 Commodo Avenida','Silas.Hunter@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (8,'Elvis','Kylie','Gage','Abbot','265-7874 Felis. Ctra.','Elvis.Gage@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (9,'Dolan','Willa','Scarlet','Simon','Apartado núm.: 465, 4861 Blandit. Avenida','Dolan.Scarlet@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (10,'Kasimir','Jacqueline','Rajah','Barrett','Apdo.:555-5138 Ante C/','Kasimir.Rajah@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (11,'Mannix','Mara','Ashton','Acton','Apartado núm.: 955, 5906 Erat. Calle','Mannix.Ashton@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (12,'Rajah','Vivian','Damian','Damian','Apdo.:199-8231 Enim Avenida','Rajah.Damian@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (13,'Lyle','Aspen','Zenaida','Elliott','Apdo.:851-1894 Interdum Calle','Lyle.Zenaida@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (14,'Josiah','Francesca','Tara','Logan','Apartado núm.: 625, 7156 Cursus Av.','Josiah.Tara@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (15,'Caldwell','Chanda','Colette','William','Apartado núm.: 447, 6839 Dolor. ','Caldwell.Colette@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (16,'Carlos','Lacy','Catherine','Kenneth','275-594 Proin Avenida','Carlos.Catherine@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (17,'Ali','Nerea','Hop','Lamar','Apdo.:279-8210 Conubia Carretera','Ali.Hop@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (18,'Burton','Xena','Wing','Cade','Apartado núm.: 405, 6350 Semper Ctra.','Burton.Wing@gmail.com','0801-1990-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (19,'Kane','Mikayla','Barrett','Donovan','Apartado núm.: 739, 2415 Egestas C.','Kane.Barrett@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (20,'Nissim','Lenore','Griffin','Quamar','Apdo.:533-8845 Eleifend, Ctra.','Nissim.Griffin@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (21,'Porter','Kerry','Hedley','Jarrod','2752 Tellus Calle','Porter.Hedley@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (22,'Paki','Sade','Cheryl','Kieran','266-3845 Bibendum Ctra.','Paki.Cheryl@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (23,'Wayne','Sydnee','Gray','Arthur','529-2933 Convallis Avda.','Wayne.Gray@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (24,'Tyler','Priscilla','Carolyn','Brian','931-1471 Id, ','Tyler.Carolyn@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (25,'Marshall','Jasmine','Jael','Bradley','483-5240 Mauris, C/','Marshall.Jael@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (26,'Wyatt','Hanna','Olivia','Stuart','Apdo.:976-9925 Proin Av.','Wyatt.Olivia@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (27,'Cody','Maggie','Lilah','Gage','Apdo.:696-4729 Id Calle','Cody.Lilah@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (28,'Gage','Briar','Dylan','Chester','Apartado núm.: 475, 9258 Donec Av.','Gage.Dylan@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (29,'Aristotle','Mary','Erich','Kirk','Apartado núm.: 308, 1177 Tristique Calle','Aristotle.Erich@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (30,'Louis','Lucy','Dexter','Josiah','376-9729 Sed Avda.','Louis.Dexter@gmail.com','0801-1992-12345');
-INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (31,'Gage','Lee','Lucian','Honorato','Apdo.:658-265 Lacinia C/','Gage.Lucian@gmail.com','0801-1992-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (2,'Barrett','Katelyn','Kameko','Oscar','Apdo.:165-4262 Non C.','Barrett.Kameko@gmail.com','0801-1990-13245');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (3,'Wade','Ivana','Melissa','Ferdinand','Apartado núm.: 905, 1658 Phasellus C.','Wade.Melissa@gmail.com','0801-1990-12543');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (4,'Malcolm','Angelica','Uriel','Mannix','Apdo.:984-4984 Diam C.','Malcolm.Uriel@gmail.com','0801-1991-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (5,'Sawyer','Amelia','Benjamin','Fuller','Apdo.:602-6808 Sed Calle','Sawyer.Benjamin@gmail.com','0801-1989-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (6,'Austin','Karly','Aladdin','Aristotle','Apartado núm.: 247, 1371 Curabitur Carretera','Austin.Aladdin@gmail.com','0801-1992-12345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (7,'Silas','Vivian','Hunter','Jermaine','435-7991 Commodo Avenida','Silas.Hunter@gmail.com','0801-1990-12346');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (8,'Elvis','Kylie','Gage','Abbot','265-7874 Felis. Ctra.','Elvis.Gage@gmail.com','0801-1990-12347');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (9,'Dolan','Willa','Scarlet','Simon','Apartado núm.: 465, 4861 Blandit. Avenida','Dolan.Scarlet@gmail.com','0801-1990-12348');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (10,'Kasimir','Jacqueline','Rajah','Barrett','Apdo.:555-5138 Ante C/','Kasimir.Rajah@gmail.com','0801-1990-12349');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (11,'Mannix','Mara','Ashton','Acton','Apartado núm.: 955, 5906 Erat. Calle','Mannix.Ashton@gmail.com','0801-1990-12344');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (12,'Rajah','Vivian','Damian','Damian','Apdo.:199-8231 Enim Avenida','Rajah.Damian@gmail.com','0801-1990-12341');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (13,'Lyle','Aspen','Zenaida','Elliott','Apdo.:851-1894 Interdum Calle','Lyle.Zenaida@gmail.com','0801-1990-12342');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (14,'Josiah','Francesca','Tara','Logan','Apartado núm.: 625, 7156 Cursus Av.','Josiah.Tara@gmail.com','0801-1990-12343');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (15,'Caldwell','Chanda','Colette','William','Apartado núm.: 447, 6839 Dolor. ','Caldwell.Colette@gmail.com','0801-1990-22345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (16,'Carlos','Lacy','Catherine','Kenneth','275-594 Proin Avenida','Carlos.Catherine@gmail.com','0801-1990-23345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (17,'Ali','Nerea','Hop','Lamar','Apdo.:279-8210 Conubia Carretera','Ali.Hop@gmail.com','0801-1990-13345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (18,'Burton','Xena','Wing','Cade','Apartado núm.: 405, 6350 Semper Ctra.','Burton.Wing@gmail.com','0801-1990-52345');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (19,'Kane','Mikayla','Barrett','Donovan','Apartado núm.: 739, 2415 Egestas C.','Kane.Barrett@gmail.com','0801-1992-52341');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (20,'Nissim','Lenore','Griffin','Quamar','Apdo.:533-8845 Eleifend, Ctra.','Nissim.Griffin@gmail.com','0801-1992-52344');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (21,'Porter','Kerry','Hedley','Jarrod','2752 Tellus Calle','Porter.Hedley@gmail.com','0801-1992-32343');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (22,'Paki','Sade','Cheryl','Kieran','266-3845 Bibendum Ctra.','Paki.Cheryl@gmail.com','0801-1992-23342');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (23,'Wayne','Sydnee','Gray','Arthur','529-2933 Convallis Avda.','Wayne.Gray@gmail.com','0801-1992-12243');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (24,'Tyler','Priscilla','Carolyn','Brian','931-1471 Id, ','Tyler.Carolyn@gmail.com','0801-1992-12366');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (25,'Marshall','Jasmine','Jael','Bradley','483-5240 Mauris, C/','Marshall.Jael@gmail.com','0801-1992-12555');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (26,'Wyatt','Hanna','Olivia','Stuart','Apdo.:976-9925 Proin Av.','Wyatt.Olivia@gmail.com','0801-1992-11111');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (27,'Cody','Maggie','Lilah','Gage','Apdo.:696-4729 Id Calle','Cody.Lilah@gmail.com','0801-1992-12111');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (28,'Gage','Briar','Dylan','Chester','Apartado núm.: 475, 9258 Donec Av.','Gage.Dylan@gmail.com','0801-1992-12231');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (29,'Aristotle','Mary','Erich','Kirk','Apartado núm.: 308, 1177 Tristique Calle','Aristotle.Erich@gmail.com','0801-1992-98765');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (30,'Louis','Lucy','Dexter','Josiah','376-9729 Sed Avda.','Louis.Dexter@gmail.com','0801-1992-91234');
+INSERT INTO PERSONA (idPersona,pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad) VALUES (31,'Gage','Lee','Lucian','Honorato','Apdo.:658-265 Lacinia C/','Gage.Lucian@gmail.com','0801-1992-55234');
 
 ------------------ INSERT TELEFONO ------------------
 
@@ -66,6 +66,35 @@ INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (27,'7932-8061
 INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (28,'1197-5857',28);
 INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (29,'2597-5193',29);
 INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (30,'1033-6228',30);
+
+
+------------------ INSERT CLIENTE ------------------
+
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (1,TO_DATE('10/14/08 09:05:01','DD/MM/YYYY hh24:mi:ss'),20);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (2,TO_DATE('01/19/11 09:05:01','DD/MM/YYYY hh24:mi:ss'),21);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (3,TO_DATE('01/19/08 09:05:01','DD/MM/YYYY hh24:mi:ss'),22);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (4,TO_DATE('05/01/17 09:05:01','DD/MM/YYYY hh24:mi:ss'),23);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (5,TO_DATE('04/09/15 09:05:01','DD/MM/YYYY hh24:mi:ss'),24);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (6,TO_DATE('10/21/09 09:05:01','DD/MM/YYYY hh24:mi:ss'),25);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (7,TO_DATE('06/06/04 09:05:01','DD/MM/YYYY hh24:mi:ss'),26);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (8,TO_DATE('09/16/15 09:05:01','DD/MM/YYYY hh24:mi:ss'),27);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (9,TO_DATE('11/19/17 09:05:01','DD/MM/YYYY hh24:mi:ss'),28);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (10,TO_DATE('10/15/03 09:05:01','DD/MM/YYYY hh24:mi:ss'),29);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (11,TO_DATE('02/28/03 09:05:01','DD/MM/YYYY hh24:mi:ss'),30);
+
+
+------------------ INSERT AUTOR ------------------
+
+INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (1,10);
+INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (2,11);
+INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (3,12);
+INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (4,13);
+INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (5,14);
+INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (6,15);
+INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (7,16);
+INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (8,17);
+INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (9,18);
+INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (10,19);
 
 ------------------ INSERT CARGO ------------------
 
@@ -142,6 +171,55 @@ INSERT INTO TIPOPAGO (idTipoPago,descripcion) VALUES (2,'Tarjetas de Debito');
 INSERT INTO TIPOPAGO (idTipoPago,descripcion) VALUES (3,'Efectivo');
 
 
+------------------ INSERT TIPO OBTENCION ------------------
+
+INSERT INTO TIPOOBTENCION (idTipoObtencion, descripcion) VALUES (1,'Vendido');
+INSERT INTO TIPOOBTENCION (idTipoObtencion, descripcion) VALUES (2,'Prestamo');
+
+
+------------------ INSERT DESCUENTO ------------------
+
+INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (1,0.10,'descuento persona normal');
+INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (2,0.20,'descuento estudiante');
+INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (3,0.30,'descuento tercera edad');
+INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (4,0.30,'descuento maestro');
+INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (5,0.35,'descuento empleados');
+
+
+------------------ INSERT PRESTAMO ------------------
+
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (1,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (2,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (3,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (4,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (5,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (6,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (7,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (8,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (9,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (10,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (11,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (12,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (13,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (14,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (15,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (16,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (17,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (18,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (19,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (20,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (21,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (22,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (23,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (24,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (25,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (26,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (27,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (28,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (29,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (30,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+
+
 ------------------ INSERT LIBRO ------------------
 
 INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (1,'Don Quijote de La Mancha I',1995,4,2,300,400);
@@ -171,42 +249,12 @@ INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_i
 INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (25,'Estructuras de datos',2011,11,1,300,500);
 
 
------------------- INSERT CLIENTE ------------------
-
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (1,TO_DATE('10/14/08 09:05:01','DD/MM/YYYY hh24:mi:ss'),20);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (2,TO_DATE('01/19/11 09:05:01','DD/MM/YYYY hh24:mi:ss'),21);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (3,TO_DATE('01/19/08 09:05:01','DD/MM/YYYY hh24:mi:ss'),22);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (4,TO_DATE('05/01/17 09:05:01','DD/MM/YYYY hh24:mi:ss'),23);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (5,TO_DATE('04/09/15 09:05:01','DD/MM/YYYY hh24:mi:ss'),24);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (6,TO_DATE('10/21/09 09:05:01','DD/MM/YYYY hh24:mi:ss'),25);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (7,TO_DATE('06/06/04 09:05:01','DD/MM/YYYY hh24:mi:ss'),26);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (8,TO_DATE('09/16/15 09:05:01','DD/MM/YYYY hh24:mi:ss'),27);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (9,TO_DATE('11/19/17 09:05:01','DD/MM/YYYY hh24:mi:ss'),28);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (10,TO_DATE('10/15/03 09:05:01','DD/MM/YYYY hh24:mi:ss'),29);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (11,TO_DATE('02/28/03 09:05:01','DD/MM/YYYY hh24:mi:ss'),30);
-
-
------------------- INSERT AUTOR ------------------
-
-INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (1,10);
-INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (2,11);
-INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (3,12);
-INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (4,13);
-INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (5,14);
-INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (6,15);
-INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (7,16);
-INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (8,17);
-INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (9,18);
-INSERT INTO AUTOR (idAutor,Persona_idPersona) VALUES (10,19);
-
-
 ------------------ INSERT BODEGA ------------------
 
 INSERT INTO BODEGA (idBodega,Nombre) VALUES (1,'Bodega 1');
 INSERT INTO BODEGA (idBodega,Nombre) VALUES (2,'Bodega 2');
 INSERT INTO BODEGA (idBodega,Nombre) VALUES (3,'Bodega 3');
 INSERT INTO BODEGA (idBodega,Nombre) VALUES (5,'Bodega 4');
-
 
 
 ------------------ INSERT PASILLO ------------------
@@ -260,55 +308,6 @@ INSERT INTO CUBICULO (idCubiculo, descripcion, Estante_idEstante) VALUES (7,'Cub
 INSERT INTO CUBICULO (idCubiculo, descripcion, Estante_idEstante) VALUES (8,'Cubiculo 8',8);
 INSERT INTO CUBICULO (idCubiculo, descripcion, Estante_idEstante) VALUES (9,'Cubiculo 9',9);
 INSERT INTO CUBICULO (idCubiculo, descripcion, Estante_idEstante) VALUES (10,'Cubiculo 10',10);
-
-
------------------- INSERT TIPO OBTENCION ------------------
-
-INSERT INTO TIPOOBTENCION (idTipoObtencion, descripcion) VALUES (1,'Vendido');
-INSERT INTO TIPOOBTENCION (idTipoObtencion, descripcion) VALUES (2,'Prestamo');
-
-
------------------- INSERT DESCUENTO ------------------
-
-INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (1,0.10,'descuento persona normal');
-INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (2,0.20,'descuento estudiante');
-INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (3,0.30,'descuento tercera edad');
-INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (4,0.30,'descuento maestro');
-INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (5,0.35,'descuento empleados');
-
-
------------------- INSERT PRESTAMO ------------------
-
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (1,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (2,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (3,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (4,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (5,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (6,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (7,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (8,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (9,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (10,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (11,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (12,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (13,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (14,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (15,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (16,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (17,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (18,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (19,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (20,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (21,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (22,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (23,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (24,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (25,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (26,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (27,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (28,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (29,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (30,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
 
 
 ------------------ INSERT  ------------------

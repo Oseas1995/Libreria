@@ -44,9 +44,9 @@ Create view wv_SucLibros AS
 SELECT su.nombre AS nombreSucursal, COUNT(li.idLibro) AS LibroTotales FROM Sucursal su
 INNER JOIN Bodega bo ON bo.idBodega=su.Bodega_idBodega
 INNER JOIN Pasillo pa ON bo.idBodega=pa.Bodega_idBodega
-INNER JOIN Estante es ON es.Pasillo_idPasillo=pa.idPasillo 
+INNER JOIN Estante es ON es.Pasillo_idPasillo=pa.idPasillo
 INNER JOIN Cubiculo cu ON cu.Estante_idEstante=es.idEstante
-INNER JOIN posicionLibro pl ON pl.Cubiculo_idCubiculo=cu.idCubiculo 
+INNER JOIN posicionLibro pl ON pl.Cubiculo_idCubiculo=cu.idCubiculo
 INNER JOIN Libro li ON li.idLibro=pl.Libro_idLibro
 GROUP BY su.nombre;
 
@@ -54,7 +54,7 @@ GROUP BY su.nombre;
 --6 Mostrar cargos de los empleados.
 
 CREATE VIEW wv_CargoEmpleados AS
-SELECT (p.pnombre||' '||p.snombre||' '||p.papellido||' '||p.sapellido) NombreCompleto, c.descripcion cargo  FROM Persona p 
+SELECT (p.pnombre||' '||p.snombre||' '||p.papellido||' '||p.sapellido) NombreCompleto, c.descripcion cargo  FROM Persona p
 INNER JOIN Empleado e ON p.idPersona = e.Persona_idPersona
 INNER JOIN Empleado/Cargo ec ON e.idEmpleado = ec.Empleado_idEmpleado
 INNER JOIN Cargo c ON ec.Cargo_idCargo = c.idCargo;
@@ -63,7 +63,7 @@ INNER JOIN Cargo c ON ec.Cargo_idCargo = c.idCargo;
 --7 Mostrar Detalle Factura.
 
 CREATE VIEW vw_DetalleFactura AS
-SELECT f.IDFACTURA, (p.PNOMBRE||' '||p.PAPELLIDO) nombre, l.NOMBRE libro, df.CANTIDAD, tiob.DESCRIPCION TipoObtencion, f.FECHAREGISTRO, tp.DESCRIPCION tipoPago  FROM Factura f 
+SELECT f.IDFACTURA, (p.PNOMBRE||' '||p.PAPELLIDO) nombre, l.NOMBRE libro, df.CANTIDAD, tiob.DESCRIPCION TipoObtencion, f.FECHAREGISTRO, tp.DESCRIPCION tipoPago  FROM Factura f
 INNER JOIN DETALLEFACTURA df ON f.IDFACTURA = df.FACTURA_IDFACTURA
 INNER JOIN CLIENTE c ON f.CLIENTE_IDCLIENTE = c.IDCLIENTE
 INNER JOIN Persona p ON c.PERSONA_IDPERSONA = p.IDPERSONA
@@ -75,6 +75,7 @@ INNER JOIN TIPOPAGO tp ON pa.TIPOPAGO_IDTIPOPAGO = tp.IDTIPOPAGO;
 
 --8 Mostrar los Empleados que tengas dos o más telefonos.
 
+CREATE VIEW vw_EmpleadosTelefonos AS
 SELECT (p.PNOMBRE||' '||p.PAPELLIDO) nombre, COUNT(t.IDTELEFONO) CantidadTelefonos FROM TELEFONO t
 INNER JOIN PERSONA p ON t.PERSONA_IDPERSONA = p.IDPERSONA
 INNER JOIN EMPLEADO e ON p.IDPERSONA = e.PERSONA_IDPERSONA
@@ -84,6 +85,7 @@ HAVING COUNT(t.IDTELEFONO) > 1;
 
 --9 Mostrar los Empleados que tienen jefe.
 
+CREATE VIEW vw_EmpleadosTienenJefe AS
 SELECT e.IDEMPLEADO, (p.pnombre||' '||p.snombre||' '||p.papellido||' '||p.sapellido) NombreCompleto, e.JEFEINMEDIATO_IDJEFEINMEDIATO FROM Persona p
 INNER JOIN EMPLEADO e ON p.IDPERSONA = e.PERSONA_IDPERSONA
 WHERE e.JEFEINMEDIATO_IDJEFEINMEDIATO IS NOT NULL;
@@ -91,6 +93,7 @@ WHERE e.JEFEINMEDIATO_IDJEFEINMEDIATO IS NOT NULL;
 
 --10 Mostrar los clientes que tiene dos o más telefonos.
 
+CREATE VIEW vw_Clientestelefonos AS
 SELECT (p.PNOMBRE||' '||p.PAPELLIDO) nombre, COUNT(t.IDTELEFONO) CantidadTelefonos FROM TELEFONO t
 INNER JOIN PERSONA p ON t.PERSONA_IDPERSONA = p.IDPERSONA
 INNER JOIN CLIENTE c ON p.IDPERSONA = c.PERSONA_IDPERSONA

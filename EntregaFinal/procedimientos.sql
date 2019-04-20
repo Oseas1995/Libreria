@@ -85,7 +85,7 @@ BEGIN
         INSERT INTO Persona(pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad)
         VALUES(pcpnombre,pcsnombre,pcpapellido,pcsapellido,pcdireccion,pccorreo,pcNoIdentidad);
 
-        SELECT MAX(per.idPersona) INTO vnPersona FROM Persona;
+        SELECT MAX(per.idPersona) INTO vnPersona FROM Persona per;
 
         INSERT INTO Empleado(FechaIngreso,Persona_idPersona)
         VALUES (SYSDATE,vnPersona);
@@ -225,7 +225,7 @@ BEGIN
         INSERT INTO Persona(pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad)
         VALUES(pcpnombre,pcsnombre,pcpapellido,pcsapellido,pcdireccion,pccorreo,pcNoIdentidad);
 
-        SELECT MAX(per.idPersona) INTO vnPersona FROM Persona;
+        SELECT MAX(per.idPersona) INTO vnPersona FROM Persona per;
 
         INSERT INTO Cliente(FechaIngreso,Persona_idPersona)
         VALUES(SYSDATE,vnPersona);
