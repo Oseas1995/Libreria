@@ -16,14 +16,15 @@ CREATE OR REPLACE PROCEDURE SP_GESTION_EMPLEADO(
         pcNoIdentidad IN VARCHAR2,
         pcAccion IN VARCHAR2,
 
-       pbocurreError         OUT  INT,
+       pbocurreError         OUT  INTEGER,
        pcmensajeError        OUT  VARCHAR2
 )
 
 IS
     vctempMensaje VARCHAR2(1000);
-    vnconteo INT;
-    vnEmpleado INT;
+    vnconteo INTEGER;
+    vnEmpleado INTEGER;
+    vnPersona INTEGER;
 
 BEGIN
     vctempMensaje:='';
@@ -84,8 +85,6 @@ BEGIN
         INSERT INTO Persona(pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad)
         VALUES(pcpnombre,pcsnombre,pcpapellido,pcsapellido,pcdireccion,pccorreo,pcNoIdentidad);
 
-        DECLARE vnPersona INT;
-
         SELECT MAX(per.idPersona) INTO vnPersona FROM Persona;
 
         INSERT INTO Empleado(FechaIngreso,Persona_idPersona)
@@ -101,7 +100,6 @@ BEGIN
 
         SELECT COUNT(*) INTO vnconteo FROM Persona per
         WHERE per.NoIdentidad=pcNoIdentidad;
-
 
         IF vnconteo=0 THEN
             pcmensajeError:='NO SE ENCONTRÓ REGISTRO';
@@ -158,14 +156,16 @@ CREATE OR REPLACE PROCEDURE SP_GESTIO_CLIENTE(
         pcNoIdentidad IN VARCHAR2,
         pcAccion IN VARCHAR2,
 
-       pbocurreError         OUT  INT,
+       pbocurreError         OUT  INTEGER,
        pcmensajeError        OUT  VARCHAR2
 )
 
 IS
     vctempMensaje VARCHAR2(1000);
-    vnconteo INT;
-    vnCliente INT;
+    vnconteo INTEGER;
+    vnCliente INTEGER;
+    vnPersona INTEGER;
+
 BEGIN
     vctempMensaje:='';
     vnconteo:=0;
@@ -225,8 +225,6 @@ BEGIN
         INSERT INTO Persona(pnombre,snombre,papellido,sapellido,direccion,correo,NoIdentidad)
         VALUES(pcpnombre,pcsnombre,pcpapellido,pcsapellido,pcdireccion,pccorreo,pcNoIdentidad);
 
-        DECLARE vnPersona INT;
-
         SELECT MAX(per.idPersona) INTO vnPersona FROM Persona;
 
         INSERT INTO Cliente(FechaIngreso,Persona_idPersona)
@@ -242,7 +240,6 @@ BEGIN
 
         SELECT COUNT(*) INTO vnconteo FROM Persona per
         WHERE per.NoIdentidad=pcNoIdentidad;
-
 
         IF vnconteo=0 THEN
             pcmensajeError:='NO SE ENCONTRÓ REGISTRO';
@@ -291,20 +288,22 @@ END
 --3. GESTION LIBRO
 CREATE OR REPLACE PROCEDURE SP_GESTIO_LIBRO(
         pcnombre IN VARCHAR2,
-        pnanioPublicacion IN INT,
-        pnidCategoria IN INT,
-        pnidIdioma IN INT,
+        pnanioPublicacion IN INTEGER,
+        pnidCategoria IN INTEGER,
+        pnidIdioma IN INTEGER,
         pfPrecioCosto IN FLOAT,
         pfPrecioVenta IN FLOAT,
-        pcAccion in VARCHAR2,
+        pcAccion IN VARCHAR2,
 
-       pbocurreError         OUT  INT,
+       pbocurreError         OUT  INTEGER,
        pcmensajeError        OUT  VARCHAR2
 )
 
 IS
     vctempMensaje VARCHAR2(1000);
-    vnconteo INT;
+    vnconteo INTEGER;
+    vnLibro INTEGER;
+
 BEGIN
     vctempMensaje:='';
     vnconteo:=0;
@@ -380,7 +379,6 @@ BEGIN
             RETURN;
         END IF;
 
-        DECLARE vnLibro INT;
 
         SELECT lib.idLibro INTO vnLibro FROM Libro lib
         WHERE lib.nombre=pcnombre;
@@ -418,17 +416,19 @@ END
         pcnombre IN VARCHAR2,
         pcdireccion IN VARCHAR2,
         pctelefono IN VARCHAR2,
-        pnidBodega IN INT,
+        pnidBodega IN INTEGER,
         pnidLibreria IN FLOAT,
         pcAccion in VARCHAR2,
 
-       pbocurreError         OUT  INT,
+       pbocurreError         OUT  INTEGER,
        pcmensajeError        OUT  VARCHAR2
 )
 
 IS
     vctempMensaje VARCHAR2(1000);
-    vnconteo INT;
+    vnconteo INTEGER;
+    vnSucursal INTEGER;
+
 BEGIN
     vctempMensaje:='';
     vnconteo:=0;
@@ -503,7 +503,6 @@ BEGIN
             RETURN;
         END IF;
 
-        DECLARE vnSucursal INT;
 
         SELECT su.idSucursal INTO vnSucursal FROM Sucursal su
         WHERE su.nombre=pcnombre;
