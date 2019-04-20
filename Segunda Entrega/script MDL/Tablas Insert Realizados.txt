@@ -16,7 +16,7 @@ Tablas Insert Realizados
 13. PASILLO
 14. ESTANTE
 15. CUBICULO
-16. TIPO OBTENCION 
+16. TIPO OBTENCION
 17. DESCUENTO
 18. PRESTAMO
 19. MORA ------------------(FALTA)
@@ -26,17 +26,16 @@ Tablas Insert Realizados
 23. PROV/PV ---------------(FALTA)
 24. EMPLEADO --------------(FALTA)
 25. EMPLEADO/CARGO --------(FALTA)
-26. JEFE INMEDIATO --------(FALTA)
-27. SUCURSAL/EMPLEADO -----(FALTA)
-28. SUCURSAL --------------(FALTA)
-29. LIBRERIA --------------(FALTA)
-30. POSICION LIBRO --------(FALTA)
-31. PAGO ------------------(FALTA)
-32. FACTURA ---------------(FALTA)
-33. DETALLE FACTURA -------(FALTA)
-34. LIB/EDIT --------------(FALTA)
-35. GENEROS/LIBROS --------(FALTA)
-36. AUTORES/LIBROS --------(FALTA)
-37. PROV/LIB --------------(FALTA)
-38. EDICION ---------------(FALTA)
+26. SUCURSAL/EMPLEADO -----(FALTA)
+27. SUCURSAL --------------(FALTA)
+28. LIBRERIA --------------(FALTA)
+29. POSICION LIBRO --------(FALTA)
+30. PAGO ------------------(FALTA)
+31. FACTURA ---------------(FALTA)
+32. DETALLE FACTURA -------(FALTA)
+33. LIB/EDIT --------------(FALTA)
+34. GENEROS/LIBROS --------(FALTA)
+35. AUTORES/LIBROS --------(FALTA)
+36. PROV/LIB --------------(FALTA)
+37. EDICION ---------------(FALTA)
 
