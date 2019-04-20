@@ -70,17 +70,17 @@ INSERT INTO TELEFONO (idTelefono,numero,Persona_idPersona) VALUES (30,'1033-6228
 
 ------------------ INSERT CLIENTE ------------------
 
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (1,TO_DATE('10/14/08 09:05:01','DD/MM/YYYY hh24:mi:ss'),20);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (2,TO_DATE('01/19/11 09:05:01','DD/MM/YYYY hh24:mi:ss'),21);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (3,TO_DATE('01/19/08 09:05:01','DD/MM/YYYY hh24:mi:ss'),22);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (4,TO_DATE('05/01/17 09:05:01','DD/MM/YYYY hh24:mi:ss'),23);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (5,TO_DATE('04/09/15 09:05:01','DD/MM/YYYY hh24:mi:ss'),24);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (6,TO_DATE('10/21/09 09:05:01','DD/MM/YYYY hh24:mi:ss'),25);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (7,TO_DATE('06/06/04 09:05:01','DD/MM/YYYY hh24:mi:ss'),26);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (8,TO_DATE('09/16/15 09:05:01','DD/MM/YYYY hh24:mi:ss'),27);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (9,TO_DATE('11/19/17 09:05:01','DD/MM/YYYY hh24:mi:ss'),28);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (10,TO_DATE('10/15/03 09:05:01','DD/MM/YYYY hh24:mi:ss'),29);
-INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (11,TO_DATE('02/28/03 09:05:01','DD/MM/YYYY hh24:mi:ss'),30);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (1,TO_DATE('10/12/2018 09:05:01','DD/MM/YYYY hh24:mi:ss'),20);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (2,TO_DATE('01/12/2018 09:05:01','DD/MM/YYYY hh24:mi:ss'),21);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (3,TO_DATE('01/12/2018 09:05:01','DD/MM/YYYY hh24:mi:ss'),22);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (4,TO_DATE('05/01/2018 09:05:01','DD/MM/YYYY hh24:mi:ss'),23);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (5,TO_DATE('04/09/2018 09:05:01','DD/MM/YYYY hh24:mi:ss'),24);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (6,TO_DATE('10/12/2018 09:05:01','DD/MM/YYYY hh24:mi:ss'),25);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (7,TO_DATE('06/06/2018 09:05:01','DD/MM/YYYY hh24:mi:ss'),26);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (8,TO_DATE('09/12/2018 09:05:01','DD/MM/YYYY hh24:mi:ss'),27);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (9,TO_DATE('11/11/2018 09:05:01','DD/MM/YYYY hh24:mi:ss'),28);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (10,TO_DATE('10/03/2019 09:05:01','DD/MM/YYYY hh24:mi:ss'),29);
+INSERT INTO CLIENTE (idCliente,fechaIngreso,Persona_idPersona) VALUES (11,TO_DATE('02/03/2019 09:05:01','DD/MM/YYYY hh24:mi:ss'),30);
 
 
 ------------------ INSERT AUTOR ------------------
@@ -228,7 +228,7 @@ INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_i
 INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (4,'El principito',1999,4,2,300,400);
 INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (5,'El príncipe',1995,4,2,300,400);
 INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (6,'Diplomacia',1995,8,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (7,'Los Windsor Plaza & Janés',1995,5,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (7,'Los Windsor Plaza & Janes',1995,5,2,300,400);
 INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (8,'El Último Emperador',1996,5,2,300,400);
 INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (9,'Fortunata y Jacinta',1996,6,2,300,400);
 INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (10,'Sistemas operativos',1990,7,2,300,400);
