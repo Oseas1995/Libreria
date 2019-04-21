@@ -6,3 +6,4 @@ MODIFICACIONES:
 3. Se eliminó la tabla JefeInmediato.
 4. se les agregó el comando ON DELETE CASCADE a las lalves foraneas pra permitir DELETE en cascada.
 5. se eliminó el caracter / de los nombres de las tablas,llaves foraneas y llaves primarias por problemas de compatibilidad.
+6. Se afgregó el campo Existencia a las tablas Libro y PVarios.
