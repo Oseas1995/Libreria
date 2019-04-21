@@ -292,14 +292,14 @@ INSERT INTO TIPOPROVEEDOR (idTipoProveedor,descripcion) VALUES (6,'Proveedor Bal
 
 ------------------ INSERT PVARIOS ------------------
 
-INSERT INTO PVARIOS (idPVarios,descripcion) VALUES (1,'Chocolate');
-INSERT INTO PVARIOS (idPVarios,descripcion) VALUES (2,'Coca Cola');
-INSERT INTO PVARIOS (idPVarios,descripcion) VALUES (3,'Pepsi Cola');
-INSERT INTO PVARIOS (idPVarios,descripcion) VALUES (4,'Galleta Choki');
-INSERT INTO PVARIOS (idPVarios,descripcion) VALUES (5,'Galleta Oreon');
-INSERT INTO PVARIOS (idPVarios,descripcion) VALUES (6,'Cafe');
-INSERT INTO PVARIOS (idPVarios,descripcion) VALUES (7,'Pan');
-INSERT INTO PVARIOS (idPVarios,descripcion) VALUES (8,'Baleadas');
+INSERT INTO PVARIOS (idPVarios,descripcion,Existencia) VALUES (1,'Chocolate',20);
+INSERT INTO PVARIOS (idPVarios,descripcion,Existencia) VALUES (2,'Coca Cola',20);
+INSERT INTO PVARIOS (idPVarios,descripcion,Existencia) VALUES (3,'Pepsi Cola',20);
+INSERT INTO PVARIOS (idPVarios,descripcion,Existencia) VALUES (4,'Galleta Choki',20);
+INSERT INTO PVARIOS (idPVarios,descripcion,Existencia) VALUES (5,'Galleta Oreon',20);
+INSERT INTO PVARIOS (idPVarios,descripcion,Existencia) VALUES (6,'Cafe',20);
+INSERT INTO PVARIOS (idPVarios,descripcion,Existencia) VALUES (7,'Pan',20);
+INSERT INTO PVARIOS (idPVarios,descripcion,Existencia) VALUES (8,'Baleadas',20);
 
 
 ------------------ INSERT PROVEEDOR ------------------
@@ -328,31 +328,31 @@ INSERT INTO PROVPV (idProvpv,cantidad,Proveedor_idProveedor,PVarios_idPVarios) V
 
 ------------------ INSERT LIBRO ------------------
 
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (1,'Don Quijote de La Mancha I',1995,4,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (2,'El tránsito terreno',2015,2,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (3,'Historias de Nueva',2000,8,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (4,'El principito',1999,4,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (5,'El príncipe',1995,4,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (6,'Diplomacia',1995,8,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (7,'Los Windsor Plaza & Janes',1995,5,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (8,'El Último Emperador',1996,5,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (9,'Fortunata y Jacinta',1996,6,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (10,'Sistemas operativos',1990,7,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (11,'Poemas intrínsecos',2000,6,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (12,'Avances en Arquitectura',1990,2,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (13,'Las balas del bien',2001,4,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (14,'La mente y el sentir',2005,6,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (15,'Ensayos póstumos',1990,6,1,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (16,'Arquitectura y arte',2003,10,1,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (17,'Historia de Occidente',2014,8,2,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (18,'Sentimiento popular',2017,6,1,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (19,'Amigos o enemigos',1997,4,1,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (20,'Procesadores cuánticos',1899,2,1,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (21,'Canto de esperanza',2013,5,2,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (22,'Algebra lineal',2004,11,1,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (23,'Calculo II',1990,11,2,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (24,'Ecuaciones Diferenciales',1990,11,1,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (25,'Estructuras de datos',1995,11,1,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (1,'Don Quijote de La Mancha I',1995,4,2,300,400,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (2,'El tránsito terreno',2015,2,2,300,400,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (3,'Historias de Nueva',2000,8,2,300,400,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (4,'El principito',1999,4,2,300,400,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (5,'El príncipe',1995,4,2,300,400,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (6,'Diplomacia',1995,8,2,300,400,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (7,'Los Windsor Plaza & Janes',1995,5,2,300,400,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (8,'El Último Emperador',1996,5,2,300,400,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (9,'Fortunata y Jacinta',1996,6,2,300,400,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (10,'Sistemas operativos',1990,7,2,300,400,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (11,'Poemas intrínsecos',2000,6,2,300,400,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (12,'Avances en Arquitectura',1990,2,2,300,400,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (13,'Las balas del bien',2001,4,2,300,400,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (14,'La mente y el sentir',2005,6,2,300,400,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (15,'Ensayos póstumos',1990,6,1,300,500,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (16,'Arquitectura y arte',2003,10,1,300,500,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (17,'Historia de Occidente',2014,8,2,300,500,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (18,'Sentimiento popular',2017,6,1,300,500,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (19,'Amigos o enemigos',1997,4,1,300,500,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (20,'Procesadores cuánticos',1899,2,1,300,500,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (21,'Canto de esperanza',2013,5,2,300,500,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (22,'Algebra lineal',2004,11,1,300,500,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (23,'Calculo II',1990,11,2,300,500,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (24,'Ecuaciones Diferenciales',1990,11,1,300,500,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (25,'Estructuras de datos',1995,11,1,300,500,30);
 
 
 ------------------ INSERT PROV LIB ------------------
