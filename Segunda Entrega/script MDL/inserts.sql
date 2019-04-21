@@ -123,156 +123,23 @@ INSERT INTO EMPLEADO (idEmpleado,FechaIngreso,Persona_idPersona) VALUES (9,TO_DA
 
 ------------------ INSERT EMPLEADO CARGO ------------------
 
-INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (1,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),1,1);
-INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (2,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),2,2);
-INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (3,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),3,3);
-INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (4,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),4,4);
-INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (5,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),5,5);
-INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (6,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),6,5);
-INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (7,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),7,6);
-INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (8,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),8,7);
-INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (9,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),9,8);
+INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (1,TO_DATE('02/03/2016 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),1,1);
+INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (2,TO_DATE('02/03/2016 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),2,2);
+INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (3,TO_DATE('02/03/2016 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),3,3);
+INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (4,TO_DATE('02/03/2016 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),4,4);
+INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (5,TO_DATE('02/03/2016 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),5,5);
+INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (6,TO_DATE('02/03/2016 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),6,5);
+INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (7,TO_DATE('02/03/2016 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),7,6);
+INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (8,TO_DATE('02/03/2016 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),8,7);
+INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (9,TO_DATE('02/03/2016 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),9,8);
 
 
------------------- INSERT IDIOMA ------------------
+------------------ INSERT LIBRERIA ------------------
 
-INSERT INTO IDIOMA (idIdioma,descripcion) VALUES (1,'Ingles');
-INSERT INTO IDIOMA (idIdioma,descripcion) VALUES (2,'Español');
-
-
------------------- INSERT Editorial ------------------
-
-INSERT INTO EDITORIAL (idEditorial,nombre,correo,direccion) VALUES (1,'Larrosa Mas, S.L.','larrosa.@gmail.com','León XIII, 12');
-INSERT INTO EDITORIAL (idEditorial,nombre,correo,direccion) VALUES (2,'Deloria Editores','deloriaeditores@gmail.com','Gran Vía, 77');
-INSERT INTO EDITORIAL (idEditorial,nombre,correo,direccion) VALUES (3,'TechniBooks','technibooks@gmail.com','Espronceda, 11');
-INSERT INTO EDITORIAL (idEditorial,nombre,correo,direccion) VALUES (4,'McCoy Hill','mccoyhill@gmail.com','Sants Metges, 2');
-INSERT INTO EDITORIAL (idEditorial,nombre,correo,direccion) VALUES (5,'Grisham Publishing','grishampublishing@gmail.com','Alfonso Paso, 3');
-INSERT INTO EDITORIAL (idEditorial,nombre,correo,direccion) VALUES (6,'McGraw-Hill','mcgrawhill@gmail.com','San Andrés, 21');
-INSERT INTO EDITORIAL (idEditorial,nombre,correo,direccion) VALUES (7,'Springer','springer@gmail.com','Carlos III,43');
-INSERT INTO EDITORIAL (idEditorial,nombre,correo,direccion) VALUES (8,'Prentice Hall','prenticehall@gmail.com','Plaza Luceros, 4');
-INSERT INTO EDITORIAL (idEditorial,nombre,correo,direccion) VALUES (9,'Universidad de Granada','universidadgranada@gmail.com','Mairena del Aljarafe (Sevilla)');
-INSERT INTO EDITORIAL (idEditorial,nombre,correo,direccion) VALUES (10,'Addison Wesley','addisonwesley@gmail.com','Jerez de la Frontera (Cádiz).');
-
-
------------------- INSERT CATEGORIA ------------------
-
-INSERT INTO CATEGORIA (idCategoria,descripcion) VALUES (1,'Psicología');
-INSERT INTO CATEGORIA (idCategoria,descripcion) VALUES (2,'Ciencia');
-INSERT INTO CATEGORIA (idCategoria,descripcion) VALUES (3,'Salud');
-INSERT INTO CATEGORIA (idCategoria,descripcion) VALUES (4,'Ficción');
-INSERT INTO CATEGORIA (idCategoria,descripcion) VALUES (5,'Novela');
-INSERT INTO CATEGORIA (idCategoria,descripcion) VALUES (6,'Poesía');
-INSERT INTO CATEGORIA (idCategoria,descripcion) VALUES (7,'Técnica');
-INSERT INTO CATEGORIA (idCategoria,descripcion) VALUES (8,'Historia');
-INSERT INTO CATEGORIA (idCategoria,descripcion) VALUES (9,'Filosofía');
-INSERT INTO CATEGORIA (idCategoria,descripcion) VALUES (10,'Arte');
-INSERT INTO CATEGORIA (idCategoria,descripcion) VALUES (11,'Matemática');
-
-
------------------- INSERT GENERO ------------------
-
-INSERT INTO GENERO (idGenero,descripcion) VALUES (1,'Romántica');
-INSERT INTO GENERO (idGenero,descripcion) VALUES (2,'Aventura');
-INSERT INTO GENERO (idGenero,descripcion) VALUES (3,'Terror');
-INSERT INTO GENERO (idGenero,descripcion) VALUES (4,'Ficcion / Realidad');
-INSERT INTO GENERO (idGenero,descripcion) VALUES (5,'Ciencia Ficción');
-INSERT INTO GENERO (idGenero,descripcion) VALUES (6,'Investigación');
-INSERT INTO GENERO (idGenero,descripcion) VALUES (7,'Biográfica');
-INSERT INTO GENERO (idGenero,descripcion) VALUES (8,'Infantil');
-INSERT INTO GENERO (idGenero,descripcion) VALUES (9,'Autoayuda');
-INSERT INTO GENERO (idGenero,descripcion) VALUES (10,'Erótica');
-INSERT INTO GENERO (idGenero,descripcion) VALUES (11,'Hogar');
-INSERT INTO GENERO (idGenero,descripcion) VALUES (12,'Enciclopedia / Manual');
-INSERT INTO GENERO (idGenero,descripcion) VALUES (13,'Política');
-INSERT INTO GENERO (idGenero,descripcion) VALUES (14,'Economía / Marketing');
-INSERT INTO GENERO (idGenero,descripcion) VALUES (15,'Sociedad');
-INSERT INTO GENERO (idGenero,descripcion) VALUES (16,'Deportes');
-INSERT INTO GENERO (idGenero,descripcion) VALUES (17,'Viajes / Cultura');
-
-
------------------- INSERT TIPO PAGO ------------------
-
-INSERT INTO TIPOPAGO (idTipoPago,descripcion) VALUES (1,'Tarjetas de Credito');
-INSERT INTO TIPOPAGO (idTipoPago,descripcion) VALUES (2,'Tarjetas de Debito');
-INSERT INTO TIPOPAGO (idTipoPago,descripcion) VALUES (3,'Efectivo');
-
-
------------------- INSERT TIPO OBTENCION ------------------
-
-INSERT INTO TIPOOBTENCION (idTipoObtencion, descripcion) VALUES (1,'Vendido');
-INSERT INTO TIPOOBTENCION (idTipoObtencion, descripcion) VALUES (2,'Prestamo');
-
-
------------------- INSERT DESCUENTO ------------------
-
-INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (1,0.10,'descuento persona normal');
-INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (2,0.20,'descuento estudiante');
-INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (3,0.30,'descuento tercera edad');
-INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (4,0.30,'descuento maestro');
-INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (5,0.35,'descuento empleados');
-
-
------------------- INSERT PRESTAMO ------------------
-
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (1,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (2,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (3,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (4,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (5,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (6,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (7,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (8,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (9,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (10,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (11,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (12,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (13,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (14,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (15,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (16,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (17,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (18,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (19,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (20,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (21,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (22,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (23,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (24,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (25,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (26,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (27,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (28,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (29,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (30,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
-
-
------------------- INSERT LIBRO ------------------
-
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (1,'Don Quijote de La Mancha I',1995,4,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (2,'El tránsito terreno',2015,2,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (3,'Historias de Nueva',2000,8,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (4,'El principito',1999,4,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (5,'El príncipe',1995,4,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (6,'Diplomacia',1995,8,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (7,'Los Windsor Plaza & Janes',1995,5,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (8,'El Último Emperador',1996,5,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (9,'Fortunata y Jacinta',1996,6,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (10,'Sistemas operativos',1990,7,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (11,'Poemas intrínsecos',2000,6,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (12,'Avances en Arquitectura',1990,2,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (13,'Las balas del bien',2001,4,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (14,'La mente y el sentir',2005,6,2,300,400);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (15,'Ensayos póstumos',1990,6,1,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (16,'Arquitectura y arte',2003,10,1,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (17,'Historia de Occidente',2014,8,2,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (18,'Sentimiento popular',2017,6,1,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (19,'Amigos o enemigos',1997,4,1,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (20,'Procesadores cuánticos',1899,2,1,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (21,'Canto de esperanza',2013,5,2,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (22,'Algebra lineal',2004,11,1,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (23,'Calculo II',2016,11,2,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (24,'Ecuaciones Diferenciales',2013,11,1,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (25,'Estructuras de datos',2011,11,1,300,500);
+INSERT INTO LIBRERIA (idLibreria,nombre,direccion,RTN,Telefono) VALUES (1,'Las tres rosas','Col. Kennedy, 3816 2da. Entrada.','rtn-2239-1093','2239-1193');
+INSERT INTO LIBRERIA (idLibreria,nombre,direccion,RTN,Telefono) VALUES (2,'Fondo Cultural Hondureño','Col. San Carlos','rtn-2239-1093','2239-1093');
+INSERT INTO LIBRERIA (idLibreria,nombre,direccion,RTN,Telefono) VALUES (3,'Libreria San Antonio','3 Ave. 3 Y 4 Cll. No. 1013 Teg.','rtn-2220-1120','2220-1120');
+INSERT INTO LIBRERIA (idLibreria,nombre,direccion,RTN,Telefono) VALUES (4,'Libreria Y Papeleria C & M','Centro Comercial Villas Del Sol Modulo','rtn-2228-3399','2228-3399');
 
 
 ------------------ INSERT BODEGA ------------------
@@ -280,7 +147,28 @@ INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_i
 INSERT INTO BODEGA (idBodega,Nombre) VALUES (1,'Bodega 1');
 INSERT INTO BODEGA (idBodega,Nombre) VALUES (2,'Bodega 2');
 INSERT INTO BODEGA (idBodega,Nombre) VALUES (3,'Bodega 3');
-INSERT INTO BODEGA (idBodega,Nombre) VALUES (5,'Bodega 4');
+INSERT INTO BODEGA (idBodega,Nombre) VALUES (4,'Bodega 4');
+
+
+------------------ INSERT SUCURSAL ------------------
+
+INSERT INTO SUCURSAL (idSucursal,nombre,direccion,telefono,Bodega_idBodega,Libreria_idLibreria) VALUES (1,'Sucursal 11','Col. Kennedy, 3816 2da. Entrada.','2234-2194',1,1);
+INSERT INTO SUCURSAL (idSucursal,nombre,direccion,telefono,Bodega_idBodega,Libreria_idLibreria) VALUES (2,'Sucursal 12','Col. Kennedy, 3816 2da. Entrada.','2234-2194',2,1);
+INSERT INTO SUCURSAL (idSucursal,nombre,direccion,telefono,Bodega_idBodega,Libreria_idLibreria) VALUES (3,'Sucursal 13','Col. Kennedy, 3816 2da. Entrada.','2234-2194',3,1);
+INSERT INTO SUCURSAL (idSucursal,nombre,direccion,telefono,Bodega_idBodega,Libreria_idLibreria) VALUES (4,'Sucursal 21','Col. San Carlos','2239-1093',1,2);
+INSERT INTO SUCURSAL (idSucursal,nombre,direccion,telefono,Bodega_idBodega,Libreria_idLibreria) VALUES (5,'Sucursal 22','Col. San Carlos','2239-1093',2,2);
+INSERT INTO SUCURSAL (idSucursal,nombre,direccion,telefono,Bodega_idBodega,Libreria_idLibreria) VALUES (6,'Sucursal 23','Col. San Carlos','2239-1093',3,2);
+
+
+------------------ INSERT SUCURSALEMPLEADO ------------------
+
+INSERT INTO SUCURSALEMPLEADO (idSucursalEmpleado,fechaInicio, fechaFin,Sucursal_idSucursal,Empleado_idEmpleado) VALUES (1,TO_DATE('02/03/2016 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),1,1);
+INSERT INTO SUCURSALEMPLEADO (idSucursalEmpleado,fechaInicio, fechaFin,Sucursal_idSucursal,Empleado_idEmpleado) VALUES (2,TO_DATE('02/03/2016 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),1,2);
+INSERT INTO SUCURSALEMPLEADO (idSucursalEmpleado,fechaInicio, fechaFin,Sucursal_idSucursal,Empleado_idEmpleado) VALUES (3,TO_DATE('02/03/2016 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),1,3);
+INSERT INTO SUCURSALEMPLEADO (idSucursalEmpleado,fechaInicio, fechaFin,Sucursal_idSucursal,Empleado_idEmpleado) VALUES (4,TO_DATE('02/03/2016 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),1,4);
+INSERT INTO SUCURSALEMPLEADO (idSucursalEmpleado,fechaInicio, fechaFin,Sucursal_idSucursal,Empleado_idEmpleado) VALUES (5,TO_DATE('02/03/2016 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),1,5);
+INSERT INTO SUCURSALEMPLEADO (idSucursalEmpleado,fechaInicio, fechaFin,Sucursal_idSucursal,Empleado_idEmpleado) VALUES (6,TO_DATE('02/03/2016 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),1,6);
+INSERT INTO SUCURSALEMPLEADO (idSucursalEmpleado,fechaInicio, fechaFin,Sucursal_idSucursal,Empleado_idEmpleado) VALUES (7,TO_DATE('02/03/2016 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),1,7);
 
 
 ------------------ INSERT PASILLO ------------------
@@ -336,16 +224,200 @@ INSERT INTO CUBICULO (idCubiculo, descripcion, Estante_idEstante) VALUES (9,'Cub
 INSERT INTO CUBICULO (idCubiculo, descripcion, Estante_idEstante) VALUES (10,'Cubiculo 10',10);
 
 
------------------- INSERT  ------------------
+------------------ INSERT EDITORIAL ------------------
+
+INSERT INTO EDITORIAL (idEditorial,nombre,correo,direccion) VALUES (1,'Larrosa Mas, S.L.','larrosa.@gmail.com','León XIII, 12');
+INSERT INTO EDITORIAL (idEditorial,nombre,correo,direccion) VALUES (2,'Deloria Editores','deloriaeditores@gmail.com','Gran Vía, 77');
+INSERT INTO EDITORIAL (idEditorial,nombre,correo,direccion) VALUES (3,'TechniBooks','technibooks@gmail.com','Espronceda, 11');
+INSERT INTO EDITORIAL (idEditorial,nombre,correo,direccion) VALUES (4,'McCoy Hill','mccoyhill@gmail.com','Sants Metges, 2');
+INSERT INTO EDITORIAL (idEditorial,nombre,correo,direccion) VALUES (5,'Grisham Publishing','grishampublishing@gmail.com','Alfonso Paso, 3');
+INSERT INTO EDITORIAL (idEditorial,nombre,correo,direccion) VALUES (6,'McGraw-Hill','mcgrawhill@gmail.com','San Andrés, 21');
+INSERT INTO EDITORIAL (idEditorial,nombre,correo,direccion) VALUES (7,'Springer','springer@gmail.com','Carlos III,43');
+INSERT INTO EDITORIAL (idEditorial,nombre,correo,direccion) VALUES (8,'Prentice Hall','prenticehall@gmail.com','Plaza Luceros, 4');
+INSERT INTO EDITORIAL (idEditorial,nombre,correo,direccion) VALUES (9,'Universidad de Granada','universidadgranada@gmail.com','Mairena del Aljarafe (Sevilla)');
+INSERT INTO EDITORIAL (idEditorial,nombre,correo,direccion) VALUES (10,'Addison Wesley','addisonwesley@gmail.com','Jerez de la Frontera (Cádiz).');
 
 
------------------- INSERT  ------------------
+------------------ INSERT IDIOMA ------------------
+
+INSERT INTO IDIOMA (idIdioma,descripcion) VALUES (1,'Ingles');
+INSERT INTO IDIOMA (idIdioma,descripcion) VALUES (2,'Español');
 
 
------------------- INSERT  ------------------
+------------------ INSERT GENERO ------------------
+
+INSERT INTO GENERO (idGenero,descripcion) VALUES (1,'Romántica');
+INSERT INTO GENERO (idGenero,descripcion) VALUES (2,'Aventura');
+INSERT INTO GENERO (idGenero,descripcion) VALUES (3,'Terror');
+INSERT INTO GENERO (idGenero,descripcion) VALUES (4,'Ficcion / Realidad');
+INSERT INTO GENERO (idGenero,descripcion) VALUES (5,'Ciencia Ficción');
+INSERT INTO GENERO (idGenero,descripcion) VALUES (6,'Investigación');
+INSERT INTO GENERO (idGenero,descripcion) VALUES (7,'Biográfica');
+INSERT INTO GENERO (idGenero,descripcion) VALUES (8,'Infantil');
+INSERT INTO GENERO (idGenero,descripcion) VALUES (9,'Autoayuda');
+INSERT INTO GENERO (idGenero,descripcion) VALUES (10,'Erótica');
+INSERT INTO GENERO (idGenero,descripcion) VALUES (11,'Hogar');
+INSERT INTO GENERO (idGenero,descripcion) VALUES (12,'Enciclopedia / Manual');
+INSERT INTO GENERO (idGenero,descripcion) VALUES (13,'Política');
+INSERT INTO GENERO (idGenero,descripcion) VALUES (14,'Economía / Marketing');
+INSERT INTO GENERO (idGenero,descripcion) VALUES (15,'Sociedad');
+INSERT INTO GENERO (idGenero,descripcion) VALUES (16,'Deportes');
+INSERT INTO GENERO (idGenero,descripcion) VALUES (17,'Viajes / Cultura');
 
 
------------------- INSERT  ------------------
+------------------ INSERT CATEGORIA ------------------
+
+INSERT INTO CATEGORIA (idCategoria,descripcion) VALUES (1,'Psicología');
+INSERT INTO CATEGORIA (idCategoria,descripcion) VALUES (2,'Ciencia');
+INSERT INTO CATEGORIA (idCategoria,descripcion) VALUES (3,'Salud');
+INSERT INTO CATEGORIA (idCategoria,descripcion) VALUES (4,'Ficción');
+INSERT INTO CATEGORIA (idCategoria,descripcion) VALUES (5,'Novela');
+INSERT INTO CATEGORIA (idCategoria,descripcion) VALUES (6,'Poesía');
+INSERT INTO CATEGORIA (idCategoria,descripcion) VALUES (7,'Técnica');
+INSERT INTO CATEGORIA (idCategoria,descripcion) VALUES (8,'Historia');
+INSERT INTO CATEGORIA (idCategoria,descripcion) VALUES (9,'Filosofía');
+INSERT INTO CATEGORIA (idCategoria,descripcion) VALUES (10,'Arte');
+INSERT INTO CATEGORIA (idCategoria,descripcion) VALUES (11,'Matemática');
 
 
------------------- INSERT  ------------------
+------------------ INSERT TIPO PROVEEDOR ------------------
+
+
+
+------------------ INSERT PVARIOS ------------------
+
+
+
+------------------ INSERT PROVEEDOR ------------------
+
+
+
+------------------ INSERT PROV PV ------------------
+
+
+
+------------------ INSERT PROV LIB ------------------
+
+
+
+------------------ INSERT LIBRO ------------------
+
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (1,'Don Quijote de La Mancha I',1995,4,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (2,'El tránsito terreno',2015,2,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (3,'Historias de Nueva',2000,8,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (4,'El principito',1999,4,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (5,'El príncipe',1995,4,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (6,'Diplomacia',1995,8,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (7,'Los Windsor Plaza & Janes',1995,5,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (8,'El Último Emperador',1996,5,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (9,'Fortunata y Jacinta',1996,6,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (10,'Sistemas operativos',1990,7,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (11,'Poemas intrínsecos',2000,6,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (12,'Avances en Arquitectura',1990,2,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (13,'Las balas del bien',2001,4,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (14,'La mente y el sentir',2005,6,2,300,400);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (15,'Ensayos póstumos',1990,6,1,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (16,'Arquitectura y arte',2003,10,1,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (17,'Historia de Occidente',2014,8,2,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (18,'Sentimiento popular',2017,6,1,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (19,'Amigos o enemigos',1997,4,1,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (20,'Procesadores cuánticos',1899,2,1,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (21,'Canto de esperanza',2013,5,2,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (22,'Algebra lineal',2004,11,1,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (23,'Calculo II',2016,11,2,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (24,'Ecuaciones Diferenciales',2013,11,1,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (25,'Estructuras de datos',2011,11,1,300,500);
+
+
+------------------ INSERT AUTORES LIBROS ------------------
+
+
+
+------------------ INSERT GENEROS LIBROS ------------------
+
+
+
+------------------ INSERT EDICION ------------------
+
+
+
+------------------ INSERT LIB EDIT ------------------
+
+
+
+------------------ INSERT POSICION LIBRO ------------------
+
+
+
+------------------ INSERT TIPO OBTENCION ------------------
+
+INSERT INTO TIPOOBTENCION (idTipoObtencion, descripcion) VALUES (1,'Vendido');
+INSERT INTO TIPOOBTENCION (idTipoObtencion, descripcion) VALUES (2,'Prestamo');
+
+
+------------------ INSERT PRESTAMO ------------------
+
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (1,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (2,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (3,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (4,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (5,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (6,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (7,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (8,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (9,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (10,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (11,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (12,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (13,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (14,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (15,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (16,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (17,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (18,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (19,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (20,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (21,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (22,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (23,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (24,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (25,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (26,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (27,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (28,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (29,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+INSERT INTO PRESTAMO (idPrestamo,fechaInicio,fechaMax) VALUES (30,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('12/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'));
+
+
+------------------ INSERT DESCUENTO ------------------
+
+INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (1,0.10,'descuento persona normal');
+INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (2,0.20,'descuento estudiante');
+INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (3,0.30,'descuento tercera edad');
+INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (4,0.30,'descuento maestro');
+INSERT INTO DESCUENTO (idDescuento, porcentajeDescuento, descripcion) VALUES (5,0.35,'descuento empleados');
+
+
+------------------ INSERT TIPO PAGO ------------------
+
+INSERT INTO TIPOPAGO (idTipoPago,descripcion) VALUES (1,'Tarjetas de Credito');
+INSERT INTO TIPOPAGO (idTipoPago,descripcion) VALUES (2,'Tarjetas de Debito');
+INSERT INTO TIPOPAGO (idTipoPago,descripcion) VALUES (3,'Efectivo');
+
+
+------------------ INSERT PAGO ------------------
+
+
+
+------------------ INSERT MORA ------------------
+
+
+
+------------------ INSERT FACTURA ------------------
+
+
+
+------------------ INSERT DETALLE FACTURA ------------------
+
+
+
