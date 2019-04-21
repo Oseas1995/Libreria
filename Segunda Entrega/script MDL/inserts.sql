@@ -313,10 +313,17 @@ INSERT INTO PROVEEDOR (idProveedor,direccion,correo,Telefono,descripcion,nombre,
 
 ------------------ INSERT PROV PV ------------------
 
-
-
------------------- INSERT PROV LIB ------------------
-
+INSERT INTO PROVPV (idProvpv,cantidad,Proveedor_idProveedor,PVarios_idPVarios) VALUES (1,10,1,1);
+INSERT INTO PROVPV (idProvpv,cantidad,Proveedor_idProveedor,PVarios_idPVarios) VALUES (2,10,1,2);
+INSERT INTO PROVPV (idProvpv,cantidad,Proveedor_idProveedor,PVarios_idPVarios) VALUES (3,5,1,3);
+INSERT INTO PROVPV (idProvpv,cantidad,Proveedor_idProveedor,PVarios_idPVarios) VALUES (4,25,1,4);
+INSERT INTO PROVPV (idProvpv,cantidad,Proveedor_idProveedor,PVarios_idPVarios) VALUES (5,50,1,5);
+INSERT INTO PROVPV (idProvpv,cantidad,Proveedor_idProveedor,PVarios_idPVarios) VALUES (6,25,1,6);
+INSERT INTO PROVPV (idProvpv,cantidad,Proveedor_idProveedor,PVarios_idPVarios) VALUES (7,30,1,7);
+INSERT INTO PROVPV (idProvpv,cantidad,Proveedor_idProveedor,PVarios_idPVarios) VALUES (8,15,2,2);
+INSERT INTO PROVPV (idProvpv,cantidad,Proveedor_idProveedor,PVarios_idPVarios) VALUES (9,12,2,3);
+INSERT INTO PROVPV (idProvpv,cantidad,Proveedor_idProveedor,PVarios_idPVarios) VALUES (10,16,2,5);
+INSERT INTO PROVPV (idProvpv,cantidad,Proveedor_idProveedor,PVarios_idPVarios) VALUES (11,18,2,8);
 
 
 ------------------ INSERT LIBRO ------------------
@@ -346,6 +353,28 @@ INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_i
 INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (23,'Calculo II',2016,11,2,300,500);
 INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (24,'Ecuaciones Diferenciales',2013,11,1,300,500);
 INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (25,'Estructuras de datos',2011,11,1,300,500);
+
+
+------------------ INSERT PROV LIB ------------------
+
+INSERT INTO PROVLIB (idProvLib,cantidad,Proveedor_idProveedor,Libro_idLibro) VALUES (1,30,3,1);
+INSERT INTO PROVLIB (idProvLib,cantidad,Proveedor_idProveedor,Libro_idLibro) VALUES (2,25,3,2);
+INSERT INTO PROVLIB (idProvLib,cantidad,Proveedor_idProveedor,Libro_idLibro) VALUES (3,25,3,3);
+INSERT INTO PROVLIB (idProvLib,cantidad,Proveedor_idProveedor,Libro_idLibro) VALUES (4,25,3,4);
+INSERT INTO PROVLIB (idProvLib,cantidad,Proveedor_idProveedor,Libro_idLibro) VALUES (5,25,3,5);
+INSERT INTO PROVLIB (idProvLib,cantidad,Proveedor_idProveedor,Libro_idLibro) VALUES (6,25,4,6);
+INSERT INTO PROVLIB (idProvLib,cantidad,Proveedor_idProveedor,Libro_idLibro) VALUES (7,25,4,7);
+INSERT INTO PROVLIB (idProvLib,cantidad,Proveedor_idProveedor,Libro_idLibro) VALUES (8,25,4,8);
+INSERT INTO PROVLIB (idProvLib,cantidad,Proveedor_idProveedor,Libro_idLibro) VALUES (9,25,4,9);
+INSERT INTO PROVLIB (idProvLib,cantidad,Proveedor_idProveedor,Libro_idLibro) VALUES (10,40,5,10);
+INSERT INTO PROVLIB (idProvLib,cantidad,Proveedor_idProveedor,Libro_idLibro) VALUES (11,40,5,11);
+INSERT INTO PROVLIB (idProvLib,cantidad,Proveedor_idProveedor,Libro_idLibro) VALUES (12,35,5,12);
+INSERT INTO PROVLIB (idProvLib,cantidad,Proveedor_idProveedor,Libro_idLibro) VALUES (13,25,5,24);
+INSERT INTO PROVLIB (idProvLib,cantidad,Proveedor_idProveedor,Libro_idLibro) VALUES (14,36,5,25);
+INSERT INTO PROVLIB (idProvLib,cantidad,Proveedor_idProveedor,Libro_idLibro) VALUES (15,45,5,23);
+INSERT INTO PROVLIB (idProvLib,cantidad,Proveedor_idProveedor,Libro_idLibro) VALUES (16,42,5,15);
+INSERT INTO PROVLIB (idProvLib,cantidad,Proveedor_idProveedor,Libro_idLibro) VALUES (17,26,5,15);
+INSERT INTO PROVLIB (idProvLib,cantidad,Proveedor_idProveedor,Libro_idLibro) VALUES (18,40,5,17);
 
 
 ------------------ INSERT AUTORES LIBROS ------------------
