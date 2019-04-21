@@ -139,7 +139,7 @@ INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Emplead
 INSERT INTO LIBRERIA (idLibreria,nombre,direccion,RTN,Telefono) VALUES (1,'Las tres rosas','Col. Kennedy, 3816 2da. Entrada.','rtn-2239-1093','2239-1193');
 INSERT INTO LIBRERIA (idLibreria,nombre,direccion,RTN,Telefono) VALUES (2,'Fondo Cultural Hondureño','Col. San Carlos','rtn-2239-1093','2239-1093');
 INSERT INTO LIBRERIA (idLibreria,nombre,direccion,RTN,Telefono) VALUES (3,'Libreria San Antonio','3 Ave. 3 Y 4 Cll. No. 1013 Teg.','rtn-2220-1120','2220-1120');
-INSERT INTO LIBRERIA (idLibreria,nombre,direccion,RTN,Telefono) VALUES (4,'Libreria Y Papeleria C & M','Centro Comercial Villas Del Sol Modulo','rtn-2228-3399','2228-3399');
+INSERT INTO LIBRERIA (idLibreria,nombre,direccion,RTN,Telefono) VALUES (4,'Libreria Y Papeleria C & M','Centro Comercial Villas Del Sol','rtn-2228-3399','2228-3399');
 
 
 ------------------ INSERT BODEGA ------------------
@@ -286,7 +286,7 @@ INSERT INTO TIPOPROVEEDOR (idTipoProveedor,descripcion) VALUES (1,'Proveedor Lib
 INSERT INTO TIPOPROVEEDOR (idTipoProveedor,descripcion) VALUES (2,'Proveedor Libros Románticos');
 INSERT INTO TIPOPROVEEDOR (idTipoProveedor,descripcion) VALUES (3,'Proveedor Libros Terror');
 INSERT INTO TIPOPROVEEDOR (idTipoProveedor,descripcion) VALUES (4,'Proveedor Dulces');
-INSERT INTO TIPOPROVEEDOR (idTipoProveedor,descripcion) VALUES (5,'Proveedor galletas');
+INSERT INTO TIPOPROVEEDOR (idTipoProveedor,descripcion) VALUES (5,'Proveedor Galletas');
 INSERT INTO TIPOPROVEEDOR (idTipoProveedor,descripcion) VALUES (6,'Proveedor Baleadas');
 
 
@@ -304,12 +304,11 @@ INSERT INTO PVARIOS (idPVarios,descripcion) VALUES (8,'Baleadas');
 
 ------------------ INSERT PROVEEDOR ------------------
 
-INSERT INTO PROVEEDOR (idProveedor,direccion,correo,Telefono,descripcion,nombre) VALUES (1,'','','','','');
-INSERT INTO PROVEEDOR (idProveedor,direccion,correo,Telefono,descripcion,nombre) VALUES (2,'','','','','');
-INSERT INTO PROVEEDOR (idProveedor,direccion,correo,Telefono,descripcion,nombre) VALUES (3,'','','','','');
-INSERT INTO PROVEEDOR (idProveedor,direccion,correo,Telefono,descripcion,nombre) VALUES (4,'','','','','');
-INSERT INTO PROVEEDOR (idProveedor,direccion,correo,Telefono,descripcion,nombre) VALUES (5,'','','','','');
-
+INSERT INTO PROVEEDOR (idProveedor,direccion,correo,Telefono,descripcion,nombre,TipoProveedor_idTipoProveedor) VALUES (1,'Centro Comercial Villas Del Sol','Proveedor1@gmail.com','2222-2211','Proveedor 1','Proveedor1',1);
+INSERT INTO PROVEEDOR (idProveedor,direccion,correo,Telefono,descripcion,nombre,TipoProveedor_idTipoProveedor) VALUES (2,'Centro Comercial Villas Del Sol','Proveedor2@gmail.com','2222-2211','Proveedor 2','Proveedor2',1);
+INSERT INTO PROVEEDOR (idProveedor,direccion,correo,Telefono,descripcion,nombre,TipoProveedor_idTipoProveedor) VALUES (3,'Centro Comercial Villas Del Sol','Proveedor3@gmail.com','2222-2211','Proveedor 3','Proveedor3',2);
+INSERT INTO PROVEEDOR (idProveedor,direccion,correo,Telefono,descripcion,nombre,TipoProveedor_idTipoProveedor) VALUES (4,'Centro Comercial Villas Del Sol','Proveedor4@gmail.com','2222-2211','Proveedor 4','Proveedor4',2);
+INSERT INTO PROVEEDOR (idProveedor,direccion,correo,Telefono,descripcion,nombre,TipoProveedor_idTipoProveedor) VALUES (5,'Centro Comercial Villas Del Sol','Proveedor5@gmail.com','2222-2211','Proveedor 5','Proveedor5',3);
 
 
 ------------------ INSERT PROV PV ------------------
@@ -351,10 +350,35 @@ INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_i
 
 ------------------ INSERT AUTORES LIBROS ------------------
 
+INSERT INTO AUTORESLIBROS (idAutoresLibros,Autor_idAutor,Libro_idLibro) VALUES (1,1,1);
+INSERT INTO AUTORESLIBROS (idAutoresLibros,Autor_idAutor,Libro_idLibro) VALUES (2,1,2);
+INSERT INTO AUTORESLIBROS (idAutoresLibros,Autor_idAutor,Libro_idLibro) VALUES (3,1,3);
+INSERT INTO AUTORESLIBROS (idAutoresLibros,Autor_idAutor,Libro_idLibro) VALUES (4,1,4);
+INSERT INTO AUTORESLIBROS (idAutoresLibros,Autor_idAutor,Libro_idLibro) VALUES (5,2,5);
+INSERT INTO AUTORESLIBROS (idAutoresLibros,Autor_idAutor,Libro_idLibro) VALUES (6,2,6);
+INSERT INTO AUTORESLIBROS (idAutoresLibros,Autor_idAutor,Libro_idLibro) VALUES (7,2,7);
+INSERT INTO AUTORESLIBROS (idAutoresLibros,Autor_idAutor,Libro_idLibro) VALUES (8,2,8);
+INSERT INTO AUTORESLIBROS (idAutoresLibros,Autor_idAutor,Libro_idLibro) VALUES (9,3,9);
+INSERT INTO AUTORESLIBROS (idAutoresLibros,Autor_idAutor,Libro_idLibro) VALUES (10,3,10);
+INSERT INTO AUTORESLIBROS (idAutoresLibros,Autor_idAutor,Libro_idLibro) VALUES (11,3,11);
+INSERT INTO AUTORESLIBROS (idAutoresLibros,Autor_idAutor,Libro_idLibro) VALUES (12,3,12);
+INSERT INTO AUTORESLIBROS (idAutoresLibros,Autor_idAutor,Libro_idLibro) VALUES (13,4,13);
 
 
 ------------------ INSERT GENEROS LIBROS ------------------
 
+INSERT INTO GENEROSLIBROS (idGenerosLibros,Libro_idLibro,Genero_idGenero) VALUES (1,1,1);
+INSERT INTO GENEROSLIBROS (idGenerosLibros,Libro_idLibro,Genero_idGenero) VALUES (2,2,1);
+INSERT INTO GENEROSLIBROS (idGenerosLibros,Libro_idLibro,Genero_idGenero) VALUES (3,3,1);
+INSERT INTO GENEROSLIBROS (idGenerosLibros,Libro_idLibro,Genero_idGenero) VALUES (4,4,1);
+INSERT INTO GENEROSLIBROS (idGenerosLibros,Libro_idLibro,Genero_idGenero) VALUES (5,5,2);
+INSERT INTO GENEROSLIBROS (idGenerosLibros,Libro_idLibro,Genero_idGenero) VALUES (6,6,2);
+INSERT INTO GENEROSLIBROS (idGenerosLibros,Libro_idLibro,Genero_idGenero) VALUES (7,7,2);
+INSERT INTO GENEROSLIBROS (idGenerosLibros,Libro_idLibro,Genero_idGenero) VALUES (8,8,2);
+INSERT INTO GENEROSLIBROS (idGenerosLibros,Libro_idLibro,Genero_idGenero) VALUES (9,9,3);
+INSERT INTO GENEROSLIBROS (idGenerosLibros,Libro_idLibro,Genero_idGenero) VALUES (10,10,3);
+INSERT INTO GENEROSLIBROS (idGenerosLibros,Libro_idLibro,Genero_idGenero) VALUES (11,11,3);
+INSERT INTO GENEROSLIBROS (idGenerosLibros,Libro_idLibro,Genero_idGenero) VALUES (12,12,3);
 
 
 ------------------ INSERT EDICION ------------------
