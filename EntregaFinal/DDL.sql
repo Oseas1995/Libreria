@@ -541,6 +541,13 @@ ALTER TABLE telefono
 
 
 
+ALTER TABLE Libro
+ADD Existencia INTEGER CONSTRAINT;
+
+ALTER TABLE PVarios
+ADD Existencia INTEGER CONSTRAINT;
+
+
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
 -- CREATE TABLE                            37
