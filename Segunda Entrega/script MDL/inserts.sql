@@ -136,10 +136,7 @@ INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Emplead
 
 ------------------ INSERT LIBRERIA ------------------
 
-INSERT INTO LIBRERIA (idLibreria,nombre,direccion,RTN,Telefono) VALUES (1,'Las tres rosas','Col. Kennedy, 3816 2da. Entrada.','rtn-2239-1093','2239-1193');
-INSERT INTO LIBRERIA (idLibreria,nombre,direccion,RTN,Telefono) VALUES (2,'Fondo Cultural Hondureño','Col. San Carlos','rtn-2239-1093','2239-1093');
-INSERT INTO LIBRERIA (idLibreria,nombre,direccion,RTN,Telefono) VALUES (3,'Libreria San Antonio','3 Ave. 3 Y 4 Cll. No. 1013 Teg.','rtn-2220-1120','2220-1120');
-INSERT INTO LIBRERIA (idLibreria,nombre,direccion,RTN,Telefono) VALUES (4,'Libreria Y Papeleria C & M','Centro Comercial Villas Del Sol','rtn-2228-3399','2228-3399');
+INSERT INTO LIBRERIA (idLibreria,nombre,direccion,RTN,Telefono) VALUES (1,'DaveOs','Col. Kennedy, 3816 2da. Entrada.','rtn-2239-1093','2239-1193');
 
 
 ------------------ INSERT BODEGA ------------------
@@ -455,20 +452,20 @@ INSERT INTO LIBEDIT (idLibEdit,Editorial_idEditorial,Libro_idLibro) VALUES (11,9
 
 ------------------ INSERT POSICION LIBRO ------------------
 
-INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (1,'',1,1);
-INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (2,'',2,2);
-INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (3,'',3,3);
-INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (4,'',4,4);
-INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (5,'',5,5);
-INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (6,'',6,6);
-INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (7,'',7,7);
-INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (8,'',8,8);
-INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (9,'',9,9);
-INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (10,'',10,10);
-INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (11,'',1,11);
-INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (12,'',2,12);
-INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (13,'',3,13);
-INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (14,'',4,14);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (1,'Posicion 1',1,1);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (2,'Posicion 2',2,2);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (3,'Posicion 3',3,3);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (4,'Posicion 4',4,4);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (5,'Posicion 5',5,5);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (6,'Posicion 6',6,6);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (7,'Posicion 7',7,7);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (8,'Posicion 8',8,8);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (9,'Posicion 9',9,9);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (10,'Posicion 10',10,10);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (11,'Posicion 11',1,11);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (12,'Posicion 12',2,12);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (13,'Posicion 13',3,13);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (14,'Posicion 14',4,14);
 
 
 ------------------ INSERT TIPO OBTENCION ------------------
@@ -529,17 +526,59 @@ INSERT INTO TIPOPAGO (idTipoPago,descripcion) VALUES (3,'Efectivo');
 
 ------------------ INSERT PAGO ------------------
 
+INSERT INTO PAGO (idPago,MontoPagar,fechaHora,Prestamo_idPrestamo,Descuento_idDescuento,TipoPago_idTipoPago) VALUES (1,300,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),1,2,3);
+INSERT INTO PAGO (idPago,MontoPagar,fechaHora,Prestamo_idPrestamo,Descuento_idDescuento,TipoPago_idTipoPago) VALUES (2,200,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),2,2,3);
+INSERT INTO PAGO (idPago,MontoPagar,fechaHora,Prestamo_idPrestamo,Descuento_idDescuento,TipoPago_idTipoPago) VALUES (3,200,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),3,2,3);
+INSERT INTO PAGO (idPago,MontoPagar,fechaHora,Prestamo_idPrestamo,Descuento_idDescuento,TipoPago_idTipoPago) VALUES (4,200,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),4,2,3);
+INSERT INTO PAGO (idPago,MontoPagar,fechaHora,Prestamo_idPrestamo,Descuento_idDescuento,TipoPago_idTipoPago) VALUES (5,200,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),5,2,3);
+INSERT INTO PAGO (idPago,MontoPagar,fechaHora,Prestamo_idPrestamo,Descuento_idDescuento,TipoPago_idTipoPago) VALUES (6,200,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),6,4,3);
+INSERT INTO PAGO (idPago,MontoPagar,fechaHora,Prestamo_idPrestamo,Descuento_idDescuento,TipoPago_idTipoPago) VALUES (7,200,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),7,4,3);
+INSERT INTO PAGO (idPago,MontoPagar,fechaHora,Prestamo_idPrestamo,Descuento_idDescuento,TipoPago_idTipoPago) VALUES (8,200,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),8,4,3);
+INSERT INTO PAGO (idPago,MontoPagar,fechaHora,Prestamo_idPrestamo,Descuento_idDescuento,TipoPago_idTipoPago) VALUES (9,200,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),9,4,2);
+INSERT INTO PAGO (idPago,MontoPagar,fechaHora,Prestamo_idPrestamo,Descuento_idDescuento,TipoPago_idTipoPago) VALUES (10,250,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),10,1,2);
+INSERT INTO PAGO (idPago,MontoPagar,fechaHora,Prestamo_idPrestamo,Descuento_idDescuento,TipoPago_idTipoPago) VALUES (11,250,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),11,1,2);
 
 
 ------------------ INSERT MORA ------------------
 
+INSERT INTO MORA (idMora,montoMora,descripcion,Pago_idPago) VALUES (1,10,'atraso',1;
+INSERT INTO MORA (idMora,montoMora,descripcion,Pago_idPago) VALUES (2,10,'atraso',2);
+INSERT INTO MORA (idMora,montoMora,descripcion,Pago_idPago) VALUES (3,10,'atraso',3);
+INSERT INTO MORA (idMora,montoMora,descripcion,Pago_idPago) VALUES (4,10,'atraso',4);
+INSERT INTO MORA (idMora,montoMora,descripcion,Pago_idPago) VALUES (5,10,'atraso',5);
+INSERT INTO MORA (idMora,montoMora,descripcion,Pago_idPago) VALUES (6,10,'atraso',6);
+INSERT INTO MORA (idMora,montoMora,descripcion,Pago_idPago) VALUES (7,10,'atraso',7);
+INSERT INTO MORA (idMora,montoMora,descripcion,Pago_idPago) VALUES (8,10,'atraso',8);
+INSERT INTO MORA (idMora,montoMora,descripcion,Pago_idPago) VALUES (9,10,'atraso',9);
+INSERT INTO MORA (idMora,montoMora,descripcion,Pago_idPago) VALUES (10,10,'atraso',10);
 
 
 ------------------ INSERT FACTURA ------------------
 
+INSERT INTO FACTURA (idFactura,fechaRegistro,TipoObtencion_idTipoObtencion,Cliente_idCliente,Pago_idPago) VALUES (1,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),1,1,1);
+INSERT INTO FACTURA (idFactura,fechaRegistro,TipoObtencion_idTipoObtencion,Cliente_idCliente,Pago_idPago) VALUES (2,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),1,2,2);
+INSERT INTO FACTURA (idFactura,fechaRegistro,TipoObtencion_idTipoObtencion,Cliente_idCliente,Pago_idPago) VALUES (3,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),1,3,3);
+INSERT INTO FACTURA (idFactura,fechaRegistro,TipoObtencion_idTipoObtencion,Cliente_idCliente,Pago_idPago) VALUES (4,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),1,4,4);
+INSERT INTO FACTURA (idFactura,fechaRegistro,TipoObtencion_idTipoObtencion,Cliente_idCliente,Pago_idPago) VALUES (5,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),1,5,5);
+INSERT INTO FACTURA (idFactura,fechaRegistro,TipoObtencion_idTipoObtencion,Cliente_idCliente,Pago_idPago) VALUES (6,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),1,6,6);
+INSERT INTO FACTURA (idFactura,fechaRegistro,TipoObtencion_idTipoObtencion,Cliente_idCliente,Pago_idPago) VALUES (7,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),1,7,7);
+INSERT INTO FACTURA (idFactura,fechaRegistro,TipoObtencion_idTipoObtencion,Cliente_idCliente,Pago_idPago) VALUES (8,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),1,8,8);
+INSERT INTO FACTURA (idFactura,fechaRegistro,TipoObtencion_idTipoObtencion,Cliente_idCliente,Pago_idPago) VALUES (9,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),1,9,9);
+INSERT INTO FACTURA (idFactura,fechaRegistro,TipoObtencion_idTipoObtencion,Cliente_idCliente,Pago_idPago) VALUES (10,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),1,10,10);
 
 
 ------------------ INSERT DETALLE FACTURA ------------------
 
+INSERT INTO DETALLEFACTURA (idDetalleFactura,Cantidad,Factura_idFactura,Libro_idLibro) VALUES (1,1,1,1);
+INSERT INTO DETALLEFACTURA (idDetalleFactura,Cantidad,Factura_idFactura,Libro_idLibro) VALUES (2,1,1,2);
+INSERT INTO DETALLEFACTURA (idDetalleFactura,Cantidad,Factura_idFactura,Libro_idLibro) VALUES (3,1,2,3);
+INSERT INTO DETALLEFACTURA (idDetalleFactura,Cantidad,Factura_idFactura,Libro_idLibro) VALUES (4,1,3,4);
+INSERT INTO DETALLEFACTURA (idDetalleFactura,Cantidad,Factura_idFactura,Libro_idLibro) VALUES (5,1,4,5);
+INSERT INTO DETALLEFACTURA (idDetalleFactura,Cantidad,Factura_idFactura,Libro_idLibro) VALUES (6,1,4,6);
+INSERT INTO DETALLEFACTURA (idDetalleFactura,Cantidad,Factura_idFactura,Libro_idLibro) VALUES (7,1,5,1);
+INSERT INTO DETALLEFACTURA (idDetalleFactura,Cantidad,Factura_idFactura,Libro_idLibro) VALUES (8,1,6,2);
+INSERT INTO DETALLEFACTURA (idDetalleFactura,Cantidad,Factura_idFactura,Libro_idLibro) VALUES (9,1,7,6);
+INSERT INTO DETALLEFACTURA (idDetalleFactura,Cantidad,Factura_idFactura,Libro_idLibro) VALUES (10,5,8,7);
+INSERT INTO DETALLEFACTURA (idDetalleFactura,Cantidad,Factura_idFactura,Libro_idLibro) VALUES (11,5,9,8);
 
 
