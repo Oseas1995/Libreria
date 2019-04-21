@@ -282,13 +282,33 @@ INSERT INTO CATEGORIA (idCategoria,descripcion) VALUES (11,'Matemática');
 
 ------------------ INSERT TIPO PROVEEDOR ------------------
 
+INSERT INTO TIPOPROVEEDOR (idTipoProveedor,descripcion) VALUES (1,'Proveedor Libros Matemática');
+INSERT INTO TIPOPROVEEDOR (idTipoProveedor,descripcion) VALUES (2,'Proveedor Libros Románticos');
+INSERT INTO TIPOPROVEEDOR (idTipoProveedor,descripcion) VALUES (3,'Proveedor Libros Terror');
+INSERT INTO TIPOPROVEEDOR (idTipoProveedor,descripcion) VALUES (4,'Proveedor Dulces');
+INSERT INTO TIPOPROVEEDOR (idTipoProveedor,descripcion) VALUES (5,'Proveedor galletas');
+INSERT INTO TIPOPROVEEDOR (idTipoProveedor,descripcion) VALUES (6,'Proveedor Baleadas');
 
 
 ------------------ INSERT PVARIOS ------------------
 
+INSERT INTO PVARIOS (idPVarios,descripcion) VALUES (1,'Chocolate');
+INSERT INTO PVARIOS (idPVarios,descripcion) VALUES (2,'Coca Cola');
+INSERT INTO PVARIOS (idPVarios,descripcion) VALUES (3,'Pepsi Cola');
+INSERT INTO PVARIOS (idPVarios,descripcion) VALUES (4,'Galleta Choki');
+INSERT INTO PVARIOS (idPVarios,descripcion) VALUES (5,'Galleta Oreon');
+INSERT INTO PVARIOS (idPVarios,descripcion) VALUES (6,'Cafe');
+INSERT INTO PVARIOS (idPVarios,descripcion) VALUES (7,'Pan');
+INSERT INTO PVARIOS (idPVarios,descripcion) VALUES (8,'Baleadas');
 
 
 ------------------ INSERT PROVEEDOR ------------------
+
+INSERT INTO PROVEEDOR (idProveedor,direccion,correo,Telefono,descripcion,nombre) VALUES (1,'','','','','');
+INSERT INTO PROVEEDOR (idProveedor,direccion,correo,Telefono,descripcion,nombre) VALUES (2,'','','','','');
+INSERT INTO PROVEEDOR (idProveedor,direccion,correo,Telefono,descripcion,nombre) VALUES (3,'','','','','');
+INSERT INTO PROVEEDOR (idProveedor,direccion,correo,Telefono,descripcion,nombre) VALUES (4,'','','','','');
+INSERT INTO PROVEEDOR (idProveedor,direccion,correo,Telefono,descripcion,nombre) VALUES (5,'','','','','');
 
 
 
