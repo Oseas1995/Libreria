@@ -350,9 +350,9 @@ INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_i
 INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (20,'Procesadores cuánticos',1899,2,1,300,500);
 INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (21,'Canto de esperanza',2013,5,2,300,500);
 INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (22,'Algebra lineal',2004,11,1,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (23,'Calculo II',2016,11,2,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (24,'Ecuaciones Diferenciales',2013,11,1,300,500);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (25,'Estructuras de datos',2011,11,1,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (23,'Calculo II',1990,11,2,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (24,'Ecuaciones Diferenciales',1990,11,1,300,500);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta) VALUES (25,'Estructuras de datos',1995,11,1,300,500);
 
 
 ------------------ INSERT PROV LIB ------------------
@@ -412,14 +412,63 @@ INSERT INTO GENEROSLIBROS (idGenerosLibros,Libro_idLibro,Genero_idGenero) VALUES
 
 ------------------ INSERT EDICION ------------------
 
+INSERT INTO EDICION (idEdicion,descripcion,fechaPublicacion,Libro_idLibro) VALUES (1,'edicion 1',TO_DATE('02/03/1995 22:05:01','DD/MM/YYYY hh24:mi:ss'),1);
+INSERT INTO EDICION (idEdicion,descripcion,fechaPublicacion,Libro_idLibro) VALUES (2,'edicion 2',TO_DATE('02/03/1996 22:05:01','DD/MM/YYYY hh24:mi:ss'),1);
+INSERT INTO EDICION (idEdicion,descripcion,fechaPublicacion,Libro_idLibro) VALUES (3,'edicion 3',TO_DATE('02/03/2000 22:05:01','DD/MM/YYYY hh24:mi:ss'),1);
+
+INSERT INTO EDICION (idEdicion,descripcion,fechaPublicacion,Libro_idLibro) VALUES (4,'edicion 1',TO_DATE('02/03/2015 22:05:01','DD/MM/YYYY hh24:mi:ss'),2);
+INSERT INTO EDICION (idEdicion,descripcion,fechaPublicacion,Libro_idLibro) VALUES (5,'edicion 2',TO_DATE('02/03/2016 22:05:01','DD/MM/YYYY hh24:mi:ss'),2);
+INSERT INTO EDICION (idEdicion,descripcion,fechaPublicacion,Libro_idLibro) VALUES (6,'edicion 3',TO_DATE('02/03/2017 22:05:01','DD/MM/YYYY hh24:mi:ss'),2);
+INSERT INTO EDICION (idEdicion,descripcion,fechaPublicacion,Libro_idLibro) VALUES (7,'edicion 4',TO_DATE('02/03/2018 22:05:01','DD/MM/YYYY hh24:mi:ss'),2);
+INSERT INTO EDICION (idEdicion,descripcion,fechaPublicacion,Libro_idLibro) VALUES (8,'edicion 5',TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),2);
+
+INSERT INTO EDICION (idEdicion,descripcion,fechaPublicacion,Libro_idLibro) VALUES (9,'edicion 1',TO_DATE('02/03/2000 22:05:01','DD/MM/YYYY hh24:mi:ss'),3);
+INSERT INTO EDICION (idEdicion,descripcion,fechaPublicacion,Libro_idLibro) VALUES (10,'edicion 2',TO_DATE('02/03/2003 22:05:01','DD/MM/YYYY hh24:mi:ss'),3);
+INSERT INTO EDICION (idEdicion,descripcion,fechaPublicacion,Libro_idLibro) VALUES (11,'edicion 3',TO_DATE('02/03/2006 22:05:01','DD/MM/YYYY hh24:mi:ss'),3);
+INSERT INTO EDICION (idEdicion,descripcion,fechaPublicacion,Libro_idLibro) VALUES (12,'edicion 4',TO_DATE('02/03/2008 22:05:01','DD/MM/YYYY hh24:mi:ss'),3);
+
+INSERT INTO EDICION (idEdicion,descripcion,fechaPublicacion,Libro_idLibro) VALUES (13,'edicion 1',TO_DATE('02/03/1999 22:05:01','DD/MM/YYYY hh24:mi:ss'),4);
+INSERT INTO EDICION (idEdicion,descripcion,fechaPublicacion,Libro_idLibro) VALUES (14,'edicion 2',TO_DATE('02/03/2005 22:05:01','DD/MM/YYYY hh24:mi:ss'),4);
+
+INSERT INTO EDICION (idEdicion,descripcion,fechaPublicacion,Libro_idLibro) VALUES (15,'edicion 1',TO_DATE('02/03/1990 22:05:01','DD/MM/YYYY hh24:mi:ss'),24);
+INSERT INTO EDICION (idEdicion,descripcion,fechaPublicacion,Libro_idLibro) VALUES (16,'edicion 2',TO_DATE('02/03/1992 22:05:01','DD/MM/YYYY hh24:mi:ss'),24);
+INSERT INTO EDICION (idEdicion,descripcion,fechaPublicacion,Libro_idLibro) VALUES (17,'edicion 3',TO_DATE('02/03/1994 22:05:01','DD/MM/YYYY hh24:mi:ss'),24);
+INSERT INTO EDICION (idEdicion,descripcion,fechaPublicacion,Libro_idLibro) VALUES (18,'edicion 4',TO_DATE('02/03/1996 22:05:01','DD/MM/YYYY hh24:mi:ss'),24);
+INSERT INTO EDICION (idEdicion,descripcion,fechaPublicacion,Libro_idLibro) VALUES (19,'edicion 5',TO_DATE('02/03/2000 22:05:01','DD/MM/YYYY hh24:mi:ss'),24);
+INSERT INTO EDICION (idEdicion,descripcion,fechaPublicacion,Libro_idLibro) VALUES (20,'edicion 6',TO_DATE('02/03/2004 22:05:01','DD/MM/YYYY hh24:mi:ss'),24);
 
 
 ------------------ INSERT LIB EDIT ------------------
 
+INSERT INTO LIBEDIT (idLibEdit,Editorial_idEditorial,Libro_idLibro) VALUES (1,1,1);
+INSERT INTO LIBEDIT (idLibEdit,Editorial_idEditorial,Libro_idLibro) VALUES (2,2,2);
+INSERT INTO LIBEDIT (idLibEdit,Editorial_idEditorial,Libro_idLibro) VALUES (3,3,3);
+INSERT INTO LIBEDIT (idLibEdit,Editorial_idEditorial,Libro_idLibro) VALUES (4,4,4);
+INSERT INTO LIBEDIT (idLibEdit,Editorial_idEditorial,Libro_idLibro) VALUES (5,5,5);
+INSERT INTO LIBEDIT (idLibEdit,Editorial_idEditorial,Libro_idLibro) VALUES (6,1,6);
+INSERT INTO LIBEDIT (idLibEdit,Editorial_idEditorial,Libro_idLibro) VALUES (7,2,7);
+INSERT INTO LIBEDIT (idLibEdit,Editorial_idEditorial,Libro_idLibro) VALUES (8,6,22);
+INSERT INTO LIBEDIT (idLibEdit,Editorial_idEditorial,Libro_idLibro) VALUES (9,7,23);
+INSERT INTO LIBEDIT (idLibEdit,Editorial_idEditorial,Libro_idLibro) VALUES (10,8,24);
+INSERT INTO LIBEDIT (idLibEdit,Editorial_idEditorial,Libro_idLibro) VALUES (11,9,25);
 
 
 ------------------ INSERT POSICION LIBRO ------------------
 
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (1,'',1,1);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (2,'',2,2);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (3,'',3,3);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (4,'',4,4);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (5,'',5,5);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (6,'',6,6);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (7,'',7,7);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (8,'',8,8);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (9,'',9,9);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (10,'',10,10);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (11,'',1,11);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (12,'',2,12);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (13,'',3,13);
+INSERT INTO POSICIONLIBRO (idPosicionLibro,descripcion,Cubiculo_idCubiculo,Libro_idLibro) VALUES (14,'',4,14);
 
 
 ------------------ INSERT TIPO OBTENCION ------------------
