@@ -108,6 +108,32 @@ INSERT INTO CARGO (idCargo,descripcion) VALUES (7,'Atencion al cliente');
 INSERT INTO CARGO (idCargo,descripcion) VALUES (8,'Guardia de seguridad');
 
 
+------------------ INSERT EMPLEADO ------------------
+
+INSERT INTO EMPLEADO (idEmpleado,FechaIngreso,Persona_idPersona) VALUES (1,TO_DATE('10/12/2016 09:05:01','DD/MM/YYYY hh24:mi:ss'),1);
+INSERT INTO EMPLEADO (idEmpleado,FechaIngreso,Persona_idPersona) VALUES (2,TO_DATE('01/12/2016 09:05:01','DD/MM/YYYY hh24:mi:ss'),2);
+INSERT INTO EMPLEADO (idEmpleado,FechaIngreso,Persona_idPersona) VALUES (3,TO_DATE('01/12/2016 09:05:01','DD/MM/YYYY hh24:mi:ss'),3);
+INSERT INTO EMPLEADO (idEmpleado,FechaIngreso,Persona_idPersona) VALUES (4,TO_DATE('05/01/2016 09:05:01','DD/MM/YYYY hh24:mi:ss'),4);
+INSERT INTO EMPLEADO (idEmpleado,FechaIngreso,Persona_idPersona) VALUES (5,TO_DATE('04/09/2016 09:05:01','DD/MM/YYYY hh24:mi:ss'),5);
+INSERT INTO EMPLEADO (idEmpleado,FechaIngreso,Persona_idPersona) VALUES (6,TO_DATE('10/12/2016 09:05:01','DD/MM/YYYY hh24:mi:ss'),6);
+INSERT INTO EMPLEADO (idEmpleado,FechaIngreso,Persona_idPersona) VALUES (7,TO_DATE('06/06/2016 09:05:01','DD/MM/YYYY hh24:mi:ss'),7);
+INSERT INTO EMPLEADO (idEmpleado,FechaIngreso,Persona_idPersona) VALUES (8,TO_DATE('09/12/2016 09:05:01','DD/MM/YYYY hh24:mi:ss'),8);
+INSERT INTO EMPLEADO (idEmpleado,FechaIngreso,Persona_idPersona) VALUES (9,TO_DATE('11/11/2016 09:05:01','DD/MM/YYYY hh24:mi:ss'),9);
+
+
+------------------ INSERT EMPLEADO CARGO ------------------
+
+INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (1,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),1,1);
+INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (2,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),2,2);
+INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (3,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),3,3);
+INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (4,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),4,4);
+INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (5,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),5,5);
+INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (6,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),6,5);
+INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (7,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),7,6);
+INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (8,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),8,7);
+INSERT INTO EMPLEADOCARGO (idEmpleadoCargo, FechaNombramiento, fechaFin, Empleado_idEmpleado,Cargo_idCargo) VALUES (9,TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),TO_DATE('02/03/2019 22:05:01','DD/MM/YYYY hh24:mi:ss'),9,8);
+
+
 ------------------ INSERT IDIOMA ------------------
 
 INSERT INTO IDIOMA (idIdioma,descripcion) VALUES (1,'Ingles');
@@ -308,12 +334,6 @@ INSERT INTO CUBICULO (idCubiculo, descripcion, Estante_idEstante) VALUES (7,'Cub
 INSERT INTO CUBICULO (idCubiculo, descripcion, Estante_idEstante) VALUES (8,'Cubiculo 8',8);
 INSERT INTO CUBICULO (idCubiculo, descripcion, Estante_idEstante) VALUES (9,'Cubiculo 9',9);
 INSERT INTO CUBICULO (idCubiculo, descripcion, Estante_idEstante) VALUES (10,'Cubiculo 10',10);
-
-
------------------- INSERT  ------------------
-
-
------------------- INSERT  ------------------
 
 
 ------------------ INSERT  ------------------
