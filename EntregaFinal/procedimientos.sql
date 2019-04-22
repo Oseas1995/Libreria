@@ -532,3 +532,110 @@ BEGIN
 
 
 END;
+
+
+--5 VENTA LIBRO
+
+--entrada: id del libro, cantidad, Cliente, fechaRegistro(fechaActual)
+
+--proceso: montoPagar-precioVenta= suelto, despues de vender eliminar libro
+
+--salida monto a pagar, y libro que compro, cliente nombre
+
+ CREATE OR REPLACE PROCEDURE SP_GESTION_VENTASLIBROS(
+        pnidLibro IN INTEGER,
+        pnidCliente IN INTEGER,
+        pnidTipoObtencion IN INTEGER,
+        pnidTipoPago IN INTEGER,
+        pnCantidad in INTEGER,
+        pfMontoPagar IN FLOAT,
+
+       pbocurreError         OUT  INTEGER,
+       pcmensajeError        OUT  VARCHAR2
+)
+
+IS
+    vctempMensaje VARCHAR2(1000);
+    vnconteo INTEGER;
+    vcnombrelibro VARCHAR2(45);
+    vcnombreCliente VARCHAR2(90);
+    vfTotal FLOAT;
+    vfSuelto FLOAT;
+    vnPago  INTEGER:
+
+BEGIN
+    vctempMensaje:='';
+    vnconteo:=0;
+    pbocurreError:=0;
+
+    --validaciones
+    IF pnidLibro='' OR pnidLibro IS NULL THEN
+        vctempMensaje:='id libro, ';
+    END IF;
+
+     IF pnidCliente='' OR pnidCliente IS NULL THEN
+        vctempMensaje:=vctempMensaje||'id CLIENTE, ';
+    END IF;
+
+    IF pnidTipoObtencion='' OR pnidTipoObtencion IS NULL THEN
+        vctempMensaje:=vctempMensaje||'id tipoObtencion, ';
+    END IF;
+
+    IF pnidPago='' OR pnidPago IS NULL THEN
+        vctempMensaje:=vctempMensaje||'id pago, ';
+    END IF;
+
+    IF pnCantidad='' OR pnCantidad IS NULL THEN
+        vctempMensaje:=vctempMensaje||'cantidad, ';
+    END IF;
+
+    IF vctempMensaje<>'' THEN
+        pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
+        pbocurreError:=1;
+    END IF;
+
+    pcmensajeError:='';
+
+    --que libro compra?
+
+    SELECT lib.nombre INTO vcnombrelibro FROM Libro lib
+    WHERE lib.idLibro=pnidLibro
+
+    --quien lo compra?
+
+    SELECT per.pnombre||per.sapellido INTO vcnombreCliente FROM Persona per
+    INNER JOIN Cliente cli on cli.Persona_idPersona=per.idPersona
+    WHERE cli.idCliente=pnidCliente
+
+    --Monto a pagar
+
+    SELECT SUM(lib.PrecioVenta)*df.Cantidad INTO vfTotal FROM Libro lib
+    INNER JOIN DetalleFactura df on df.Libro_idLibro=lib.idLibro
+    WHERE lib.idLibro=pnidLibro
+
+
+    IF pfMontoPagar<vfTotal THEN
+        pcmensajeError:='DINERO INSUFICIENTE';
+        RETURN;
+    END IF;
+
+    vfSuelto:=vfTotal-pfMontoPagar;
+
+    Delete FROM Libro
+    WHERE idLibro=pnidLibro;
+
+    INSERT INTO Pago(MontoPagar,fechaHora,Prestamo_idPrestamo,Descuento_idDescuento,TipoPago_idTipoPago)
+    VALUES(pfMontoPagar,SYSTIMESTAMP ,NULL,NULL,pnidTipoPago);
+
+    SELECT MAX(p.idPago) INTO vnPago FROM Pago p
+
+    INSERT INTO Factura(fechaRegistro,TipoObtencion_idTipoObtencion,Cliente_idCliente,Pago_idPago)
+    VALUES(SYSDATE,pnidTipoObtencion,pnidCliente,vnPago);
+
+    pcmensajeError:='registros agregados correctamente';
+
+
+
+
+
+END;
