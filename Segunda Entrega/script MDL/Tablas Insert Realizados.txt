@@ -37,7 +37,7 @@ Tablas Insert Realizados
 34. PAGO
 35. MORA
 36. FACTURA
-37. DETALLE FACTURA -------(FALTA)
+37. DETALLE FACTURA
 
 
 
