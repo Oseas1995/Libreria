@@ -171,7 +171,7 @@ BEGIN
     vnconteo:=0;
     pbocurreError:=0;
 
-    
+
 
 
     IF pcAccion='AGREGAR' OR pcAccion='agregar' THEN
@@ -312,6 +312,17 @@ BEGIN
     END IF;
 
     IF pcAccion='ELIMINAR' OR pcAccion='eliminar' THEN
+
+        IF pcNoIdentidad='' OR pcNoIdentidad IS NULL THEN
+            vctempMensaje:=vctempMensaje||'NO. identidad';
+        END IF;
+
+        IF vctempMensaje <> '' OR vctempMensaje IS NOT NULL THEN
+            pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
+            pbocurreError:=1;
+            RETURN;
+        END IF;
+
         Delete FROM Persona
         WHERE NoIdentidad=pcNoIdentidad;
 
