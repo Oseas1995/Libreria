@@ -178,7 +178,7 @@ BEGIN
 	        pbocurreError:=1;
 	    END IF;
 
-        SELECT COUNT(*) INTO vnconteo Persona per
+        SELECT COUNT(*) INTO vnconteo FROM Persona per
         WHERE per.NoIdentidad=pcNoIdentidad;
 
         IF vnconteo = 0 THEN
@@ -720,7 +720,7 @@ END;
 
 --entrada: id del libro, cantidad, Cliente, fechaRegistro(fechaActual)
 
---proceso: montoPagar-precioVenta= suelto, despues de vender eliminar libro
+--proceso: montoPagar-precioVenta= suelto, despues de vender eliminar libro( actualizar existencia libro)
 
 --salida monto a pagar, y libro que compro, cliente nombre
 
@@ -734,6 +734,7 @@ END;
 
         pbocurreError         OUT  INTEGER,
         pcmensajeError        OUT  VARCHAR2
+         
 )
 
 IS
@@ -743,7 +744,8 @@ IS
     vcnombreCliente VARCHAR2(90);
     vfTotal FLOAT;
     vfSuelto FLOAT;
-    vnPago  INTEGER:
+    vnPago  INTEGER;
+    vnCantidadLibros INTEGER;
 
 BEGIN
     vctempMensaje:='';
@@ -768,7 +770,7 @@ BEGIN
     END IF;
 
     IF pnCantidad='' OR pnCantidad IS NULL THEN
-        vctempMensaje:=vctempMensaje||'cantidad, ';
+        vctempMensaje:=vctempMensaje||'cantidad';
     END IF;
 
     IF vctempMensaje<>'' THEN
@@ -798,12 +800,17 @@ BEGIN
 
     IF pfMontoPagar<vfTotal THEN
         pcmensajeError:='DINERO INSUFICIENTE';
+        pbocurreError:=1;
         RETURN;
     END IF;
 
     vfSuelto:=vfTotal-pfMontoPagar;
 
-    Delete FROM Libro
+    SELECT df.Cantidad INTO vnCantidadLibros FROM DetalleFactura df
+    Inner join Libro lib on lib.idLibro=df.Libro_idLibro
+
+    UPDATE Libro
+    SET Existencia=Existencia-vnCantidadLibros;
     WHERE idLibro=pnidLibro;
 
     INSERT INTO Pago(MontoPagar,fechaHora,Prestamo_idPrestamo,Descuento_idDescuento,TipoPago_idTipoPago)
