@@ -724,7 +724,7 @@ END;
 
 --salida monto a pagar, y libro que compro, cliente nombre
 
- CREATE OR REPLACE PROCEDURE SP_GESTION_VENTASLIBROS(
+CREATE OR REPLACE PROCEDURE SP_GESTION_VENTASLIBROS(
         pnidLibro IN INTEGER,
         pnidCliente IN INTEGER,
         pnidTipoObtencion IN INTEGER,
@@ -765,9 +765,6 @@ BEGIN
         vctempMensaje:=vctempMensaje||'id tipoObtencion, ';
     END IF;
 
-    IF pnidPago='' OR pnidPago IS NULL THEN
-        vctempMensaje:=vctempMensaje||'id pago, ';
-    END IF;
 
     IF pnCantidad='' OR pnCantidad IS NULL THEN
         vctempMensaje:=vctempMensaje||'cantidad';
@@ -783,19 +780,19 @@ BEGIN
     --que libro compra?
 
     SELECT lib.nombre INTO vcnombrelibro FROM Libro lib
-    WHERE lib.idLibro=pnidLibro
+    WHERE lib.idLibro=pnidLibro;
 
     --quien lo compra?
 
     SELECT per.pnombre||per.sapellido INTO vcnombreCliente FROM Persona per
     INNER JOIN Cliente cli on cli.Persona_idPersona=per.idPersona
-    WHERE cli.idCliente=pnidCliente
+    WHERE cli.idCliente=pnidCliente;
 
     --Monto a pagar
 
     SELECT SUM(lib.PrecioVenta)*df.Cantidad INTO vfTotal FROM Libro lib
     INNER JOIN DetalleFactura df on df.Libro_idLibro=lib.idLibro
-    WHERE lib.idLibro=pnidLibro
+    WHERE lib.idLibro=pnidLibro;
 
 
     IF pfMontoPagar<vfTotal THEN
@@ -807,24 +804,22 @@ BEGIN
     vfSuelto:=vfTotal-pfMontoPagar;
 
     SELECT df.Cantidad INTO vnCantidadLibros FROM DetalleFactura df
-    Inner join Libro lib on lib.idLibro=df.Libro_idLibro
+    Inner join Libro lib on lib.idLibro=df.Libro_idLibro;
 
     UPDATE Libro
-    SET Existencia=Existencia-vnCantidadLibros;
+    SET Existencia=Existencia-vnCantidadLibros
     WHERE idLibro=pnidLibro;
 
     INSERT INTO Pago(MontoPagar,fechaHora,Prestamo_idPrestamo,Descuento_idDescuento,TipoPago_idTipoPago)
-    VALUES(pfMontoPagar,SYSTIMESTAMP ,NULL,NULL,pnidTipoPago);
+    VALUES(pfMontoPagar,SYSDATE,NULL,NULL,pnidTipoPago);
 
-    SELECT MAX(p.idPago) INTO vnPago FROM Pago p
+    SELECT MAX(p.idPago) INTO vnPago FROM Pago p;
 
     INSERT INTO Factura(fechaRegistro,TipoObtencion_idTipoObtencion,Cliente_idCliente,Pago_idPago)
     VALUES(SYSDATE,pnidTipoObtencion,pnidCliente,vnPago);
 
     pcmensajeError:='registros agregados correctamente';
-
-
-
+    pbocurreError:=0;
 
 
 END;
