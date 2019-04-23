@@ -61,14 +61,12 @@
                                   <EmptySpace min="-2" pref="174" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jScrollPane1" min="-2" pref="559" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
+                      <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -394,11 +392,14 @@
             <Component class="javax.swing.JTable" name="tblTablaCliente">
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                  <Table columnCount="4" rowCount="0">
-                    <Column editable="true" title="Primer Nombre" type="java.lang.Object"/>
-                    <Column editable="true" title="Apellido" type="java.lang.Object"/>
+                  <Table columnCount="7" rowCount="0">
+                    <Column editable="true" title="PNombre" type="java.lang.Object"/>
+                    <Column editable="true" title="SNombre" type="java.lang.Object"/>
+                    <Column editable="true" title="PApellido" type="java.lang.Object"/>
+                    <Column editable="true" title="SApellido" type="java.lang.Object"/>
                     <Column editable="true" title="Direccion" type="java.lang.Object"/>
                     <Column editable="true" title="Correo" type="java.lang.Object"/>
+                    <Column editable="true" title="Identidad" type="java.lang.Object"/>
                   </Table>
                 </Property>
               </Properties>

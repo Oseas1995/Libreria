@@ -35,6 +35,7 @@ public class ClienteDB {
             cl.setsApellido(rs.getString("sApellido"));
             cl.setDireccion(rs.getString("direccion"));
             cl.setCorreo(rs.getString("correo"));
+            cl.setNoIdentidad(rs.getString("noIdentidad"));
             cliente.add(cl);
         }
     } catch (SQLException ex) {

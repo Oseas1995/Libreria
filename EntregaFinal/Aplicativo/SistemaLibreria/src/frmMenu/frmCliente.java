@@ -33,7 +33,7 @@ public class frmCliente extends javax.swing.JFrame {
         cliente=db.ListCliente();
         DefaultTableModel tb=(DefaultTableModel)tblTablaCliente.getModel();
         for(Cliente cl:cliente){
-            tb.addRow(new Object[]{cl.getpNombre(),cl.getpApellido(),cl.getDireccion(),cl.getCorreo()});
+            tb.addRow(new Object[]{cl.getpNombre(),cl.getsNombre(),cl.getpApellido(),cl.getsApellido(),cl.getDireccion(),cl.getCorreo(),cl.getNoIdentidad()});
         }
     }
     
@@ -281,7 +281,7 @@ public class frmCliente extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Primer Nombre", "Apellido", "Direccion", "Correo"
+                "PNombre", "SNombre", "PApellido", "SApellido", "Direccion", "Correo", "Identidad"
             }
         ));
         tblTablaCliente.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -308,10 +308,9 @@ public class frmCliente extends javax.swing.JFrame {
                                 .addComponent(jLabel2)
                                 .addGap(174, 174, 174))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 559, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(22, 22, 22))))))
+                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(22, 22, 22))))
+                    .addComponent(jScrollPane1)))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -395,9 +394,12 @@ public class frmCliente extends javax.swing.JFrame {
         int row = table.rowAtPoint(point);
         if(!(row == -1)){
             txtPNombre.setText((String) tblTablaCliente.getValueAt(row, 0));
-            txtPApellido.setText((String) tblTablaCliente.getValueAt(row, 1));
-            txtDireccion.setText((String) tblTablaCliente.getValueAt(row, 2));
-            txtCorreo.setText((String) tblTablaCliente.getValueAt(row, 3));
+            txtSNombre.setText((String) tblTablaCliente.getValueAt(row, 1));
+            txtPApellido.setText((String) tblTablaCliente.getValueAt(row, 2));
+            txtSApellido.setText((String) tblTablaCliente.getValueAt(row, 3));
+            txtDireccion.setText((String) tblTablaCliente.getValueAt(row, 4));
+            txtCorreo.setText((String) tblTablaCliente.getValueAt(row, 5));
+            txtNoIdentidad.setText((String) tblTablaCliente.getValueAt(row, 6));
         }
     }//GEN-LAST:event_tblTablaClienteMousePressed
 
