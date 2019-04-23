@@ -204,9 +204,10 @@ BEGIN
         vctempMensaje:=vctempMensaje||'ACCION, ';
     END IF;
 
-    IF vctempMensaje<>'' THEN
+    IF vctempMensaje <> '' OR vctempMensaje IS NOT NULL THEN
         pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
         pbocurreError:=1;
+        RETURN;
     END IF;
 
 
@@ -338,7 +339,7 @@ BEGIN
         vctempMensaje:=vctempMensaje||'ACCION, ';
     END IF;
 
-    IF vctempMensaje<>'' THEN
+    IF vctempMensaje <> '' OR vctempMensaje IS NOT NULL THEN
         pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
         pbocurreError:=1;
     END IF;
@@ -459,7 +460,7 @@ BEGIN
         vctempMensaje:=vctempMensaje||'ACCION, ';
     END IF;
 
-    IF vctempMensaje<>'' THEN
+    IF vctempMensaje <> '' OR vctempMensaje IS NOT NULL THEN
         pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
         pbocurreError:=1;
     END IF;

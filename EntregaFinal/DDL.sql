@@ -542,14 +542,14 @@ ALTER TABLE telefono
 
 
 ALTER TABLE Libro
-ADD Existencia INTEGER CONSTRAINT;
+ADD Existencia INTEGER;
 
 ALTER TABLE PVarios
-ADD Existencia INTEGER CONSTRAINT;
+ADD Existencia INTEGER;
 
 
--- Informe de Resumen de Oracle SQL Developer Data Modeler: 
--- 
+-- Informe de Resumen de Oracle SQL Developer Data Modeler:
+--
 -- CREATE TABLE                            37
 -- CREATE INDEX                             6
 -- ALTER TABLE                             75
@@ -578,15 +578,15 @@ ADD Existencia INTEGER CONSTRAINT;
 -- CREATE SYNONYM                           0
 -- CREATE TABLESPACE                        0
 -- CREATE USER                              0
--- 
+--
 -- DROP TABLESPACE                          0
 -- DROP DATABASE                            0
--- 
+--
 -- REDACTION POLICY                         0
--- 
+--
 -- ORDS DROP SCHEMA                         0
 -- ORDS ENABLE SCHEMA                       0
 -- ORDS ENABLE OBJECT                       0
--- 
+--
 -- ERRORS                                   0
 -- WARNINGS                                 0

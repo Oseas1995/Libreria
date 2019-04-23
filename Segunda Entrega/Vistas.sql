@@ -1,14 +1,12 @@
 --1 Mostrar Clientes.
 
-Create view wv_Clientes as
-select (per.pnombre||' '||per.snombre||' '||per.papellido||' '||per.sapellido) nombreCompleto, tel.numero as numeroTelefono, per.direccion, per.correo from Cliente Cli
-inner join Persona per ON per.idPersona=Cli.Persona_idPersona
-inner join Telefono tel ON tel.Persona_idPersona=per.idPersona;
-
+Create view vw_Clientes as
+select per.pnombre, per.snombre, per.papellido, per.sapellido, per.direccion, per.correo from Cliente Cli
+inner join Persona per ON per.idPersona=Cli.Persona_idPersona;
 
 --2 Mostrar informacion de libros.
 
-Create view wv_libros as
+Create view vw_libros as
 select li.nombre, li.anioPublicacion, (per.pnombre||' '||per.papellido) as autor, idi.descripcion as idioma, gen.descripcion as genero, cat.descripcion as categoria, edi.nombre as editorial from Libro li
 inner join Idioma idi on idi.idIdioma=li.Idioma_idIdioma
 inner join Generos/Libros gl ON gl.Libro_idLibro=li.idLibro
@@ -22,7 +20,7 @@ inner join Editorial edi on edi.idEditorial=le.Editorial_idEditorial;
 
 --3 Mostrar Empleados.
 
-Create view wv_Empleados as
+Create view vw_Empleados as
 select (per.pnombre||' '||per.snombre||' '||per.papellido||' '||per.sapellido) nombreCompleto, tel.numero as numeroTelefono, per.direccion, per.correo from Empleado em
 inner join Persona per ON per.idPersona=em.Persona_idPersona
 inner join Telefono tel ON tel.Persona_idPersona=per.idPersona;
@@ -30,7 +28,7 @@ inner join Telefono tel ON tel.Persona_idPersona=per.idPersona;
 
 --4 Mostrar proveedores, productos que proveen y cantidad.
 
-Create view wv_Proveedores as
+Create view vw_Proveedores as
 select prov.Nombre, prov.Telefono, tp.descripcion as tipoProveedor, pv.descripcion, ppv.cantidad from Proveedor prov
 inner join TipoProveedor tp on tp.idTipoProveedor=prov.TipoProveedor_idTipoProveedor
 inner join Prov/pv ppv on ppv.Proveedor_idProveedor=prov.idProveedor
@@ -40,7 +38,7 @@ inner join ProductosVarios pv on pv.idProductosVarios=ppv.ProductosVarios_idProd
 
 --5 Mostrar sucursal y cantidad de libros por sucursal.
 
-Create view wv_SucLibros AS
+Create view vw_SucLibros AS
 SELECT su.nombre AS nombreSucursal, COUNT(li.idLibro) AS LibroTotales FROM Sucursal su
 INNER JOIN Bodega bo ON bo.idBodega=su.Bodega_idBodega
 INNER JOIN Pasillo pa ON bo.idBodega=pa.Bodega_idBodega
@@ -53,7 +51,7 @@ GROUP BY su.nombre;
 
 --6 Mostrar cargos de los empleados.
 
-CREATE VIEW wv_CargoEmpleados AS
+CREATE VIEW vw_CargoEmpleados AS
 SELECT (p.pnombre||' '||p.snombre||' '||p.papellido||' '||p.sapellido) NombreCompleto, c.descripcion cargo  FROM Persona p
 INNER JOIN Empleado e ON p.idPersona = e.Persona_idPersona
 INNER JOIN Empleado/Cargo ec ON e.idEmpleado = ec.Empleado_idEmpleado
