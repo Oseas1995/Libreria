@@ -38,6 +38,7 @@ BEGIN
     IF vctempMensaje <> '' OR vctempMensaje IS NOT NULL THEN
         pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
         pbocurreError:=1;
+        RETURN;
     END IF;
 
     IF pcAccion='AGREGAR' OR pcAccion='agregar' THEN
@@ -75,6 +76,7 @@ BEGIN
 	    IF vctempMensaje <> '' OR vctempMensaje IS NOT NULL THEN
 	        pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
 	        pbocurreError:=1;
+            RETURN;
 	    END IF;
 
         SELECT COUNT(*) INTO vnconteo FROM Persona per
@@ -134,6 +136,7 @@ BEGIN
 	    IF vctempMensaje <> '' OR vctempMensaje IS NOT NULL THEN
 	        pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
 	        pbocurreError:=1;
+            RETURN;
 	    END IF;
 
         SELECT COUNT(*) INTO vnconteo FROM Persona per
@@ -176,6 +179,7 @@ BEGIN
 	    IF vctempMensaje <> '' OR vctempMensaje IS NOT NULL THEN
 	        pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
 	        pbocurreError:=1;
+            RETURN;
 	    END IF;
 
         SELECT COUNT(*) INTO vnconteo FROM Persona per
@@ -434,6 +438,7 @@ BEGIN
     IF vctempMensaje <> '' OR vctempMensaje IS NOT NULL THEN
         pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
         pbocurreError:=1;
+        RETURN;
     END IF;
 
     IF pcAccion='AGREGAR' OR pcAccion='agregar' THEN
@@ -467,6 +472,7 @@ BEGIN
 	    IF vctempMensaje <> '' OR vctempMensaje IS NOT NULL THEN
 	        pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
 	        pbocurreError:=1;
+            RETURN;
 	    END IF;
 
         SELECT lib.idLibro INTO vnLibro FROM Libro lib
@@ -522,6 +528,7 @@ BEGIN
 	    IF vctempMensaje <> '' OR vctempMensaje IS NOT NULL THEN
 	        pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
 	        pbocurreError:=1;
+            RETURN;
 	    END IF;
 
         SELECT lib.idLibro INTO vnLibro FROM Libro lib
@@ -601,6 +608,7 @@ BEGIN
     IF vctempMensaje <> '' OR vctempMensaje IS NOT NULL THEN
         pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
         pbocurreError:=1;
+        RETURN;
     END IF;
 
 
@@ -623,6 +631,7 @@ BEGIN
 	    IF vctempMensaje <> '' OR vctempMensaje IS NOT NULL THEN
 	        pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
 	        pbocurreError:=1;
+            RETURN;
 	    END IF;
 
         SELECT COUNT(*) INTO vnconteo FROM Sucursal su
@@ -670,6 +679,7 @@ BEGIN
 	    IF vctempMensaje <> '' OR vctempMensaje IS NOT NULL THEN
 	        pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
 	        pbocurreError:=1;
+            RETURN;
 	    END IF;
 
         SELECT COUNT(*) INTO vnconteo FROM Sucursal su
