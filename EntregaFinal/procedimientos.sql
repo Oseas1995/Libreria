@@ -145,20 +145,20 @@ BEGIN
             RETURN;
         END IF;
 
-        SELECT per.idPersona INTO vnPersona FROM Persona per
-        WHERE per.NoIdentidad=pcNoIdentidad;
+        /*SELECT per.idPersona INTO vnPersona FROM Persona per
+        WHERE per.NoIdentidad=pcNoIdentidad;*/
 
-        SELECT em.idEmpleado INTO vnEmpleado FROM Empleado em
+      /* SELECT em.idEmpleado INTO vnEmpleado FROM Empleado em
        INNER JOIN Persona per on per.idPersona=em.Persona_idPersona
-       WHERE per.NoIdentidad=pcNoIdentidad;
+       WHERE per.NoIdentidad=pcNoIdentidad; */
 
         UPDATE Persona
-        SET idPersona=vnPersona ,pnombre=pcpnombre, snombre=pcsnombre, papellido=pcpapellido, sapellido=pcsapellido, direccion=pcdireccion, correo=pccorreo, NoIdentidad=pcNoIdentidad
+        SET pnombre=pcpnombre, snombre=pcsnombre, papellido=pcpapellido, sapellido=pcsapellido, direccion=pcdireccion, correo=pccorreo, NoIdentidad=pcNoIdentidad
         WHERE NoIdentidad=pcNoIdentidad;
 
-        UPDATE Empleado
+        /*UPDATE Empleado
         SET idEmpleado=vnEmpleado,Persona_idPersona=vnPersona
-        WHERE idEmpleado=vnEmpleado;
+        WHERE idEmpleado=vnEmpleado;*/
 
         pcmensajeError:='EMPLEADO EDITADO CORRECTAMENTE';
         pbocurreError:=0;
@@ -177,6 +177,15 @@ BEGIN
 	        pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
 	        pbocurreError:=1;
 	    END IF;
+
+        SELECT COUNT(*) INTO vnconteo Persona per
+        WHERE per.NoIdentidad=pcNoIdentidad;
+
+        IF vnconteo = 0 THEN
+            pcmensajeError := 'No se encontro el registro.';
+            pbocurreError := 1;
+            RETURN;
+        END IF;
 
         Delete FROM Persona
         WHERE NoIdentidad=pcNoIdentidad;
@@ -336,20 +345,20 @@ BEGIN
             RETURN;
         END IF;
 
-        SELECT per.idPersona INTO vnPersona FROM Persona per
-        WHERE per.NoIdentidad=pcNoIdentidad;
+      /*  SELECT per.idPersona INTO vnPersona FROM Persona per
+        WHERE per.NoIdentidad=pcNoIdentidad; 
 
         SELECT cli.idCliente INTO vnCliente FROM Cliente cli
         INNER JOIN Persona per on per.idPersona=cli.Persona_idPersona
-        WHERE per.NoIdentidad=pcNoIdentidad;
-
+        WHERE per.NoIdentidad=pcNoIdentidad;  */
+        
         UPDATE Persona
-        SET idPersona=vnPersona ,pnombre=pcpnombre, snombre=pcsnombre, papellido=pcpapellido, sapellido=pcsapellido, direccion=pcdireccion, correo=pccorreo, NoIdentidad=pcNoIdentidad
+        SET pnombre=pcpnombre, snombre=pcsnombre, papellido=pcpapellido, sapellido=pcsapellido, direccion=pcdireccion, correo=pccorreo, NoIdentidad=pcNoIdentidad
         WHERE NoIdentidad=pcNoIdentidad;
 
-        UPDATE Cliente
-        SET idCliente=vnCliente,Persona_idPersona=vnPersona
-        WHERE idCliente=vnCliente;
+        /*UPDATE Cliente
+        SET Persona_idPersona=vnPersona
+        WHERE idCliente=vnCliente;*/
 
         pcmensajeError:='CLIENTE EDITADO CORRECTAMENTE';
         pbocurreError:=0;
@@ -367,6 +376,15 @@ BEGIN
         IF vctempMensaje <> '' OR vctempMensaje IS NOT NULL THEN
             pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
             pbocurreError:=1;
+            RETURN;
+        END IF;
+
+        SELECT COUNT(*) INTO vnconteo Persona per
+        WHERE per.NoIdentidad=pcNoIdentidad;
+
+        IF vnconteo = 0 THEN
+            pcmensajeError := 'No se encontro el registro.';
+            pbocurreError := 1;
             RETURN;
         END IF;
 
@@ -451,14 +469,17 @@ BEGIN
 	        pbocurreError:=1;
 	    END IF;
 
-        SELECT COUNT(*) INTO vnconteo FROM Libro lib
-        WHERE lib.nombre =pcnombre;
+        SELECT lib.idLibro INTO vnLibro FROM Libro lib
+        WHERE lib.nombre=pcnombre AND lib.anioPublicacion=pnanioPublicacion AND lib.Categoria_idCategoria=pnidCategoria AND lib.Idioma_idIdioma=pnidIdioma AND lib.PrecioCosto=pfPrecioCosto AND lib.PrecioVenta=pfPrecioVenta;
 
-        IF vnconteo>0 THEN
-            pcmensajeError:='YA EXISTE UN LIBRO CON ESTE NOMBRE';
+        IF vnLibro IS NOT NULL or vnLibro>0 THEN 
+            pcmensajeError:='este libro ya existe';
             pbocurreError:=1;
             RETURN;
         END IF;
+
+
+
 
         INSERT INTO Libro(nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta)
         VALUES(pcnombre,pnanioPublicacion,pnidCategoria,pnidIdioma,pfPrecioCosto,pfPrecioVenta);
@@ -503,23 +524,19 @@ BEGIN
 	        pbocurreError:=1;
 	    END IF;
 
-        SELECT COUNT(*) INTO vnconteo FROM Libro lib
-        WHERE lib.nombre = pcnombre;
+        SELECT lib.idLibro INTO vnLibro FROM Libro lib
+        WHERE lib.nombre=pcnombre AND lib.anioPublicacion=pnanioPublicacion AND lib.Categoria_idCategoria=pnidCategoria AND lib.Idioma_idIdioma=pnidIdioma AND lib.PrecioCosto=pfPrecioCosto AND lib.PrecioVenta=pfPrecioVenta;        
 
-        IF vnconteo=0 THEN
+        IF vnLibro=0 OR vnLibro IS NULL THEN
             pcmensajeError:='NO SE ENCONTRÓ REGISTRO';
             pbocurreError:=1;
             RETURN;
         END IF;
 
 
-        SELECT lib.idLibro INTO vnLibro FROM Libro lib
-        WHERE lib.nombre=pcnombre;
-
-
         UPDATE Libro
-        SET idLibro=vnLibro ,nombre=pcnombre, anioPublicacion=pnanioPublicacion, PrecioCosto=pfPrecioCosto, PrecioVenta=pfPrecioVenta
-        WHERE nombre=pcnombre;
+        SET nombre=pcnombre, anioPublicacion=pnanioPublicacion, PrecioVenta=pfPrecioVenta
+        WHERE idLibro=vnLibro;
 
         pcmensajeError:='LIBRO EDITADO CORRECTAMENTE';
         pbocurreError:=0;
@@ -530,26 +547,18 @@ BEGIN
 
     IF pcAccion='ELIMINAR' OR pcAccion='eliminar' THEN
 
-    	IF pcnombre='' OR pcnombre IS NULL THEN
-	        vctempMensaje:='nombre';
-	    END IF;
+        SELECT lib.idLibro INTO vnLibro FROM Libro lib
+        WHERE lib.nombre=pcnombre AND lib.anioPublicacion=pnanioPublicacion AND lib.Categoria_idCategoria=pnidCategoria AND lib.Idioma_idIdioma=pnidIdioma AND lib.PrecioCosto=pfPrecioCosto AND lib.PrecioVenta=pfPrecioVenta;        
 
-	    IF vctempMensaje <> '' OR vctempMensaje IS NOT NULL THEN
-	        pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
-	        pbocurreError:=1;
-	    END IF;
 
-	    SELECT COUNT(*) INTO vnconteo FROM Libro lib
-        WHERE lib.nombre = pcnombre;
-
-        IF vnconteo=0 THEN
+        IF vnLibro=0 OR vnLibro IS NULL THEN
             pcmensajeError:='NO SE ENCONTRÓ REGISTRO';
             pbocurreError:=1;
             RETURN;
         END IF;
 
         Delete FROM Libro
-        WHERE nombre=pcnombre;
+        WHERE idLibro=vnLibro;
 
         pcmensajeError:='Registro eliminado exitosamente';
         pbocurreError:=0;
@@ -568,8 +577,6 @@ END;
         pcnombre IN VARCHAR2,
         pcdireccion IN VARCHAR2,
         pctelefono IN VARCHAR2,
-        pnidBodega IN INTEGER,
-        pnidLibreria IN FLOAT,
         pcAccion IN VARCHAR2,
 
         pbocurreError         OUT  INTEGER,
@@ -580,6 +587,7 @@ IS
     vctempMensaje VARCHAR2(1000);
     vnconteo INTEGER;
     vnSucursal INTEGER;
+    vnBodega INTEGER;
 
 BEGIN
     vctempMensaje:='';
@@ -609,15 +617,7 @@ BEGIN
 	    END IF;
 
 	    IF pctelefono='' OR pctelefono IS NULL THEN
-	        vctempMensaje:=vctempMensaje||'TELEFONO, ';
-	    END IF;
-
-	    IF pnidBodega='' OR pnidBodega IS NULL THEN
-	        vctempMensaje:=vctempMensaje||'ID BODEGA, ';
-	    END IF;
-
-	    IF pnidLibreria='' OR pnidLibreria IS NULL THEN
-	        vctempMensaje:=vctempMensaje||'ID LIBRERIA';
+	        vctempMensaje:=vctempMensaje||'TELEFONO';
 	    END IF;
 
 	    IF vctempMensaje <> '' OR vctempMensaje IS NOT NULL THEN
@@ -634,11 +634,15 @@ BEGIN
             RETURN;
         END IF;
 
-        INSERT INTO Sucursal(nombre,direccion,telefono,Bodega_idBodega,Libreria_idLibreria)
-        VALUES(pcnombre,pcdireccion,pctelefono,pnidBodega,pnidLibreria);
+        INSERT INTO Bodega(Nombre)
+        VALUES (pcnombre);
 
-        INSERT INTO Bodega(idBodega,Nombre)
-        VALUES (pnidBodega,pcnombre);
+        SELECT max(bo.idBodega) INTO vnBodega FROM Bodega bo;
+
+        INSERT INTO Sucursal(nombre,direccion,telefono,Bodega_idBodega,Libreria_idLibreria)
+        VALUES(pcnombre,pcdireccion,pctelefono,vnBodega,1);
+
+
 
 
 
@@ -660,15 +664,7 @@ BEGIN
 	    END IF;
 
 	    IF pctelefono='' OR pctelefono IS NULL THEN
-	        vctempMensaje:=vctempMensaje||'TELEFONO, ';
-	    END IF;
-
-	    IF pnidBodega='' OR pnidBodega IS NULL THEN
-	        vctempMensaje:=vctempMensaje||'ID BODEGA, ';
-	    END IF;
-
-	    IF pnidLibreria='' OR pnidLibreria IS NULL THEN
-	        vctempMensaje:=vctempMensaje||'ID LIBRERIA';
+	        vctempMensaje:=vctempMensaje||'TELEFONO';
 	    END IF;
 
 	    IF vctempMensaje <> '' OR vctempMensaje IS NOT NULL THEN
@@ -691,8 +687,8 @@ BEGIN
 
 
         UPDATE Sucursal
-        SET idSucursal=vnSucursal ,nombre=pcnombre, direccion=pcdireccion, telefono=pctelefono
-        WHERE nombre=pcnombre;
+        SET nombre=pcnombre, direccion=pcdireccion, telefono=pctelefono
+        WHERE idSucursal=vnSucursal;
 
         pcmensajeError:='SUCURSAL EDITADA CORRECTAMENTE';
         pbocurreError:=0;
@@ -702,8 +698,12 @@ BEGIN
     END IF;
 
     IF pcAccion='ELIMINAR' OR pcAccion='eliminar' THEN
+
+        SELECT su.idSucursal INTO vnSucursal FROM Sucursal su
+        WHERE su.nombre=pcnombre;
+
         Delete FROM Sucursal
-        WHERE nombre=pcnombre;
+        WHERE idSucursal=vnSucursal;
 
         pcmensajeError:='Registro eliminado exitosamente';
         pbocurreError:=0;
