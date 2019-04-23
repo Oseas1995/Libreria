@@ -242,39 +242,39 @@ BEGIN
         pcmensajeError:='';
 
         --validaciones
-	    IF pcpnombre='' OR pcpnombre IS NULL THEN
-	        vctempMensaje:='Primer nombre, ';
-	    END IF;
+        IF pcpnombre='' OR pcpnombre IS NULL THEN
+            vctempMensaje:='Primer nombre, ';
+        END IF;
 
-	    IF pcsnombre='' OR pcsnombre IS NULL THEN
-	        vctempMensaje:=vctempMensaje||'Segundo Nombre, ';
-	    END IF;
+        IF pcsnombre='' OR pcsnombre IS NULL THEN
+            vctempMensaje:=vctempMensaje||'Segundo Nombre, ';
+        END IF;
 
-	    IF pcpapellido='' OR pcpapellido IS NULL THEN
-	        vctempMensaje:=vctempMensaje||'Primer Apellido, ';
-	    END IF;
+        IF pcpapellido='' OR pcpapellido IS NULL THEN
+            vctempMensaje:=vctempMensaje||'Primer Apellido, ';
+        END IF;
 
-	    IF pcsapellido='' OR pcsapellido IS NULL THEN
-	        vctempMensaje:=vctempMensaje||'Segundo Apellido, ';
-	    END IF;
+        IF pcsapellido='' OR pcsapellido IS NULL THEN
+            vctempMensaje:=vctempMensaje||'Segundo Apellido, ';
+        END IF;
 
-	    IF pcdireccion='' OR pcdireccion IS NULL THEN
-	        vctempMensaje:=vctempMensaje||'Direccion, ';
-	    END IF;
+        IF pcdireccion='' OR pcdireccion IS NULL THEN
+            vctempMensaje:=vctempMensaje||'Direccion, ';
+        END IF;
 
-	    IF pccorreo='' OR pccorreo IS NULL THEN
-	        vctempMensaje:=vctempMensaje||'Correo, ';
-	    END IF;
+        IF pccorreo='' OR pccorreo IS NULL THEN
+            vctempMensaje:=vctempMensaje||'Correo, ';
+        END IF;
 
-	    IF pcNoIdentidad='' OR pcNoIdentidad IS NULL THEN
-	        vctempMensaje:=vctempMensaje||'NO. identidad';
-	    END IF;
+        IF pcNoIdentidad='' OR pcNoIdentidad IS NULL THEN
+            vctempMensaje:=vctempMensaje||'NO. identidad';
+        END IF;
 
-	    IF vctempMensaje <> '' OR vctempMensaje IS NOT NULL THEN
-	        pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
-	        pbocurreError:=1;
-	        RETURN;
-	    END IF;
+        IF vctempMensaje <> '' OR vctempMensaje IS NOT NULL THEN
+            pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
+            pbocurreError:=1;
+            RETURN;
+        END IF;
 
         SELECT COUNT(*) INTO vnconteo FROM Persona per
         WHERE per.NoIdentidad=pcNoIdentidad;
@@ -302,39 +302,39 @@ BEGIN
     IF pcAccion='EDITAR' or pcAccion='editar' THEN
 
         --validaciones
-	    IF pcpnombre='' OR pcpnombre IS NULL THEN
-	        vctempMensaje:='Primer nombre, ';
-	    END IF;
+        IF pcpnombre='' OR pcpnombre IS NULL THEN
+            vctempMensaje:='Primer nombre, ';
+        END IF;
 
-	    IF pcsnombre='' OR pcsnombre IS NULL THEN
-	        vctempMensaje:=vctempMensaje||'Segundo Nombre, ';
-	    END IF;
+        IF pcsnombre='' OR pcsnombre IS NULL THEN
+            vctempMensaje:=vctempMensaje||'Segundo Nombre, ';
+        END IF;
 
-	    IF pcpapellido='' OR pcpapellido IS NULL THEN
-	        vctempMensaje:=vctempMensaje||'Primer Apellido, ';
-	    END IF;
+        IF pcpapellido='' OR pcpapellido IS NULL THEN
+            vctempMensaje:=vctempMensaje||'Primer Apellido, ';
+        END IF;
 
-	    IF pcsapellido='' OR pcsapellido IS NULL THEN
-	        vctempMensaje:=vctempMensaje||'Segundo Apellido, ';
-	    END IF;
+        IF pcsapellido='' OR pcsapellido IS NULL THEN
+            vctempMensaje:=vctempMensaje||'Segundo Apellido, ';
+        END IF;
 
-	    IF pcdireccion='' OR pcdireccion IS NULL THEN
-	        vctempMensaje:=vctempMensaje||'Direccion, ';
-	    END IF;
+        IF pcdireccion='' OR pcdireccion IS NULL THEN
+            vctempMensaje:=vctempMensaje||'Direccion, ';
+        END IF;
 
-	    IF pccorreo='' OR pccorreo IS NULL THEN
-	        vctempMensaje:=vctempMensaje||'Correo, ';
-	    END IF;
+        IF pccorreo='' OR pccorreo IS NULL THEN
+            vctempMensaje:=vctempMensaje||'Correo, ';
+        END IF;
 
-	    IF pcNoIdentidad='' OR pcNoIdentidad IS NULL THEN
-	        vctempMensaje:=vctempMensaje||'NO. identidad';
-	    END IF;
+        IF pcNoIdentidad='' OR pcNoIdentidad IS NULL THEN
+            vctempMensaje:=vctempMensaje||'NO. identidad';
+        END IF;
 
-	    IF vctempMensaje <> '' OR vctempMensaje IS NOT NULL THEN
-	        pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
-	        pbocurreError:=1;
-	        RETURN;
-	    END IF;
+        IF vctempMensaje <> '' OR vctempMensaje IS NOT NULL THEN
+            pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
+            pbocurreError:=1;
+            RETURN;
+        END IF;
 
         SELECT COUNT(*) INTO vnconteo FROM Persona per
         WHERE per.NoIdentidad=pcNoIdentidad;
@@ -346,12 +346,12 @@ BEGIN
         END IF;
 
       /*  SELECT per.idPersona INTO vnPersona FROM Persona per
-        WHERE per.NoIdentidad=pcNoIdentidad; 
+        WHERE per.NoIdentidad=pcNoIdentidad;
 
         SELECT cli.idCliente INTO vnCliente FROM Cliente cli
         INNER JOIN Persona per on per.idPersona=cli.Persona_idPersona
         WHERE per.NoIdentidad=pcNoIdentidad;  */
-        
+
         UPDATE Persona
         SET pnombre=pcpnombre, snombre=pcsnombre, papellido=pcpapellido, sapellido=pcsapellido, direccion=pcdireccion, correo=pccorreo, NoIdentidad=pcNoIdentidad
         WHERE NoIdentidad=pcNoIdentidad;
@@ -379,7 +379,7 @@ BEGIN
             RETURN;
         END IF;
 
-        SELECT COUNT(*) INTO vnconteo Persona per
+        SELECT COUNT(*) INTO vnconteo FROM Persona per
         WHERE per.NoIdentidad=pcNoIdentidad;
 
         IF vnconteo = 0 THEN
@@ -472,7 +472,7 @@ BEGIN
         SELECT lib.idLibro INTO vnLibro FROM Libro lib
         WHERE lib.nombre=pcnombre AND lib.anioPublicacion=pnanioPublicacion AND lib.Categoria_idCategoria=pnidCategoria AND lib.Idioma_idIdioma=pnidIdioma AND lib.PrecioCosto=pfPrecioCosto AND lib.PrecioVenta=pfPrecioVenta;
 
-        IF vnLibro IS NOT NULL or vnLibro>0 THEN 
+        IF vnLibro IS NOT NULL or vnLibro>0 THEN
             pcmensajeError:='este libro ya existe';
             pbocurreError:=1;
             RETURN;
@@ -525,7 +525,7 @@ BEGIN
 	    END IF;
 
         SELECT lib.idLibro INTO vnLibro FROM Libro lib
-        WHERE lib.nombre=pcnombre AND lib.anioPublicacion=pnanioPublicacion AND lib.Categoria_idCategoria=pnidCategoria AND lib.Idioma_idIdioma=pnidIdioma AND lib.PrecioCosto=pfPrecioCosto AND lib.PrecioVenta=pfPrecioVenta;        
+        WHERE lib.nombre=pcnombre AND lib.anioPublicacion=pnanioPublicacion AND lib.Categoria_idCategoria=pnidCategoria AND lib.Idioma_idIdioma=pnidIdioma AND lib.PrecioCosto=pfPrecioCosto AND lib.PrecioVenta=pfPrecioVenta;
 
         IF vnLibro=0 OR vnLibro IS NULL THEN
             pcmensajeError:='NO SE ENCONTRÓ REGISTRO';
@@ -548,7 +548,7 @@ BEGIN
     IF pcAccion='ELIMINAR' OR pcAccion='eliminar' THEN
 
         SELECT lib.idLibro INTO vnLibro FROM Libro lib
-        WHERE lib.nombre=pcnombre AND lib.anioPublicacion=pnanioPublicacion AND lib.Categoria_idCategoria=pnidCategoria AND lib.Idioma_idIdioma=pnidIdioma AND lib.PrecioCosto=pfPrecioCosto AND lib.PrecioVenta=pfPrecioVenta;        
+        WHERE lib.nombre=pcnombre AND lib.anioPublicacion=pnanioPublicacion AND lib.Categoria_idCategoria=pnidCategoria AND lib.Idioma_idIdioma=pnidIdioma AND lib.PrecioCosto=pfPrecioCosto AND lib.PrecioVenta=pfPrecioVenta;
 
 
         IF vnLibro=0 OR vnLibro IS NULL THEN
@@ -734,7 +734,7 @@ CREATE OR REPLACE PROCEDURE SP_GESTION_VENTASLIBROS(
 
         pbocurreError         OUT  INTEGER,
         pcmensajeError        OUT  VARCHAR2
-         
+
 )
 
 IS

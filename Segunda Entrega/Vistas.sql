@@ -21,9 +21,8 @@ inner join Editorial edi on edi.idEditorial=le.Editorial_idEditorial;
 --3 Mostrar Empleados.
 
 Create view vw_Empleados as
-select (per.pnombre||' '||per.snombre||' '||per.papellido||' '||per.sapellido) nombreCompleto, tel.numero as numeroTelefono, per.direccion, per.correo from Empleado em
-inner join Persona per ON per.idPersona=em.Persona_idPersona
-inner join Telefono tel ON tel.Persona_idPersona=per.idPersona;
+select per.pnombre, per.snombre, per.papellido, per.sapellido, per.direccion, per.correo, per.noIdentidad from Empleado em
+inner join Persona per ON per.idPersona=em.Persona_idPersona;
 
 
 --4 Mostrar proveedores, productos que proveen y cantidad.
