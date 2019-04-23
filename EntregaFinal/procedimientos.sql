@@ -171,7 +171,13 @@ BEGIN
     vnconteo:=0;
     pbocurreError:=0;
 
-    --validaciones
+    
+
+
+    IF pcAccion='AGREGAR' OR pcAccion='agregar' THEN
+        pcmensajeError:='';
+
+        --validaciones
     IF pcpnombre='' OR pcpnombre IS NULL THEN
         vctempMensaje:='Primer nombre, ';
     END IF;
@@ -210,10 +216,6 @@ BEGIN
         RETURN;
     END IF;
 
-
-    IF pcAccion='AGREGAR' OR pcAccion='agregar' THEN
-        pcmensajeError:='';
-
         SELECT COUNT(*) INTO vnconteo FROM Persona per
         WHERE per.NoIdentidad=pcNoIdentidad;
 
@@ -238,6 +240,45 @@ BEGIN
     END IF;
 
     IF pcAccion='EDITAR' or pcAccion='editar' THEN
+
+        --validaciones
+    IF pcpnombre='' OR pcpnombre IS NULL THEN
+        vctempMensaje:='Primer nombre, ';
+    END IF;
+
+    IF pcsnombre='' OR pcsnombre IS NULL THEN
+        vctempMensaje:=vctempMensaje||'Segundo Nombre, ';
+    END IF;
+
+    IF pcpapellido='' OR pcpapellido IS NULL THEN
+        vctempMensaje:=vctempMensaje||'Primer Apellido, ';
+    END IF;
+
+    IF pcsapellido='' OR pcsapellido IS NULL THEN
+        vctempMensaje:=vctempMensaje||'Segundo Apellido, ';
+    END IF;
+
+    IF pcdireccion='' OR pcdireccion IS NULL THEN
+        vctempMensaje:=vctempMensaje||'Direccion, ';
+    END IF;
+
+    IF pccorreo='' OR pccorreo IS NULL THEN
+        vctempMensaje:=vctempMensaje||'Correo, ';
+    END IF;
+
+    IF pcNoIdentidad='' OR pcNoIdentidad IS NULL THEN
+        vctempMensaje:=vctempMensaje||'NO. identidad, ';
+    END IF;
+
+    IF pcAccion='' OR pcAccion IS NULL THEN
+        vctempMensaje:=vctempMensaje||'ACCION, ';
+    END IF;
+
+    IF vctempMensaje <> '' OR vctempMensaje IS NOT NULL THEN
+        pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
+        pbocurreError:=1;
+        RETURN;
+    END IF;
 
         SELECT COUNT(*) INTO vnconteo FROM Persona per
         WHERE per.NoIdentidad=pcNoIdentidad;
