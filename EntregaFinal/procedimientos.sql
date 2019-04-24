@@ -744,7 +744,7 @@ CREATE OR REPLACE PROCEDURE SP_GESTION_VENTASLIBROS(
 
         pbocurreError         OUT  INTEGER,
         pcmensajeError        OUT  VARCHAR2
-
+         
 )
 
 IS
@@ -829,6 +829,131 @@ BEGIN
     VALUES(SYSDATE,pnidTipoObtencion,pnidCliente,vnPago);
 
     pcmensajeError:='registros agregados correctamente';
+    pbocurreError:=0;
+
+
+END;
+
+
+--6 Compra de libros
+
+--entrada: id del proveedor, id del tipo de prov, cantidad, idLibro, nombre,aniPublicacion,idCategoria,idIdioma,PrecioCosto,PrecioVenta
+
+--proceso: Sumarle cantidad a existencia
+
+--salida: update en Libro o Insert
+
+
+CREATE OR REPLACE PROCEDURE SP_GESTION_COMPRASLIBROS(
+        pnidProveedor IN INTEGER,
+        pnidTipoProveedor IN INTEGER,
+        pnCantidad IN INTEGER,
+        pnidLibro IN INTEGER,
+        pcnombreLibro IN VARCHAR2,
+        pnanioPublicacion in INTEGER,
+        pnidCategoria IN INTEGER,
+        pnidIdioma IN INTEGER,
+        pfPrecioCosto IN FLOAT,
+        pfPrecioVenta IN FLOAT,
+
+        pbocurreError         OUT  INTEGER,
+        pcmensajeError        OUT  VARCHAR2
+         
+)
+
+IS
+    vctempMensaje VARCHAR2(1000);
+    vnconteo INTEGER;
+    vcnombrelibro VARCHAR2(45);
+    vcprov VARCHAR2(45);
+
+
+BEGIN
+    vctempMensaje:='';
+    vnconteo:=0;
+    pbocurreError:=0;
+
+    --validaciones
+    IF pnidProveedor='' OR pnidProveedor IS NULL THEN
+        vctempMensaje:='id Proveedor, ';
+    END IF;
+
+     IF pnidTipoProveedor='' OR pnidTipoProveedor IS NULL THEN
+        vctempMensaje:=vctempMensaje||'id tipo proveedor, ';
+    END IF;
+
+    IF pnCantidad='' OR pnCantidad IS NULL THEN
+        vctempMensaje:=vctempMensaje||'cantidad, ';
+    END IF;
+
+    IF pnidLibro='' OR pnidLibro IS NULL THEN
+        vctempMensaje:=vctempMensaje||'id libro, ';
+    END IF;
+
+    IF pcnombreLibro='' OR pcnombreLibro IS NULL THEN
+        vctempMensaje:=vctempMensaje||'nombre, ';
+    END IF;
+
+    IF pnanioPublicacion='' OR pnanioPublicacion IS NULL THEN
+        vctempMensaje:=vctempMensaje||'anio publicacion, ';
+    END IF;
+
+    IF pnidCategoria='' OR pnidCategoria IS NULL THEN
+        vctempMensaje:=vctempMensaje||'id categoria, ';
+    END IF;
+
+    IF pnidIdioma='' OR pnidIdioma IS NULL THEN
+        vctempMensaje:=vctempMensaje||'id idioma, ';
+    END IF;
+
+    IF pfPrecioCosto='' OR pfPrecioCosto IS NULL THEN
+        vctempMensaje:=vctempMensaje||'precio Costo, ';
+    END IF;
+
+
+    IF pfPrecioVenta='' OR pfPrecioVenta IS NULL THEN
+        vctempMensaje:=vctempMensaje||'precio Venta';
+    END IF;
+
+    IF vctempMensaje<>'' THEN
+        pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
+        pbocurreError:=1;
+    END IF;
+
+    pcmensajeError:='';
+
+    --que libro compra?
+
+    SELECT COUNT(*) INTO vnconteo FROM Libro lib
+    WHERE idLibro=pnidLibro;
+
+    -- a quien lo compra?
+
+    SELECT prov.nombre INTO vcprov FROM Proveedor prov
+    WHERE prov.idProveedor=pnidProveedor;
+
+    IF vnconteo=0 OR vnconteo IS NULL THEN
+
+        INSERT INTO Libro(nombre,aniPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta)
+        VALUES (pcnombreLibro,pnanioPublicacion,pnidCategoria,pnidIdioma,pfPrecioCosto,pfPrecioVenta);
+
+        INSERT INTO ProvLib(cantidad,Proveedor_idProveedor,Libro_idLibro)
+        VALUES (pnCantidad,pnidProveedor,pnidLibro);
+
+        pcmensajeError:='LIBRO REGISTRADO CORRECTAMENTE';
+        pbocurreError:=0;
+
+    RETURN;
+    END IF;
+
+    UPDATE Libro
+    SET Existencia=Existencia+pnCantidad
+    WHERE idLibro=pnidLibro;
+
+    INSERT INTO ProvLib(cantidad,Proveedor_idProveedor,Libro_idLibro)
+    VALUES (pnCantidad,pnidProveedor,pnidLibro);
+
+    pcmensajeError:='EXISTENCIA EDITADA CORRECTAMENTE';
     pbocurreError:=0;
 
 
