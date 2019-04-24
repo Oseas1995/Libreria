@@ -152,9 +152,7 @@ INSERT INTO BODEGA (idBodega,Nombre) VALUES (4,'Bodega 4');
 INSERT INTO SUCURSAL (idSucursal,nombre,direccion,telefono,Bodega_idBodega,Libreria_idLibreria) VALUES (1,'Sucursal 11','Col. Kennedy, 3816 2da. Entrada.','2234-2194',1,1);
 INSERT INTO SUCURSAL (idSucursal,nombre,direccion,telefono,Bodega_idBodega,Libreria_idLibreria) VALUES (2,'Sucursal 12','Col. Kennedy, 3816 2da. Entrada.','2234-2194',2,1);
 INSERT INTO SUCURSAL (idSucursal,nombre,direccion,telefono,Bodega_idBodega,Libreria_idLibreria) VALUES (3,'Sucursal 13','Col. Kennedy, 3816 2da. Entrada.','2234-2194',3,1);
-INSERT INTO SUCURSAL (idSucursal,nombre,direccion,telefono,Bodega_idBodega,Libreria_idLibreria) VALUES (4,'Sucursal 21','Col. San Carlos','2239-1093',1,2);
-INSERT INTO SUCURSAL (idSucursal,nombre,direccion,telefono,Bodega_idBodega,Libreria_idLibreria) VALUES (5,'Sucursal 22','Col. San Carlos','2239-1093',2,2);
-INSERT INTO SUCURSAL (idSucursal,nombre,direccion,telefono,Bodega_idBodega,Libreria_idLibreria) VALUES (6,'Sucursal 23','Col. San Carlos','2239-1093',3,2);
+
 
 
 ------------------ INSERT SUCURSALEMPLEADO ------------------
@@ -239,6 +237,9 @@ INSERT INTO EDITORIAL (idEditorial,nombre,correo,direccion) VALUES (10,'Addison 
 
 INSERT INTO IDIOMA (idIdioma,descripcion) VALUES (1,'Ingles');
 INSERT INTO IDIOMA (idIdioma,descripcion) VALUES (2,'Español');
+INSERT INTO IDIOMA (idIdioma,descripcion) VALUES (3,'Frances');
+INSERT INTO IDIOMA (idIdioma,descripcion) VALUES (4,'Ruso');
+INSERT INTO IDIOMA (idIdioma,descripcion) VALUES (5,'Portugues');
 
 
 ------------------ INSERT GENERO ------------------
@@ -331,7 +332,7 @@ INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_i
 INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (4,'El principito',1999,4,2,300,400,30);
 INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (5,'El príncipe',1995,4,2,300,400,30);
 INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (6,'Diplomacia',1995,8,2,300,400,30);
-INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (7,'Los Windsor Plaza & Janes',1995,5,2,300,400,30);
+INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (7,'Los Windsor Plaza y Janes',1995,5,2,300,400,30);
 INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (8,'El Último Emperador',1996,5,2,300,400,30);
 INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (9,'Fortunata y Jacinta',1996,6,2,300,400,30);
 INSERT INTO LIBRO (idlibro,nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta,Existencia) VALUES (10,'Sistemas operativos',1990,7,2,300,400,30);
@@ -541,7 +542,7 @@ INSERT INTO PAGO (idPago,MontoPagar,fechaHora,Prestamo_idPrestamo,Descuento_idDe
 
 ------------------ INSERT MORA ------------------
 
-INSERT INTO MORA (idMora,montoMora,descripcion,Pago_idPago) VALUES (1,10,'atraso',1;
+INSERT INTO MORA (idMora,montoMora,descripcion,Pago_idPago) VALUES (1,10,'atraso',1);
 INSERT INTO MORA (idMora,montoMora,descripcion,Pago_idPago) VALUES (2,10,'atraso',2);
 INSERT INTO MORA (idMora,montoMora,descripcion,Pago_idPago) VALUES (3,10,'atraso',3);
 INSERT INTO MORA (idMora,montoMora,descripcion,Pago_idPago) VALUES (4,10,'atraso',4);
