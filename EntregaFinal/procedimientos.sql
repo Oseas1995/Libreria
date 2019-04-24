@@ -958,3 +958,131 @@ BEGIN
 
 
 END;
+
+
+
+--7. Prestamos Libros
+
+
+--ENTRADA: ID CLIENTE, ID TIPO OBTENCION ID LIBRO, ID PRESTAMO, FECHAINICIO(FECHA ACTUAL), DIAS QUE LO TENDRÁ (SUMARLO A FECHAINICIO PRA DAR CON FECHAMAX), MONTOPAGAR, IDTIPOPAGO
+
+--PROCESO: RESTARLE LA EXISTENCIA A LIBRO, HACER INSERT EN PRESTAMO ,HACER INSERT EN PAGO, HACER UN INSERT EN FACTURA
+
+--SALIDA: TOTAL A PAGAR, DIAS RESTANTES.
+
+CREATE OR REPLACE PROCEDURE SP_GESTION_PRESTAMOSLIBROS(
+        pnidCliente IN INTEGER,
+        pnidTipoObtencion IN INTEGER,
+        pnidprestamo IN INTEGER,
+        pfMontoPagar IN FLOAT,
+        pnidTipoPago IN INTEGER,
+        pnanioPublicacion in INTEGER,
+        pdFechaMax in DATE,
+
+        pbocurreError         OUT  INTEGER,
+        pcmensajeError        OUT  VARCHAR2
+         
+)
+
+IS
+    vctempMensaje VARCHAR2(1000);
+    vnconteo INTEGER;
+    vcnombreCliente VARCHAR2(90);
+    tarifaDiara INTEGER;
+    vnDiasRestantes INTEGER;
+    vnPago INTEGER;
+    vfSuelto FLOAT;
+
+
+
+BEGIN
+    vctempMensaje:='';
+    vnconteo:=0;
+    pbocurreError:=0;
+
+    --validaciones
+    IF pnidCliente='' OR pnidCliente IS NULL THEN
+        vctempMensaje:='id cliente, ';
+    END IF;
+
+     IF pnidTipoObtencion='' OR pnidTipoObtencion IS NULL THEN
+        vctempMensaje:=vctempMensaje||'id tipo obtencion, ';
+    END IF;
+
+    IF pnidprestamo='' OR pnidprestamo IS NULL THEN
+        vctempMensaje:=vctempMensaje||'id prestamos, ';
+    END IF;
+
+    IF pfMontoPagar='' OR pfMontoPagar IS NULL THEN
+        vctempMensaje:=vctempMensaje||'monto pagar, ';
+    END IF;
+
+    IF pnidTipoPago='' OR pnidTipoPago IS NULL THEN
+        vctempMensaje:=vctempMensaje||'id del tipo pago, ';
+    END IF;
+
+    IF pnanioPublicacion='' OR pnanioPublicacion IS NULL THEN
+        vctempMensaje:=vctempMensaje||'anio publicacion, ';
+    END IF;
+     IF pnCantidadDias='' OR pnCantidadDias IS NULL THEN
+        vctempMensaje:=vctempMensaje||'cantidad de dias';
+    END IF;
+
+    IF vctempMensaje<>'' THEN
+        pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
+        pbocurreError:=1;
+        RETURN;
+    END IF;
+
+    pcmensajeError:='';
+
+    --que libro pide prestado?
+
+    SELECT COUNT(*) INTO vnconteo FROM Libro lib
+    WHERE idLibro=pnidLibro;
+
+    --quien lo pide prestado?
+
+    SELECT per.pnombre||per.sapellido INTO vcnombreCliente FROM Persona per
+    INNER JOIN Cliente cli on cli.Persona_idPersona=per.idPersona
+    WHere cli.idCliente=pnidCliente;
+
+    
+    tarifaDiara:=2;
+
+    UPDATE Libro 
+    SET Existencia=Existencia-1;
+
+    INSERT INTO Prestamo(fechaInicio,fechaMax)
+    VALUES (SYSDATE,pdFechaMax);
+
+    INSERT INTO Pago(MontoPagar,fechaHora,Prestamo_idPrestamo,Descuento_idDescuento,TipoPago_idTipoPago)
+    VALUES (pfMontoPagar,SYSDATE,pnidprestamo,NULL,pnidTipoPago);
+
+    SELECT MAX(pa.idPago) INTO vnPago FROM Pago pa;
+
+    INSERT INTO Factura(fechaRegistro,TipoObtencion_idTipoObtencion,Cliente_idCliente,Pago_idPago)
+    VALUES (SYSDATE,pnidTipoObtencion,pnidCliente,vnPago);
+
+    --sacar dias restantes
+  
+    select trunc(fechaMax)-trunc(sysdate) INTO vnDiasRestantes from  Prestamo pre
+    INNER JOIN Pago pa on pa.Prestamo_idPrestamo=pre.idPrestamo
+    INNER JOIN Factura fa ON fa.Pago_idPago=pa.idPago
+    WHERE fa.Cliente_idCliente=pnidCliente
+
+    --total
+
+    vfTotal:=pnCantidadDias*tarifaDiara;
+
+    vfSuelto:=pfMontoPagar-vfTotal;
+
+
+   
+    
+   
+    pcmensajeError:='EXISTENCIA EDITADA CORRECTAMENTE';
+    pbocurreError:=0;
+
+
+END;
