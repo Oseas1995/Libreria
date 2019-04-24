@@ -1,6 +1,6 @@
 
 ------------------- TRIGGER -------------------
---01. CUBICULO
+--01. PERSONA
 CREATE SEQUENCE S_ID_PERSONA
 START WITH 1
 INCREMENT BY 1;
