@@ -1157,3 +1157,17 @@ BEGIN
 
 
 END;
+
+
+--08 Procedimiento para seleccionar libro
+CREATE OR REPLACE PROCEDURE SP_BUSCARLIBRO(
+	pcNombre VARCHAR2,
+	cursorMemoria OUT SYS_REFCURSOR
+)
+AS
+
+BEGIN
+
+	OPEN cursorMemoria FOR SELECT * FROM Libro WHERE upper(nombre) = upper(pcNombre);
+
+END;
