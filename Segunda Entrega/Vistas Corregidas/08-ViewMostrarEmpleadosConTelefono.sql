@@ -1,0 +1,9 @@
+
+--8 Mostrar los Empleados que tengas dos o más telefonos.
+
+CREATE VIEW vw_EmpleadosTelefonos AS
+SELECT (p.PNOMBRE||' '||p.PAPELLIDO) nombre, COUNT(t.IDTELEFONO) CantidadTelefonos FROM TELEFONO t
+INNER JOIN PERSONA p ON t.PERSONA_IDPERSONA = p.IDPERSONA
+INNER JOIN EMPLEADO e ON p.IDPERSONA = e.PERSONA_IDPERSONA
+GROUP BY p.PNOMBRE||' '||p.PAPELLIDO
+HAVING COUNT(t.IDTELEFONO) > 1;
