@@ -1,9 +1,3 @@
---1. Gestion Empleado
---2. Gestion Cliente
---3. Gestion Libro
---4- Gestion Sucursal
-
-
 --1 Gestion Empleado
 
 CREATE OR REPLACE PROCEDURE SP_GESTION_EMPLEADO(
@@ -205,6 +199,7 @@ BEGIN
 END;
 
 
+
 --2 GESTION CLIENTE
 
 CREATE OR REPLACE PROCEDURE SP_GESTION_CLIENTE(
@@ -404,7 +399,6 @@ BEGIN
 
 
 END;
-
 
 
 --3. GESTION LIBRO
@@ -726,6 +720,8 @@ BEGIN
 END;
 
 
+
+
 --5 VENTA LIBRO
 
 --entrada: id del libro, cantidad, Cliente, fechaRegistro(fechaActual)
@@ -906,6 +902,9 @@ BEGIN
 END;
 
 
+
+
+
 --6 Compra de libros
 
 --entrada: id del proveedor, id del tipo de prov, cantidad, idLibro, nombre,aniPublicacion,idCategoria,idIdioma,PrecioCosto,PrecioVenta
@@ -1005,7 +1004,7 @@ BEGIN
 
 	IF vnconteo=0 OR vnconteo IS NULL THEN
 
-		INSERT INTO Libro(nombre,aniPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta)
+		INSERT INTO Libro(nombre,anioPublicacion,Categoria_idCategoria,Idioma_idIdioma,PrecioCosto,PrecioVenta)
 		VALUES (pcnombreLibro,pnanioPublicacion,pnidCategoria,pnidIdioma,pfPrecioCosto,pfPrecioVenta);
 
 		INSERT INTO ProvLib(cantidad,Proveedor_idProveedor,Libro_idLibro)
@@ -1042,8 +1041,10 @@ END;
 --SALIDA: TOTAL A PAGAR, DIAS RESTANTES.
 
 CREATE OR REPLACE PROCEDURE SP_GESTION_PRESTAMOSLIBROS(
+		pnidLibro IN INTEGER,
 		pnidCliente IN INTEGER,
 		pnidTipoObtencion IN INTEGER,
+		pnCantidadDias IN INTEGER,
 		pnidprestamo IN INTEGER,
 		pfMontoPagar IN FLOAT,
 		pnidTipoPago IN INTEGER,
@@ -1063,6 +1064,7 @@ IS
 	vnDiasRestantes INTEGER;
 	vnPago INTEGER;
 	vfSuelto FLOAT;
+	vfTotal FLOAT;
 
 
 
@@ -1095,9 +1097,7 @@ BEGIN
 	IF pnanioPublicacion='' OR pnanioPublicacion IS NULL THEN
 		vctempMensaje:=vctempMensaje||'anio publicacion, ';
 	END IF;
-	 IF pnCantidadDias='' OR pnCantidadDias IS NULL THEN
-		vctempMensaje:=vctempMensaje||'cantidad de dias';
-	END IF;
+	
 
 	IF vctempMensaje<>'' THEN
 		pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
@@ -1140,7 +1140,7 @@ BEGIN
 	select trunc(fechaMax)-trunc(sysdate) INTO vnDiasRestantes from  Prestamo pre
 	INNER JOIN Pago pa on pa.Prestamo_idPrestamo=pre.idPrestamo
 	INNER JOIN Factura fa ON fa.Pago_idPago=pa.idPago
-	WHERE fa.Cliente_idCliente=pnidCliente
+	WHERE fa.Cliente_idCliente=pnidCliente;
 
 	--total
 
@@ -1159,25 +1159,15 @@ BEGIN
 END;
 
 
+
 --08 Procedimiento para seleccionar libro
 CREATE OR REPLACE PROCEDURE SP_BUSCARLIBRO(
 	pcNombre VARCHAR2,
-	cursorMemoria OUT SYS_REFCURSOR,
-	pbocurreError INTEGER,
-	pvMensaje VARCHAR2
+	cursorMemoria OUT SYS_REFCURSOR
 )
 AS
-	vnconteo INTEGER;
-BEGIN
-	SELECT COUNT(*) INTO vnconteo FROM Libro
-	where upper(nombre) = upper(pcNombre);
 
-	IF vnconteo = 0 THEN
-		pvMensaje := 'El libro que busca no existe.';
-		pbocurreError := 1;
-		OPEN cursorMemoria FOR SELECT * FROM Libro WHERE upper(nombre) = upper(pcNombre);
-		RETURN;
-	END IF;
+BEGIN
 
 	OPEN cursorMemoria FOR SELECT * FROM Libro WHERE upper(nombre) = upper(pcNombre);
 
