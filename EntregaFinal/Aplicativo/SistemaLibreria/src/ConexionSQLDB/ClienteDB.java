@@ -8,7 +8,6 @@ package ConexionSQLDB;
 import Clases.principales.Cliente;
 import java.sql.CallableStatement;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -29,6 +28,7 @@ public class ClienteDB {
         ResultSet rs = st.executeQuery("select * from vw_Clientes");
         while (rs.next()) {
             Cliente cl=new Cliente();
+            cl.setIdCliente(rs.getInt("idCliente"));
             cl.setpNombre(rs.getString("pnombre"));
             cl.setsNombre(rs.getString("snombre"));
             cl.setpApellido(rs.getString("pApellido"));
@@ -154,4 +154,25 @@ public class ClienteDB {
         }
     }
     
+    //para buscar datos pero por nombre
+    public Cliente getCliente(String nombre) {
+        Cliente cl = null;
+        try {
+            Connection cnx = DataBaseConnect.getConnection();
+            Statement st = cnx.createStatement();
+            ResultSet rs = st.executeQuery("SELECT idCliente "
+                    + " FROM vw_nomCliente WHERE nombreCompleto='" + nombre + "'");
+            //System.out.println(nombre);
+            while (rs.next()) {
+                cl = new Cliente();
+                cl.setIdCliente(rs.getInt("idCliente"));
+                //System.out.println(cl.toString());
+            }
+
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+            System.out.println("Error en buscar");
+        }
+        return cl;
+    }
 }

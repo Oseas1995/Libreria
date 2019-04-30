@@ -1,9 +1,8 @@
 --1 Mostrar Clientes.
 
 Create view vw_Clientes as
-select per.pnombre, per.snombre, per.papellido, per.sapellido, per.direccion, per.correo, per.noIdentidad from Cliente Cli
+select cli.idCliente, per.pnombre, per.snombre, per.papellido, per.sapellido, per.direccion, per.correo, per.noIdentidad from Cliente Cli
 inner join Persona per ON per.idPersona=Cli.Persona_idPersona;
-
 --2 Mostrar informacion de libros.
 
 Create view vw_libros as
@@ -96,3 +95,10 @@ INNER JOIN PERSONA p ON t.PERSONA_IDPERSONA = p.IDPERSONA
 INNER JOIN CLIENTE c ON p.IDPERSONA = c.PERSONA_IDPERSONA
 GROUP BY p.PNOMBRE||' '||p.PAPELLIDO
 HAVING COUNT(t.IDTELEFONO) > 1;
+
+
+--11 Mostrar los clientes con nombre completo
+
+Create view vw_nomCliente as
+select cli.idCliente, (per.pnombre||' '||per.snombre||' '||per.papellido||' '||per.sapellido) nombreCompleto, per.direccion, per.correo, per.noIdentidad from Cliente Cli
+inner join Persona per ON per.idPersona=Cli.Persona_idPersona;

@@ -1162,11 +1162,22 @@ END;
 --08 Procedimiento para seleccionar libro
 CREATE OR REPLACE PROCEDURE SP_BUSCARLIBRO(
 	pcNombre VARCHAR2,
-	cursorMemoria OUT SYS_REFCURSOR
+	cursorMemoria OUT SYS_REFCURSOR,
+	pbocurreError INTEGER,
+	pvMensaje VARCHAR2
 )
 AS
-
+	vnconteo INTEGER;
 BEGIN
+	SELECT COUNT(*) INTO vnconteo FROM Libro
+	where upper(nombre) = upper(pcNombre);
+
+	IF vnconteo = 0 THEN
+		pvMensaje := 'El libro que busca no existe.';
+		pbocurreError := 1;
+		OPEN cursorMemoria FOR SELECT * FROM Libro WHERE upper(nombre) = upper(pcNombre);
+		RETURN;
+	END IF;
 
 	OPEN cursorMemoria FOR SELECT * FROM Libro WHERE upper(nombre) = upper(pcNombre);
 
