@@ -9,10 +9,8 @@
 
 CREATE OR REPLACE PROCEDURE SP_GESTION_COMPRASLIBROS(
 		pnidProveedor IN INTEGER,
-		pnidTipoProveedor IN INTEGER,
 		pnCantidad IN INTEGER,
 		pnidLibro IN INTEGER,
-		pcnombreLibro IN VARCHAR2,		
 
 		pbocurreError         OUT  INTEGER,
 		pcmensajeError        OUT  VARCHAR2
@@ -22,11 +20,11 @@ CREATE OR REPLACE PROCEDURE SP_GESTION_COMPRASLIBROS(
 IS
 	vctempMensaje VARCHAR2(1000);
 	vnconteo INTEGER;
-	vcnombrelibro VARCHAR2(45);
 	vcprov VARCHAR2(45);
 
 
 BEGIN
+	pcmensajeError:='';
 	vctempMensaje:='';
 	vnconteo:=0;
 	pbocurreError:=0;
@@ -36,49 +34,52 @@ BEGIN
 		vctempMensaje:='id Proveedor, ';
 	END IF;
 
-	 IF pnidTipoProveedor='' OR pnidTipoProveedor IS NULL THEN
-		vctempMensaje:=vctempMensaje||'id tipo proveedor, ';
-	END IF;
-
 	IF pnCantidad='' OR pnCantidad IS NULL THEN
 		vctempMensaje:=vctempMensaje||'cantidad, ';
 	END IF;
 
 	IF pnidLibro='' OR pnidLibro IS NULL THEN
-		vctempMensaje:=vctempMensaje||'id libro, ';
+		vctempMensaje:=vctempMensaje||'id libro';
 	END IF;
 
-	IF pcnombreLibro='' OR pcnombreLibro IS NULL THEN
-		vctempMensaje:=vctempMensaje||'nombre, ';
-	END IF;
-
-	IF vctempMensaje<>'' THEN
+	IF vctempMensaje<>'' OR vctempMensaje IS NOT NULL THEN
 		pcmensajeError:='CAMPOS REQUERIDOS: '||vctempMensaje;
 		pbocurreError:=1;
+		RETURN;
 	END IF;
 
-	pcmensajeError:='';
+	--Validar que el proveedor exista
+	SELECT COUNT(*) INTO vnconteo FROM Proveedor
+	WHERE idProveedor=pnidProveedor;
+
+	IF vnconteo=0 THEN
+		pcmensajeError:='id Proveedor no Existe.';
+		pbocurreError:=1;
+		RETURN;
+	END IF;
+
 
 	--que libro compra?
-
-	SELECT COUNT(*) INTO vnconteo FROM Libro lib
+	SELECT COUNT(*) INTO vnconteo FROM Libro
 	WHERE idLibro=pnidLibro;
 
+	IF vnconteo = 0 THEN
+		pcmensajeError:='Error, el libro no existe, debe registrarlo como libro nuevo primero.';
+        pbocurreError:=1;
+        RETURN;
+	END IF;
 
-    IF (vnconteo>0) THEN
+    IF (vnconteo > 0) THEN
+    	INSERT INTO ProvLib (cantidad, Proveedor_idProveedor, Libro_idLibro)
+    	VALUES (pnCantidad, pnidProveedor, pnidLibro);
+
         UPDATE Libro
-        SET Existencia=Existencia+pnCantidad;
+        SET Existencia=Existencia+pnCantidad
+        WHERE idLibro = pnidLibro;
+
         pcmensajeError:='Libro Comprado Exitosamente';
         pbocurreError:=0;
-        return;
+        RETURN;
     END IF;
-
-    IF (vnconteo='' OR vnconteo IS NULL) THEN
-        pcmensajeError:='Error, debe registrarlo como libro nuevo primero';
-        pbocurreError:=0;
-        return;
-    END IF;
-
-	
 
 END;
