@@ -74,11 +74,11 @@ BEGIN
     	VALUES (pnCantidad, pnidProveedor, pnidLibro);
 
         UPDATE Libro
-        SET Existencia=Existencia+pnCantidad
+        SET Existencia = (Existencia + pnCantidad)
         WHERE idLibro = pnidLibro;
 
-        pcmensajeError:='Libro Comprado Exitosamente';
-        pbocurreError:=0;
+        pcmensajeError := 'Libro Comprado Exitosamente';
+        pbocurreError := 0;
         RETURN;
     END IF;
 
