@@ -147,7 +147,7 @@ public class Libro {
 
     @Override
     public String toString() {
-        return "Informacion del Libro{\n" + "idLibro=" + idLibro + ", \nnombre=" + nombre + ", \nanioPublicacion=" + anioPublicacion + ", \nidCategoria=" + idCategoria + ", \nidIdioma=" + idIdioma + ", \nprecioVenta=" + precioVenta + ", \nexistencia=" + existencia + '}';
+        return "Informacion del Libro{\n" + "idLibro=" + idLibro + ", \nnombre=" + nombre + ", \nanioPublicacion=" + anioPublicacion + ", \nidCategoria=" + idCategoria + ", \nidIdioma=" + idIdioma + ", \nprecioCosto=" + precioCosto + ", \nprecioVenta=" + precioVenta + ", \nexistencia=" + existencia + '}';
     }
     
     

@@ -44,7 +44,9 @@ public class frmMenuPrincipal extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         COMPRAS = new javax.swing.JMenu();
+        jMenuItem2 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
+        jMenuItem4 = new javax.swing.JMenuItem();
         helpMenu = new javax.swing.JMenu();
         contentMenuItem = new javax.swing.JMenuItem();
         aboutMenuItem = new javax.swing.JMenuItem();
@@ -103,9 +105,22 @@ public class frmMenuPrincipal extends javax.swing.JFrame {
         menuBar.add(jMenu2);
 
         COMPRAS.setText("COMPRAS");
+
+        jMenuItem2.setText("Comprar libro existente");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        COMPRAS.add(jMenuItem2);
+
         menuBar.add(COMPRAS);
 
         jMenu3.setText("PRESTAMOS");
+
+        jMenuItem4.setText("Realizar Prestamo");
+        jMenu3.add(jMenuItem4);
+
         menuBar.add(jMenu3);
 
         helpMenu.setMnemonic('h');
@@ -181,6 +196,11 @@ public class frmMenuPrincipal extends javax.swing.JFrame {
         frm.setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        frmCompras frm = new frmCompras();
+        frm.setVisible(true);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -230,6 +250,8 @@ public class frmMenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem mClientes;
     private javax.swing.JMenuItem mEmpleados;
     private javax.swing.JMenuBar menuBar;

@@ -58,8 +58,6 @@ public class frmVentas extends javax.swing.JFrame {
         traerTipoPago();
         traerCliente();
         
-        
-        //ListarDatos();
         this.setLocationRelativeTo(null);
     }
 
@@ -275,7 +273,7 @@ public class frmVentas extends javax.swing.JFrame {
         });
 
         btnGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/GuardarTodo.png"))); // NOI18N
-        btnGuardar.setText("REALIZAR COMPRA");
+        btnGuardar.setText("REALIZAR VENTA");
         btnGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGuardarActionPerformed(evt);
@@ -350,7 +348,7 @@ public class frmVentas extends javax.swing.JFrame {
                     .addComponent(jScrollPane1)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(22, 22, 22))))
             .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -446,7 +444,6 @@ public class frmVentas extends javax.swing.JFrame {
     }//GEN-LAST:event_txtIdLibroActionPerformed
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
-        //int conta = 1;
         Venta v = new Venta();
         v.setIdLibro(Integer.parseInt(txtIdLibro.getText()));
         v.setIdCliente(idCliente);
@@ -482,8 +479,7 @@ public class frmVentas extends javax.swing.JFrame {
     }//GEN-LAST:event_tblVentasMousePressed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        frmMenuPrincipal frm = new frmMenuPrincipal();
-        frm.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed

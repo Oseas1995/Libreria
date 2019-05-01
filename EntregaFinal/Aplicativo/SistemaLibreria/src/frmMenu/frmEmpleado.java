@@ -405,8 +405,7 @@ public class frmEmpleado extends javax.swing.JFrame {
     }//GEN-LAST:event_tblEmpleadoMousePressed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        frmMenuPrincipal frm = new frmMenuPrincipal();
-        frm.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed
